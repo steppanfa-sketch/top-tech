@@ -15,16 +15,19 @@
     "ctaLabel": "Discover TOP TECH"
   },
   "featuredServicesSection": {
-    "kicker": "Featured Services",
-    "headline": "End-to-End Capabilities Across Digital, Design & AI",
-    "subtitle": "Explore our core disciplines—each backed by dedicated project pages and configurable online ordering.",
+    "kicker": "WHAT WE DO",
+    "headline": "Digital Solutions Built Around Your Vision.",
+    "subtitle": "From websites and applications to creative design and practical technology training, explore the services that help bring your ideas to life.",
     "featuredSlugs": [
       "website-development",
       "ecommerce-development",
       "web-applications",
-      "mobile-applications"
+      "mobile-applications",
+      "graphic-design",
+      "building-plans",
+      "ai-training"
     ],
-    "ctaLabel": "View All 7 Services"
+    "ctaLabel": "Explore All Services"
   },
   "selectedProjectsSection": {
     "kicker": "Selected Work",
