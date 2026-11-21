@@ -1,18 +1,18 @@
 {
   "hero": {
-    "kicker": "Technology. Creativity. Innovation.",
-    "headline": "Transforming Ideas Into Digital Excellence.",
-    "supportingText": "At TOP TECH, we combine technology, creativity, and innovation to help businesses and individuals build, design, and grow in the digital world.",
+    "kicker": "TECHNOLOGY. CREATIVITY. INNOVATION.",
+    "headline": "We Turn Your Ideas Into Powerful Digital Experiences.",
+    "supportingText": "From stunning websites and powerful applications to creative designs and practical AI solutions, TOP TECH helps individuals and businesses build, innovate and grow.",
     "primaryCtaLabel": "Explore Our Services",
     "secondaryCtaLabel": "Start a Project",
     "heroImage": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-    "heroImageAlt": "TOP TECH digital engineering and design studio workspace"
+    "heroImageAlt": "TOP TECH digital solutions and technology innovation"
   },
   "introSection": {
-    "kicker": "About TOP TECH",
-    "headline": "We Build. We Design. We Innovate.",
-    "summary": "TOP TECH is a multidisciplinary technology and creative solutions agency helping individuals, entrepreneurs, and organizations launch dependable websites, online stores, custom software, brand systems, building plans, and practical AI workflows.",
-    "ctaLabel": "Explore Our Story"
+    "kicker": "WHO WE ARE",
+    "headline": "Technology That Turns Ambition Into Progress.",
+    "summary": "TOP TECH is a full-service technology and digital solutions company serving individuals and businesses across",
+    "ctaLabel": "Discover TOP TECH"
   },
   "featuredServicesSection": {
     "kicker": "Featured Services",
