@@ -1,0 +1,95 @@
+{
+  "order": 7,
+  "code": "G",
+  "slug": "ai-training",
+  "name": "AI Training",
+  "icon": "BrainCircuit",
+  "heroSubtitle": "Hands-on artificial intelligence education, prompt engineering workshops, and practical business workflow training.",
+  "shortDescription": "Practical AI education, modern AI tools, structured prompt engineering, workflow productivity, and business applications of artificial intelligence.",
+  "fullDescription": "Artificial intelligence delivers real value only when people know how to apply it responsibly and effectively. Our hands-on AI training programs equip individuals, educators, and business teams with practical prompt engineering techniques, real tool workflows, document and analysis automation, and clear governance habits.",
+  "image": "/src/assets/images/showcase_ai_training_1795280409208.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Practical AI Foundations & Tool Mastery",
+    "Structured Prompt Engineering Workshops",
+    "Team Productivity & Workflow Automation",
+    "Business Use-Case Implementation Playbooks",
+    "Live Guided Sessions & Training Materials"
+  ],
+  "benefits": [
+    {
+      "title": "Immediate Everyday Productivity",
+      "description": "Participants leave with repeatable prompt patterns and tool setups they can apply to real tasks the same day."
+    },
+    {
+      "title": "Role-Specific Relevance",
+      "description": "Exercises are tailored to your industry—whether operations, marketing, education, administration, or software."
+    },
+    {
+      "title": "Safe, Verification-First Habits",
+      "description": "Learn practical guidelines for fact-checking AI outputs, protecting sensitive data, and maintaining quality standards."
+    }
+  ],
+  "features": [
+    {
+      "title": "Structured Prompt Frameworks",
+      "description": "Master context framing, role assignment, constraints, structured output formats, and iterative refinement."
+    },
+    {
+      "title": "Tool Ecosystem Walkthroughs",
+      "description": "Hands-on practice with modern text, research, spreadsheet, coding, and visual AI assistants."
+    },
+    {
+      "title": "Business Workflow Labs",
+      "description": "Drafting SOPs, summarizing reports, organizing meeting notes, and accelerating customer communications."
+    },
+    {
+      "title": "Custom Team Playbooks",
+      "description": "Take-home prompt libraries and checklists documented specifically for your organization."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Skill & Workflow Assessment",
+      "description": "We identify your team's current familiarity with AI and the daily tasks with highest time-saving potential."
+    },
+    {
+      "step": "02",
+      "title": "Custom Curriculum Design",
+      "description": "We assemble focused exercises, prompt templates, and tool workflows matching your roles."
+    },
+    {
+      "step": "03",
+      "title": "Interactive Hands-On Sessions",
+      "description": "Live guided workshops (remote or on-site) where every participant practices directly."
+    },
+    {
+      "step": "04",
+      "title": "Playbook Delivery & Follow-Up",
+      "description": "Participants receive reference guides, prompt libraries, and post-session Q&A support."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do participants need a technical or coding background?",
+      "answer": "No. Our core practical AI and prompt engineering tracks are designed for non-technical professionals, founders, students, and teams, with optional technical tracks for developers."
+    },
+    {
+      "question": "Can training be customized for our company department?",
+      "answer": "Yes. We tailor examples and lab exercises directly around your team's real documents, workflows, and daily tasks."
+    },
+    {
+      "question": "Are sessions available online as well as in person?",
+      "answer": "Yes. We deliver live interactive online workshops globally as well as on-site team sessions by arrangement."
+    }
+  ],
+  "relatedCategories": ["AI Training"],
+  "idealFor": "Individuals, professionals, educators, and corporate teams adopting AI for everyday productivity.",
+  "seo": {
+    "title": "AI Training — TOP TECH",
+    "description": "Practical AI education, prompt engineering, AI tools, and business productivity training by TOP TECH."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "order": 6,
+  "code": "F",
+  "slug": "building-plans",
+  "name": "Building Plans",
+  "icon": "Compass",
+  "heroSubtitle": "Precision architectural floor plans, spatial zoning layouts, elevations, and technical building drawings.",
+  "shortDescription": "Architectural layouts, technical building drawings, floor plans, elevations, and professional building plan design services.",
+  "fullDescription": "TOP TECH brings precision spatial planning to residential, commercial, and mixed-use projects. We produce clear, well-proportioned architectural floor plans, site layouts, elevations, and presentation-ready building drawings designed for functional living, efficient workflow, and smooth engineering coordination.",
+  "image": "/src/assets/images/showcase_building_plans_1795280410007.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "2D Architectural Floor Plans",
+    "Site Layouts & Spatial Zoning",
+    "Building Elevations & Section Drawings",
+    "Residential & Commercial Layout Concepts",
+    "Structured CAD & PDF Drawing Sets"
+  ],
+  "benefits": [
+    {
+      "title": "Efficient Space Utilization",
+      "description": "Thoughtful room proportions, natural light orientation, and logical circulation prevent wasted square footage."
+    },
+    {
+      "title": "Clear Builder Communication",
+      "description": "Accurate dimension lines, annotations, and clean elevation sheets minimize confusion on site."
+    },
+    {
+      "title": "Tailored to Plot & Budget",
+      "description": "Layouts are planned around your exact land dimensions, orientation, and functional room requirements."
+    }
+  ],
+  "features": [
+    {
+      "title": "Dimensioned Floor Plans",
+      "description": "Detailed room-by-room layouts with wall thicknesses, door swings, window placement, and furniture zoning."
+    },
+    {
+      "title": "Exterior Elevations",
+      "description": "Front, rear, and side facade drawings illustrating roof lines, openings, and material proportions."
+    },
+    {
+      "title": "Site & Parking Planning",
+      "description": "Coordinated setback awareness, driveway access, walkways, and outdoor utility zones."
+    },
+    {
+      "title": "CAD & Print-Ready Sheets",
+      "description": "Clean DWG/CAD files alongside scaled PDF sheets ready for A1/A3 plotting."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Plot Details & Program Brief",
+      "description": "We review your land dimensions, room list, story count, and architectural style preferences."
+    },
+    {
+      "step": "02",
+      "title": "Preliminary Floor Plan Concept",
+      "description": "We draft initial spatial zoning and room flow options for your feedback."
+    },
+    {
+      "step": "03",
+      "title": "Detailed Drafting & Elevations",
+      "description": "We refine exact dimensions, openings, stairs, and exterior elevation views."
+    },
+    {
+      "step": "04",
+      "title": "Final Drawing Package Delivery",
+      "description": "You receive scaled PDF drawing sheets and editable CAD files for project coordination."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What information do you need to start designing a building plan?",
+      "answer": "Share your plot dimensions (or survey sketch), desired number of rooms/floors, intended use (residential, commercial, or mixed-use), and any reference styles you like."
+    },
+    {
+      "question": "Can plans be customized for irregular or compact plots?",
+      "answer": "Yes. Every floor plan is drafted specifically to fit your plot boundaries, access road, and daylight orientation."
+    },
+    {
+      "question": "In what formats are final building drawings delivered?",
+      "answer": "Final drawing sets are delivered as scaled, high-resolution PDF sheets ready for printing alongside CAD source files where agreed."
+    }
+  ],
+  "relatedCategories": ["Building Plans"],
+  "idealFor": "Property owners, developers, and contractors needing clear, practical architectural drawings.",
+  "seo": {
+    "title": "Building Plans — TOP TECH",
+    "description": "Architectural layouts, building drawings, and professional building plan design services by TOP TECH."
+  }
+}

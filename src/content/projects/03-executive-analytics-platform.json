@@ -1,0 +1,24 @@
+{
+  "order": 3,
+  "slug": "executive-analytics-platform",
+  "title": "Executive Operations & Analytics Suite",
+  "category": "Web Applications",
+  "clientType": "Showcase Concept · Operations Management",
+  "summary": "A unified browser-based web dashboard for monitoring team workflows, inventory pipelines, and financial summaries in real time.",
+  "challenge": "Growing organizations rely on disconnected spreadsheets that delay reporting and make daily operational visibility difficult.",
+  "solution": "Engineered a modular web application interface with clear tabular data hierarchy, role-oriented views, and responsive desktop/tablet controls.",
+  "deliverables": [
+    "Interactive Web Application UI",
+    "Tabular Reporting Views",
+    "Role-Based Access Views",
+    "Scalable Component Architecture"
+  ],
+  "image": "/src/assets/images/showcase_web_platform_1795280410303.jpg",
+  "videoUrl": "",
+  "projectUrl": "",
+  "featured": true,
+  "seo": {
+    "title": "Executive Operations & Analytics Suite — TOP TECH Projects",
+    "description": "Custom web application showcase designed by TOP TECH."
+  }
+}

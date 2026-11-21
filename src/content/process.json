@@ -1,0 +1,80 @@
+{
+  "kicker": "Our Process",
+  "headline": "A Disciplined Six-Stage Delivery Framework",
+  "subtitle": "Every engagement—from custom websites and mobile apps to architectural building plans and AI training—follows a transparent six-stage workflow with clear milestones.",
+  "steps": [
+    {
+      "stepNumber": "01",
+      "title": "Discovery",
+      "description": "Understanding the client's needs, audience, technical constraints, and business objectives before writing a line of code or drawing a layout.",
+      "activities": [
+        "Stakeholder discovery session and requirements gathering",
+        "Audience, workflow, and operational bottleneck analysis",
+        "Review of existing brand assets, systems, or site plans"
+      ],
+      "deliverable": "Project Discovery Brief & Requirements Summary"
+    },
+    {
+      "stepNumber": "02",
+      "title": "Planning",
+      "description": "Developing the right strategy, scope architecture, technical stack, and milestone roadmap aligned with your timeline.",
+      "activities": [
+        "Information architecture, sitemap, or functional specification",
+        "Technology selection and external integration mapping",
+        "Milestone schedule and deliverable acceptance criteria"
+      ],
+      "deliverable": "Technical Architecture & Milestone Roadmap"
+    },
+    {
+      "stepNumber": "03",
+      "title": "Design",
+      "description": "Creating the visual experience, interface systems, brand assets, or architectural floor plans with clarity and intentional hierarchy.",
+      "activities": [
+        "Wireframes, visual prototypes, or spatial zoning concepts",
+        "Typography, color system, and responsive layout design",
+        "Structured client review and refinement cycle"
+      ],
+      "deliverable": "Approved Visual Design System or CAD Concept"
+    },
+    {
+      "stepNumber": "04",
+      "title": "Development",
+      "description": "Building the solution using modern frameworks, clean maintainable architecture, responsive layouts, and reliable integrations.",
+      "activities": [
+        "Frontend, backend, mobile, or print-ready asset production",
+        "CMS structure setup and configurable ordering integration",
+        "Code quality checks, semantic markup, and SEO implementation"
+      ],
+      "deliverable": "Staging Build or Production-Ready Package"
+    },
+    {
+      "stepNumber": "05",
+      "title": "Delivery",
+      "description": "Testing across devices, verifying performance and accessibility, and delivering the finished project ready for real-world launch.",
+      "activities": [
+        "Cross-browser, mobile viewport, and accessibility verification",
+        "Deployment configuration and domain/hosting handover",
+        "Walkthrough documentation and team orientation"
+      ],
+      "deliverable": "Verified Production Release & Handover Guide"
+    },
+    {
+      "stepNumber": "06",
+      "title": "Support",
+      "description": "Providing ongoing technical assistance, team training, and iterative improvements whenever your business needs to evolve.",
+      "activities": [
+        "Post-launch monitoring and minor refinement support",
+        "Content management guidance and AI workflow coaching",
+        "Planned feature expansions as your business scales"
+      ],
+      "deliverable": "Continuous Support & Growth Readiness"
+    }
+  ],
+  "collaborationNoteTitle": "Transparent Collaboration at Every Milestone",
+  "collaborationNoteBody": "You never have to guess where a project stands. Each stage concludes with a concrete deliverable for your review before we move forward.",
+  "ctaLabel": "Start Discovery With TOP TECH",
+  "seo": {
+    "title": "Our Process — TOP TECH",
+    "description": "Explore TOP TECH's six-stage project delivery process: Discovery, Planning, Design, Development, Delivery, and Support."
+  }
+}

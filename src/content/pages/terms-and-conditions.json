@@ -1,0 +1,28 @@
+{
+  "title": "Terms and Conditions",
+  "slug": "terms-and-conditions",
+  "published": true,
+  "kicker": "Legal & Governance",
+  "heroSubtitle": "General terms governing use of the TOP TECH website and project engagements.",
+  "heroImage": "",
+  "sections": [
+    {
+      "heading": "Project Scopes & Deliverables",
+      "body": "All website development, e-commerce, software application, graphic design, architectural building plan, and AI training engagements are governed by written project proposals detailing deliverables, milestones, revision cycles, and payment schedules."
+    },
+    {
+      "heading": "Intellectual Property",
+      "body": "Unless otherwise specified in a separate written agreement, all original website copy, interface systems, and showcase materials published on this site belong to TOP TECH. Client project ownership transfers according to the terms of each signed service agreement."
+    },
+    {
+      "heading": "External Service Ordering",
+      "body": "Direct service orders routed through configured external checkout or booking platforms are subject to availability confirmation and scope verification by TOP TECH."
+    }
+  ],
+  "ctaLabel": "Start a Project Inquiry",
+  "ctaTarget": "/#contact",
+  "seo": {
+    "title": "Terms and Conditions — TOP TECH",
+    "description": "Terms and Conditions for TOP TECH digital agency services."
+  }
+}

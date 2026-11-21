@@ -1,0 +1,845 @@
+media:
+  input: public/uploads
+  output: /uploads
+
+content:
+  - name: site
+    label: Site Settings & Branding
+    type: file
+    path: src/content/site.json
+    fields:
+      - name: brandName
+        label: Brand Name
+        type: string
+        required: true
+      - name: tagline
+        label: Tagline
+        type: string
+        required: true
+      - name: logoUrl
+        label: Custom Logo Image (optional, replaces text logo)
+        type: image
+      - name: faviconUrl
+        label: Custom Favicon Image (optional)
+        type: image
+      - name: siteUrl
+        label: Production Site Base URL (e.g. https://username.github.io/top-tech)
+        type: string
+      - name: shortDescription
+        label: Short Agency Description (Footer)
+        type: text
+      - name: startProjectLabel
+        label: Start a Project Button Text
+        type: string
+      - name: getStartedLabel
+        label: Get Started Button Text
+        type: string
+      - name: startProjectUrl
+        label: External Start a Project URL (leave empty to route to /contact)
+        type: string
+      - name: copyrightHolder
+        label: Copyright Holder
+        type: string
+      - name: defaultSeo
+        label: Default SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image
+            type: image
+
+  - name: navigation
+    label: Navigation & Footer Links
+    type: file
+    path: src/content/navigation.json
+    fields:
+      - name: headerLinks
+        label: Header Navigation Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Link Label
+            type: string
+          - name: target
+            label: Route or URL (e.g. /, /about, /services, /pages/custom-slug)
+            type: string
+          - name: type
+            label: Link Type
+            type: select
+            options:
+              values:
+                - route
+                - services-dropdown
+                - external
+      - name: footerLegalLinks
+        label: Footer Legal & Custom Links
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: target
+            label: Route or URL
+            type: string
+
+  - name: home
+    label: Homepage Content & SEO
+    type: file
+    path: src/content/home.json
+    fields:
+      - name: hero
+        label: Hero Section
+        type: object
+        fields:
+          - name: kicker
+            label: Hero Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: supportingText
+            label: Supporting Text
+            type: text
+          - name: primaryCtaLabel
+            label: Primary Button Text
+            type: string
+          - name: secondaryCtaLabel
+            label: Secondary Button Text
+            type: string
+          - name: heroImage
+            label: Hero Image
+            type: image
+          - name: heroImageAlt
+            label: Hero Image Alt Text
+            type: string
+      - name: introSection
+        label: Brief Introduction Section
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: summary
+            label: Summary
+            type: text
+          - name: ctaLabel
+            label: Link Text
+            type: string
+      - name: featuredServicesSection
+        label: Featured Services Section
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: featuredSlugs
+            label: Featured Service Slugs
+            type: string
+            list: true
+          - name: ctaLabel
+            label: View More Button Text
+            type: string
+      - name: selectedProjectsSection
+        label: Selected Projects Section
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: ctaLabel
+            label: Explore Portfolio Button Text
+            type: string
+      - name: whyChooseSection
+        label: Reasons to Choose Us (Homepage)
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: ctaLabel
+            label: Learn More Link Text
+            type: string
+          - name: items
+            label: Highlight Pillars
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: icon
+                label: Icon Name
+                type: string
+      - name: processOverviewSection
+        label: Brief Process Overview
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: ctaLabel
+            label: Explore Process Button Text
+            type: string
+      - name: ctaSection
+        label: Bottom Call-to-Action Section
+        type: object
+        fields:
+          - name: kicker
+            label: Kicker
+            type: string
+          - name: headline
+            label: Headline
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: primaryButtonLabel
+            label: Primary Button Text
+            type: string
+          - name: secondaryButtonLabel
+            label: Secondary Button Text
+            type: string
+      - name: seo
+        label: Homepage SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: about
+    label: About Page (/about)
+    type: file
+    path: src/content/about.json
+    fields:
+      - name: kicker
+        label: Section Label
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+      - name: intro
+        label: Introduction Paragraph
+        type: text
+      - name: secondaryText
+        label: Secondary Paragraph
+        type: text
+      - name: image
+        label: Studio Image
+        type: image
+      - name: imageAlt
+        label: Studio Image Alt Text
+        type: string
+      - name: mission
+        label: Our Mission
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+      - name: vision
+        label: Our Vision
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+      - name: values
+        label: Our Values
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Value Title
+            type: string
+          - name: description
+            label: Value Description
+            type: text
+      - name: reasonsHeading
+        label: Why Work With TOP TECH Heading
+        type: string
+      - name: reasonsSubtitle
+        label: Why Work With TOP TECH Subtitle
+        type: text
+      - name: reasons
+        label: Reasons to Work With TOP TECH
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: icon
+            label: Icon Name
+            type: string
+      - name: seo
+        label: About Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: services_overview
+    label: Services Index Page (/services)
+    type: file
+    path: src/content/services-overview.json
+    fields:
+      - name: kicker
+        label: Kicker
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: text
+      - name: ctaTitle
+        label: Bottom CTA Title
+        type: string
+      - name: ctaDescription
+        label: Bottom CTA Description
+        type: text
+      - name: seo
+        label: Services Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: projects_overview
+    label: Projects Page (/projects)
+    type: file
+    path: src/content/projects-overview.json
+    fields:
+      - name: kicker
+        label: Kicker
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: text
+      - name: ctaTitle
+        label: Bottom CTA Title
+        type: string
+      - name: ctaDescription
+        label: Bottom CTA Description
+        type: text
+      - name: seo
+        label: Projects Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: process
+    label: Our Process Page (/process)
+    type: file
+    path: src/content/process.json
+    fields:
+      - name: kicker
+        label: Kicker
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: text
+      - name: steps
+        label: Process Stages
+        type: object
+        list: true
+        fields:
+          - name: stepNumber
+            label: Step Number
+            type: string
+          - name: title
+            label: Stage Title
+            type: string
+          - name: description
+            label: Stage Description
+            type: text
+          - name: activities
+            label: Key Activities
+            type: string
+            list: true
+          - name: deliverable
+            label: Stage Output
+            type: string
+      - name: collaborationNoteTitle
+        label: Collaboration Note Title
+        type: string
+      - name: collaborationNoteBody
+        label: Collaboration Note Body
+        type: text
+      - name: ctaLabel
+        label: CTA Button Label
+        type: string
+      - name: seo
+        label: Process Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: contact
+    label: Contact Page (/contact) & Form Integration
+    type: file
+    path: src/content/contact.json
+    fields:
+      - name: kicker
+        label: Kicker
+        type: string
+      - name: title
+        label: Contact Headline
+        type: string
+      - name: subtitle
+        label: Contact Subtitle
+        type: text
+      - name: formEndpoint
+        label: External Form Service Endpoint (Formspree / Web3Forms / Basin URL)
+        type: string
+      - name: formAccessKey
+        label: Optional Form Access Key (for Web3Forms)
+        type: string
+      - name: email
+        label: Contact Email
+        type: string
+      - name: phone
+        label: Phone Number
+        type: string
+      - name: whatsappNumber
+        label: WhatsApp Number (digits only)
+        type: string
+      - name: whatsappPrefill
+        label: Default WhatsApp Message
+        type: string
+      - name: floatingWhatsappEnabled
+        label: Show Floating WhatsApp Button
+        type: boolean
+        default: true
+      - name: floatingWhatsappLabel
+        label: Floating WhatsApp Accessible Label
+        type: string
+      - name: location
+        label: Business Location
+        type: string
+      - name: availabilityNote
+        label: Office Hours / Response Note
+        type: string
+      - name: socialLinks
+        label: Social Media Links
+        type: object
+        list: true
+        fields:
+          - name: platform
+            label: Platform
+            type: string
+          - name: url
+            label: Profile URL
+            type: string
+      - name: seo
+        label: Contact Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: services
+    label: Individual Service Pages (/services/:slug)
+    type: collection
+    path: src/content/services
+    extension: json
+    view:
+      fields: [order, name, published, available, orderingUrl]
+      primary: name
+    fields:
+      - name: order
+        label: Display Order
+        type: number
+        required: true
+      - name: published
+        label: Published (Visible on Website)
+        type: boolean
+        default: true
+      - name: code
+        label: Editorial Code (e.g. A, B, C)
+        type: string
+      - name: slug
+        label: URL Slug
+        type: string
+        required: true
+      - name: name
+        label: Service Name
+        type: string
+        required: true
+      - name: icon
+        label: Icon Key (Globe, ShoppingBag, LayoutDashboard, Smartphone, PenTool, Compass, BrainCircuit)
+        type: string
+      - name: heroSubtitle
+        label: Service Page Hero Subtitle
+        type: text
+      - name: shortDescription
+        label: Card Description
+        type: text
+        required: true
+      - name: fullDescription
+        label: Detailed Service Overview
+        type: text
+      - name: image
+        label: Service Image
+        type: image
+      - name: orderingUrl
+        label: External Ordering URL (leave empty for Contact Us fallback)
+        type: string
+      - name: buttonText
+        label: Order Button Text
+        type: string
+        default: Order Service
+      - name: available
+        label: Available for Direct Ordering
+        type: boolean
+        default: true
+      - name: deliverables
+        label: Core Deliverables
+        type: string
+        list: true
+      - name: benefits
+        label: Key Benefits
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Benefit Title
+            type: string
+          - name: description
+            label: Benefit Description
+            type: text
+      - name: features
+        label: Included Features
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Feature Title
+            type: string
+          - name: description
+            label: Feature Description
+            type: text
+      - name: processSteps
+        label: Service Delivery Steps
+        type: object
+        list: true
+        fields:
+          - name: step
+            label: Step Number
+            type: string
+          - name: title
+            label: Step Title
+            type: string
+          - name: description
+            label: Step Description
+            type: text
+      - name: faqs
+        label: Frequently Asked Questions
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+          - name: answer
+            label: Answer
+            type: text
+      - name: relatedCategories
+        label: Matching Portfolio Project Categories
+        type: string
+        list: true
+      - name: idealFor
+        label: Ideal For
+        type: string
+      - name: seo
+        label: Service Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+
+  - name: projects
+    label: Portfolio Projects (/projects/:slug)
+    type: collection
+    path: src/content/projects
+    extension: json
+    view:
+      fields: [order, title, category, published, featured]
+      primary: title
+    fields:
+      - name: order
+        label: Display Order
+        type: number
+      - name: published
+        label: Published (Visible on Website)
+        type: boolean
+        default: true
+      - name: slug
+        label: URL Slug
+        type: string
+        required: true
+      - name: title
+        label: Project Title
+        type: string
+        required: true
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Website Development
+            - E-Commerce Development
+            - Web Applications
+            - Mobile Applications
+            - Graphic Design
+            - Building Plans
+            - AI Training
+      - name: clientType
+        label: Client / Industry Context
+        type: string
+      - name: summary
+        label: Short Summary
+        type: text
+      - name: challenge
+        label: Project Challenge
+        type: text
+      - name: solution
+        label: Solution Delivered
+        type: text
+      - name: deliverables
+        label: Deliverables
+        type: string
+        list: true
+      - name: image
+        label: Project Image
+        type: image
+      - name: videoUrl
+        label: Optional Video Demonstration URL
+        type: string
+      - name: projectUrl
+        label: External Project Link (optional)
+        type: string
+      - name: featured
+        label: Feature on Homepage
+        type: boolean
+        default: true
+      - name: seo
+        label: Project Page SEO
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image
+
+  - name: testimonials
+    label: Testimonials (Sample Placeholders & Client Quotes)
+    type: collection
+    path: src/content/testimonials
+    extension: json
+    view:
+      fields: [order, authorName, organization, visible, isSamplePlaceholder]
+      primary: authorName
+    fields:
+      - name: order
+        label: Display Order
+        type: number
+      - name: visible
+        label: Visible on Website
+        type: boolean
+        default: true
+      - name: isSamplePlaceholder
+        label: Mark as Sample Placeholder
+        type: boolean
+        default: true
+      - name: quote
+        label: Testimonial Quote
+        type: text
+        required: true
+      - name: authorName
+        label: Client Name
+        type: string
+        required: true
+      - name: role
+        label: Role / Title
+        type: string
+      - name: organization
+        label: Organization
+        type: string
+      - name: serviceCategory
+        label: Related Service
+        type: string
+
+  - name: pages
+    label: Custom Pages (/pages/:slug)
+    type: collection
+    path: src/content/pages
+    extension: json
+    view:
+      fields: [title, slug, published]
+      primary: title
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+        required: true
+      - name: slug
+        label: URL Slug (accessible at /#/pages/<slug>)
+        type: string
+        required: true
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+      - name: kicker
+        label: Eyebrow Label
+        type: string
+      - name: heroSubtitle
+        label: Subtitle
+        type: text
+      - name: heroImage
+        label: Optional Banner Image
+        type: image
+      - name: videoUrl
+        label: Optional Video Embed URL (YouTube, Vimeo, or MP4)
+        type: string
+      - name: sections
+        label: Page Content Sections
+        type: object
+        list: true
+        fields:
+          - name: heading
+            label: Section Heading
+            type: string
+          - name: body
+            label: Section Text
+            type: text
+          - name: bullets
+            label: Bullet Points (optional)
+            type: string
+            list: true
+      - name: ctaLabel
+        label: Bottom Call-to-Action Label (optional)
+        type: string
+      - name: ctaTarget
+        label: Bottom Call-to-Action Link
+        type: string
+      - name: seo
+        label: SEO Settings
+        type: object
+        fields:
+          - name: title
+            label: Meta Title
+            type: string
+          - name: description
+            label: Meta Description
+            type: text
+          - name: ogImage
+            label: Social Share Image (optional)
+            type: image

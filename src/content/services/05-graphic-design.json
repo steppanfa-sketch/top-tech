@@ -1,0 +1,95 @@
+{
+  "order": 5,
+  "code": "E",
+  "slug": "graphic-design",
+  "name": "Graphic Design",
+  "icon": "PenTool",
+  "heroSubtitle": "Distinctive logos, cohesive brand identity systems, flyers, posters, banners, and social media graphics.",
+  "shortDescription": "Logo design, complete branding systems, flyers, posters, banners, social media graphics, and print-ready promotional materials.",
+  "fullDescription": "Strong visual communication earns immediate trust. Our graphic design studio crafts cohesive brand identities and campaign assets—from distinctive logos and typography guidelines to crisp flyers, event posters, large-format banners, and social media graphics ready for both digital and print production.",
+  "image": "/src/assets/images/showcase_brand_identity_1795280409365.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Logo Design & Brand Identity Systems",
+    "Flyers, Posters & Roll-Up Banners",
+    "Social Media Graphics & Ad Creatives",
+    "Corporate Stationery & Packaging Assets",
+    "Print-Ready & Vector Source Files"
+  ],
+  "benefits": [
+    {
+      "title": "Consistent Brand Recognition",
+      "description": "Unified colors, typography, and layout rules make every flyer, post, and invoice look unmistakably yours."
+    },
+    {
+      "title": "Print & Digital Precision",
+      "description": "Assets are exported in crisp vector formats, CMYK print-ready PDFs, and high-DPI web formats."
+    },
+    {
+      "title": "Fast Campaign Turnaround",
+      "description": "Reusable promotional templates let your marketing stay sharp across events, product drops, and announcements."
+    }
+  ],
+  "features": [
+    {
+      "title": "Vector Logo Construction",
+      "description": "Clean geometric marks that scale sharply from favicons to storefront signage."
+    },
+    {
+      "title": "Brand Guidelines Document",
+      "description": "Clear usage rules covering color palettes, font pairings, clear space, and light/dark lockups."
+    },
+    {
+      "title": "Marketing & Print Collateral",
+      "description": "Brochures, event posters, flyers, business cards, letterheads, and pull-up banners."
+    },
+    {
+      "title": "Social Media Template Kits",
+      "description": "Coordinated square, portrait, and cover layouts for Instagram, LinkedIn, X, and Facebook."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Brand & Audience Brief",
+      "description": "We review your positioning, target audience, competitors, and visual preferences."
+    },
+    {
+      "step": "02",
+      "title": "Concept Exploration",
+      "description": "We present focused creative directions showing typography, color, and layout structure."
+    },
+    {
+      "step": "03",
+      "title": "Refinement & System Expansion",
+      "description": "We polish your selected direction and extend it across print and digital deliverables."
+    },
+    {
+      "step": "04",
+      "title": "Final File Package",
+      "description": "You receive organized SVG, PNG, PDF, and editable source files ready for printers and web teams."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What file formats do I receive for logo and print designs?",
+      "answer": "You receive scalable vector files (SVG, PDF, EPS/AI), transparent high-resolution PNGs, and CMYK print-ready PDFs with proper bleed."
+    },
+    {
+      "question": "Can I order only flyers, posters, or social graphics without a full rebrand?",
+      "answer": "Yes. You can book standalone promotional graphics or a full brand identity package."
+    },
+    {
+      "question": "How many revision rounds are included?",
+      "answer": "Every project scope includes structured review and refinement rounds so the final artwork meets your expectations."
+    }
+  ],
+  "relatedCategories": ["Graphic Design"],
+  "idealFor": "New ventures building their brand from scratch and established companies refreshing campaign visuals.",
+  "seo": {
+    "title": "Graphic Design — TOP TECH",
+    "description": "Logo design, branding, flyers, posters, banners, and promotional graphics by TOP TECH."
+  }
+}

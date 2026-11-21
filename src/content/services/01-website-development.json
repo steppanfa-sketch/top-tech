@@ -1,0 +1,95 @@
+{
+  "order": 1,
+  "code": "A",
+  "slug": "website-development",
+  "name": "Website Development",
+  "icon": "Globe",
+  "heroSubtitle": "Fast, conversion-focused business websites, corporate portals, portfolios, and custom landing pages built for reliability.",
+  "shortDescription": "Business websites, portfolios, landing pages, corporate websites and custom websites engineered for speed, clarity, and conversion.",
+  "fullDescription": "We architect and build responsive, search-ready websites tailored to your brand identity and business objectives. Whether launching a high-converting landing page, an executive corporate presence, or a custom multi-page web platform, every build prioritizes clean semantics, fast load performance, and effortless maintainability.",
+  "image": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Business & Corporate Websites",
+    "Personal & Creative Portfolios",
+    "High-Conversion Landing Pages",
+    "Responsive Mobile & Desktop Architecture",
+    "On-Page SEO & Performance Optimization"
+  ],
+  "benefits": [
+    {
+      "title": "Credible Digital First Impression",
+      "description": "Structured typography, clean layouts, and fast page loads build immediate trust with prospective clients."
+    },
+    {
+      "title": "Search-Engine Ready Structure",
+      "description": "Semantic HTML, Open Graph social cards, clean metadata, and structured headings help your pages index cleanly."
+    },
+    {
+      "title": "Effortless Content Updates",
+      "description": "Organized CMS content files allow your team to update copy, links, and media without developer bottlenecks."
+    }
+  ],
+  "features": [
+    {
+      "title": "Responsive Multi-Device Layouts",
+      "description": "Carefully tested across desktop monitors, laptops, tablets, iOS, and Android viewports."
+    },
+    {
+      "title": "Modern Component Architecture",
+      "description": "Built on React, TypeScript, and Tailwind CSS for clean long-term maintainability."
+    },
+    {
+      "title": "Dark & Light Theme Support",
+      "description": "Optional dual-theme UI systems tuned for legibility in every lighting environment."
+    },
+    {
+      "title": "Contact & Lead Routing",
+      "description": "Validated inquiry forms, WhatsApp quick links, and direct email handoff."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Site Architecture & Content Mapping",
+      "description": "We organize your pages, navigation hierarchy, and core messaging around visitor actions."
+    },
+    {
+      "step": "02",
+      "title": "UI Design & Visual Prototyping",
+      "description": "We craft a cohesive visual language with clean spacing, typography, and responsive breakpoints."
+    },
+    {
+      "step": "03",
+      "title": "Engineering & CMS Integration",
+      "description": "We build clean, fast frontend components wired to structured content files and SEO tags."
+    },
+    {
+      "step": "04",
+      "title": "Launch Verification & Handover",
+      "description": "We test forms, links, speed, and mobile usability before deploying to your domain."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I update text and images on my website after launch?",
+      "answer": "Yes. We structure projects for clean CMS management such as Pages CMS so your team can edit copy, images, and links directly."
+    },
+    {
+      "question": "Are TOP TECH websites mobile-friendly and SEO-ready?",
+      "answer": "Every website is built mobile-first with semantic HTML, page-specific titles and meta descriptions, and clean Open Graph tags."
+    },
+    {
+      "question": "Do you handle custom domains and hosting setup?",
+      "answer": "Yes. We can deploy to GitHub Pages, Vercel, Netlify, or your preferred hosting provider and assist with DNS setup."
+    }
+  ],
+  "relatedCategories": ["Website Development"],
+  "idealFor": "Businesses, founders, consultants, and organizations establishing or upgrading their digital presence.",
+  "seo": {
+    "title": "Website Development — TOP TECH",
+    "description": "Custom business websites, portfolios, landing pages, and corporate web solutions built by TOP TECH."
+  }
+}

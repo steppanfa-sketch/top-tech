@@ -1,0 +1,95 @@
+{
+  "order": 4,
+  "code": "D",
+  "slug": "mobile-applications",
+  "name": "Mobile Applications",
+  "icon": "Smartphone",
+  "heroSubtitle": "Intuitive Android and iOS mobile experiences designed for speed, field operations, and everyday customer engagement.",
+  "shortDescription": "Custom Android and iOS mobile applications, companion apps, booking tools, and mobile-first business systems.",
+  "fullDescription": "TOP TECH designs and builds mobile applications crafted for real-world usability on smartphones and tablets. Whether launching a customer-facing service app, an internal field-operations companion, or a mobile extension to your existing web platform, we focus on clean navigation, reliable sync, and responsive performance.",
+  "image": "/src/assets/images/showcase_mobile_app_1795284409918.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Cross-Platform Android & iOS Applications",
+    "Progressive Web Apps (PWA)",
+    "Mobile UI/UX Prototypes & Design Systems",
+    "Push Notification & Offline-Ready Workflows",
+    "App Store & Play Store Release Preparation"
+  ],
+  "benefits": [
+    {
+      "title": "Consistent Cross-Platform Reach",
+      "description": "Reach both Android and iOS users from a unified, maintainable codebase without duplicating engineering effort."
+    },
+    {
+      "title": "Thumb-Friendly Ergonomics",
+      "description": "Generous touch targets, clear bottom navigation, and uncluttered screens keep tasks fast on the go."
+    },
+    {
+      "title": "Connected to Your Business Backend",
+      "description": "Sync customer orders, field updates, or analytics seamlessly with your web dashboard."
+    }
+  ],
+  "features": [
+    {
+      "title": "Native-Feel Transitions & Gestures",
+      "description": "Responsive screen transitions, clean form inputs, and reliable feedback states."
+    },
+    {
+      "title": "Offline Caching & Resilience",
+      "description": "Graceful handling of intermittent mobile connectivity so users never lose unsaved work."
+    },
+    {
+      "title": "Secure User Accounts",
+      "description": "Clean sign-in flows, profile management, and protected session handling."
+    },
+    {
+      "title": "Real-Time Alerts & Status Updates",
+      "description": "Keep customers or field staff informed on bookings, orders, and task milestones."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Mobile Use-Case & Platform Scope",
+      "description": "We define target devices, core mobile user journeys, and backend sync requirements."
+    },
+    {
+      "step": "02",
+      "title": "Interactive Screen Prototypes",
+      "description": "We design touch-first wireframes and high-contrast light/dark mobile interfaces."
+    },
+    {
+      "step": "03",
+      "title": "App Development & API Wiring",
+      "description": "We build screens, local storage, authentication, and backend API integrations."
+    },
+    {
+      "step": "04",
+      "title": "Device Testing & Store Submission",
+      "description": "We test across Android and iPhone screen sizes and prepare store listing assets."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should we build a native/cross-platform mobile app or a PWA?",
+      "answer": "We help you evaluate both based on your audience: cross-platform apps for App Store and Google Play distribution, or installable PWAs for fast browser-based rollout."
+    },
+    {
+      "question": "Can the mobile app share data with our website or web dashboard?",
+      "answer": "Yes. Both web and mobile interfaces can connect to the same unified database and API layer."
+    },
+    {
+      "question": "Do you help with Google Play and Apple App Store preparation?",
+      "answer": "Yes. We prepare build packages, app icons, screenshots, and metadata checklists for store review."
+    }
+  ],
+  "relatedCategories": ["Mobile Applications"],
+  "idealFor": "Businesses launching customer mobile apps, booking platforms, or field-team companion tools.",
+  "seo": {
+    "title": "Mobile Applications — TOP TECH",
+    "description": "Android, iOS, and cross-platform mobile application design and development by TOP TECH."
+  }
+}

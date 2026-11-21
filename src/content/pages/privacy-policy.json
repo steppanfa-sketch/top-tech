@@ -1,0 +1,28 @@
+{
+  "title": "Privacy Policy",
+  "slug": "privacy-policy",
+  "published": true,
+  "kicker": "Legal & Governance",
+  "heroSubtitle": "How TOP TECH handles contact inquiries, browser preferences, and visitor information.",
+  "heroImage": "",
+  "sections": [
+    {
+      "heading": "Information You Provide",
+      "body": "When you submit an inquiry through our contact form, email, or WhatsApp channel, we collect only the details you choose to share—such as your name, email address, phone number, selected service, and project description—solely to respond to your request."
+    },
+    {
+      "heading": "Local Browser Storage",
+      "body": "This website stores your selected display theme (dark or light mode) in your browser's localStorage so your visual preference persists across visits. We do not use intrusive third-party advertising trackers."
+    },
+    {
+      "heading": "Third-Party Links & Ordering Portals",
+      "body": "When you click an external service ordering link, social link, or external form processor, your interaction with that destination is governed by the privacy policy of the respective service provider."
+    }
+  ],
+  "ctaLabel": "Contact Us With Questions",
+  "ctaTarget": "/#contact",
+  "seo": {
+    "title": "Privacy Policy — TOP TECH",
+    "description": "Privacy Policy for TOP TECH digital agency services and website inquiries."
+  }
+}

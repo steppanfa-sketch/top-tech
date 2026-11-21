@@ -1,0 +1,95 @@
+{
+  "order": 3,
+  "code": "C",
+  "slug": "web-applications",
+  "name": "Web Applications",
+  "icon": "LayoutDashboard",
+  "heroSubtitle": "Custom browser-based software, interactive dashboards, client portals, and business management systems.",
+  "shortDescription": "Custom web applications, operational dashboards, internal portals, and browser-based business management systems.",
+  "fullDescription": "When spreadsheets and generic SaaS tools create operational bottlenecks, TOP TECH engineers purpose-built web applications matched to your exact business workflows. From multi-role executive dashboards and client portals to inventory and scheduling systems, we build clean, responsive software designed for daily team use.",
+  "image": "/src/assets/images/showcase_web_platform_1795280410303.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Custom Web Applications & Portals",
+    "Executive & Operational Dashboards",
+    "Business & Inventory Management Systems",
+    "Role-Based Access & Authentication Flows",
+    "REST / Third-Party API Integrations"
+  ],
+  "benefits": [
+    {
+      "title": "Tailored to Your Exact Workflow",
+      "description": "Eliminate manual copy-pasting between disconnected spreadsheets with software built around how your team works."
+    },
+    {
+      "title": "Accessible From Any Browser",
+      "description": "Zero desktop installation overhead—authorized staff or clients sign in securely from any device."
+    },
+    {
+      "title": "Maintainable TypeScript Codebase",
+      "description": "Clean modular architecture makes future feature additions and integrations predictable and cost-effective."
+    }
+  ],
+  "features": [
+    {
+      "title": "Structured Data Tables & Filters",
+      "description": "Sortable, searchable records with tabular numeric alignment and instant CSV or report exports."
+    },
+    {
+      "title": "Role-Based Views",
+      "description": "Separate administrator, staff, and client permissions so every user sees only what they need."
+    },
+    {
+      "title": "Interactive Analytics & Summaries",
+      "description": "Clear visual indicators and real-time KPI summaries without visual clutter."
+    },
+    {
+      "title": "API & Webhook Connectivity",
+      "description": "Connect payment processors, CRM systems, email providers, or external databases seamlessly."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Workflow & Data Modeling",
+      "description": "We document user roles, database entities, permissions, and core operational tasks."
+    },
+    {
+      "step": "02",
+      "title": "Interactive UI Architecture",
+      "description": "We design clean dashboard screens, forms, and navigation flows optimized for daily speed."
+    },
+    {
+      "step": "03",
+      "title": "Full-Stack Engineering",
+      "description": "We implement the frontend, API routes, validation, authentication, and database persistence."
+    },
+    {
+      "step": "04",
+      "title": "Testing & Team Onboarding",
+      "description": "We run end-to-end validation checks and guide your administrators through live deployment."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can a custom web app replace our spreadsheets?",
+      "answer": "Yes. We routinely turn multi-tab spreadsheets into structured web applications with validation, search, user roles, and automated reporting."
+    },
+    {
+      "question": "Can it integrate with tools we already use?",
+      "answer": "Yes. We build clean integrations for email services, payment APIs, cloud storage, and third-party business tools."
+    },
+    {
+      "question": "Will the web app work on tablets and phones too?",
+      "answer": "Yes. Every web application is engineered responsively so managers and staff can check updates from mobile browsers."
+    }
+  ],
+  "relatedCategories": ["Web Applications"],
+  "idealFor": "Growing teams, service businesses, and startups replacing manual workflows with custom software.",
+  "seo": {
+    "title": "Web Applications — TOP TECH",
+    "description": "Custom web applications, operational dashboards, client portals, and business systems built by TOP TECH."
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="tt-bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B152E" />
+      <stop offset="100%" stop-color="#050A18" />
+    </linearGradient>
+    <linearGradient id="tt-border" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="55%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="tt-accent" x1="38" y1="30" x2="50" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#tt-bg)" />
+  <rect x="3" y="3" width="58" height="58" rx="13" stroke="url(#tt-border)" stroke-width="3" />
+  <path d="M16 21H48M32 21V46" stroke="#FFFFFF" stroke-width="5.2" stroke-linecap="square" />
+  <path d="M41.5 32.5L48 39L41.5 45.5" stroke="url(#tt-accent)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

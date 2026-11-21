@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "kicker": "Technology. Creativity. Innovation.",
+    "headline": "Transforming Ideas Into Digital Excellence.",
+    "supportingText": "At TOP TECH, we combine technology, creativity and innovation to help businesses and individuals build, design and grow in the digital world.",
+    "primaryCtaLabel": "Explore Our Services",
+    "secondaryCtaLabel": "Start a Project",
+    "heroImage": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
+    "heroImageAlt": "TOP TECH digital engineering and design studio workspace"
+  },
+  "introSection": {
+    "kicker": "About TOP TECH",
+    "headline": "We Build. We Design. We Innovate.",
+    "summary": "TOP TECH is a multidisciplinary technology and creative solutions agency helping individuals, entrepreneurs, and organizations launch dependable websites, online stores, custom software, brand systems, building plans, and practical AI workflows.",
+    "ctaLabel": "Explore Our Story"
+  },
+  "featuredServicesSection": {
+    "kicker": "Featured Services",
+    "headline": "End-to-End Capabilities Across Digital, Design & AI",
+    "subtitle": "Explore our core disciplines—each backed by dedicated project pages and configurable online ordering.",
+    "featuredSlugs": [
+      "website-development",
+      "ecommerce-development",
+      "web-applications",
+      "mobile-applications"
+    ],
+    "ctaLabel": "View All 7 Services"
+  },
+  "selectedProjectsSection": {
+    "kicker": "Selected Work",
+    "headline": "Architecture, Design & Software Showcases",
+    "subtitle": "Preview selected conceptual and structural deliverables across our engineering, branding, and drafting practices.",
+    "ctaLabel": "Explore Full Portfolio"
+  },
+  "whyChooseSection": {
+    "kicker": "Why TOP TECH",
+    "headline": "Built With Precision, Designed for Longevity",
+    "subtitle": "Every engagement pairs modern technical architecture with disciplined visual craft and direct collaboration.",
+    "ctaLabel": "Learn More About Us",
+    "items": [
+      {
+        "title": "Innovative Solutions",
+        "description": "Practical architectures and modern workflows tailored to solve real operational and commercial challenges.",
+        "icon": "Lightbulb"
+      },
+      {
+        "title": "Creative Thinking",
+        "description": "Distinctive visual identities, clean interfaces, and spatial designs crafted to stand apart from generic templates.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Quality Delivery",
+        "description": "Thorough cross-device testing, clean documentation, and attention to typography, speed, and usability.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Modern Technologies",
+        "description": "Built on proven web, mobile, CAD, and artificial intelligence toolchains chosen for longevity and maintainability.",
+        "icon": "Cpu"
+      }
+    ]
+  },
+  "processOverviewSection": {
+    "kicker": "How We Work",
+    "headline": "A Clear Six-Stage Delivery Process",
+    "subtitle": "From initial discovery and strategic planning through design, engineering, launch verification, and ongoing support.",
+    "ctaLabel": "Explore Our Process"
+  },
+  "ctaSection": {
+    "kicker": "Start Your Project",
+    "headline": "Ready to Turn Your Concept Into a Dependable Reality?",
+    "description": "Whether you need a high-converting website, a custom application, brand assets, building plans, or team AI training, our team is ready to scope your next step.",
+    "primaryButtonLabel": "Contact TOP TECH",
+    "secondaryButtonLabel": "Browse Services"
+  },
+  "seo": {
+    "title": "TOP TECH — Technology. Creativity. Innovation.",
+    "description": "TOP TECH helps businesses and individuals build, design, and grow with website development, e-commerce, web & mobile applications, graphic design, building plans, and AI training."
+  }
+}

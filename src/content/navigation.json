@@ -1,0 +1,15 @@
+{
+  "headerLinks": [
+    { "label": "Home", "target": "/", "type": "route" },
+    { "label": "About Us", "target": "/about", "type": "route" },
+    { "label": "Services", "target": "/services", "type": "services-dropdown" },
+    { "label": "Projects", "target": "/projects", "type": "route" },
+    { "label": "Our Process", "target": "/process", "type": "route" },
+    { "label": "Contact", "target": "/contact", "type": "route" }
+  ],
+  "footerLegalLinks": [
+    { "label": "AI Training Programs", "target": "/pages/ai-training-programs" },
+    { "label": "Privacy Policy", "target": "/pages/privacy-policy" },
+    { "label": "Terms & Conditions", "target": "/pages/terms-and-conditions" }
+  ]
+}

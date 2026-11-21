@@ -1,0 +1,17 @@
+{
+  "brandName": "TOP TECH",
+  "tagline": "Technology. Creativity. Innovation.",
+  "logoUrl": "",
+  "faviconUrl": "",
+  "siteUrl": "",
+  "shortDescription": "A multidisciplinary technology and creative agency building websites, e-commerce platforms, web and mobile applications, brand systems, architectural building plans, and practical AI training.",
+  "startProjectLabel": "Start a Project",
+  "getStartedLabel": "Get Started",
+  "startProjectUrl": "",
+  "copyrightHolder": "TOP TECH",
+  "defaultSeo": {
+    "title": "TOP TECH — Technology. Creativity. Innovation.",
+    "description": "TOP TECH helps businesses and individuals build, design, and grow with website development, e-commerce, web & mobile apps, graphic design, building plans, and AI training.",
+    "ogImage": "/src/assets/images/hero_toptech_studio_1795280407432.jpg"
+  }
+}

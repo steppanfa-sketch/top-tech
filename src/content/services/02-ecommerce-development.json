@@ -1,0 +1,95 @@
+{
+  "order": 2,
+  "code": "B",
+  "slug": "ecommerce-development",
+  "name": "E-Commerce Development",
+  "icon": "ShoppingBag",
+  "heroSubtitle": "Streamlined online stores, structured product catalogs, shopping carts, and reliable checkout experiences.",
+  "shortDescription": "Online stores, structured product catalogs, seamless shopping carts, and scalable e-commerce solutions built to sell reliably.",
+  "fullDescription": "We design and engineer complete online storefronts that make browsing, product discovery, and checkout intuitive across desktop and mobile devices. From single-brand boutiques to multi-category product catalogs, our e-commerce builds focus on clear merchandising, cart reliability, and streamlined inventory workflows.",
+  "image": "/src/assets/images/showcase_ecommerce_system_1795280409464.jpg",
+  "orderingUrl": "",
+  "buttonText": "Order Service",
+  "available": true,
+  "deliverables": [
+    "Custom Online Storefronts",
+    "Structured Product Catalogs & Filtering",
+    "Shopping Cart & Checkout Flows",
+    "Payment & Shipping Integration Readiness",
+    "Mobile-First Merchandising Layouts"
+  ],
+  "benefits": [
+    {
+      "title": "Frictionless Product Discovery",
+      "description": "Clean category filters, search, and clear variant selection help shoppers find what they need quickly."
+    },
+    {
+      "title": "Built for Mobile Shoppers",
+      "description": "Touch-friendly product cards, fast image loading, and clear cart controls prevent mobile drop-off."
+    },
+    {
+      "title": "Flexible Catalog Management",
+      "description": "Easily organize collections, pricing, stock visibility, and promotional banners as inventory changes."
+    }
+  ],
+  "features": [
+    {
+      "title": "Category & Attribute Filtering",
+      "description": "Filter products by collection, price range, size, or availability without page reloads."
+    },
+    {
+      "title": "Persistent Shopping Cart",
+      "description": "Slide-over or dedicated cart views with clear quantity controls and itemized subtotals."
+    },
+    {
+      "title": "Payment Gateway Integration",
+      "description": "Ready for Stripe, Paystack, Flutterwave, PayPal, or regional checkout workflows."
+    },
+    {
+      "title": "Order & Inquiry Notifications",
+      "description": "Structured customer confirmation summaries and WhatsApp or email order routing options."
+    }
+  ],
+  "processSteps": [
+    {
+      "step": "01",
+      "title": "Catalog & Checkout Planning",
+      "description": "We map your product categories, variants, shipping rules, and preferred payment methods."
+    },
+    {
+      "step": "02",
+      "title": "Storefront & Product Page Design",
+      "description": "We design clean product grids and clear detail pages that highlight product imagery and pricing."
+    },
+    {
+      "step": "03",
+      "title": "Cart & Payment Engineering",
+      "description": "We build cart state, checkout validation, and payment or WhatsApp order handoff."
+    },
+    {
+      "step": "04",
+      "title": "Test Orders & Store Launch",
+      "description": "We verify every checkout edge case across desktop and mobile before going live."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which payment gateways can you integrate?",
+      "answer": "We configure integrations matching your region and platform—such as Stripe, Paystack, PayPal, or direct invoice/WhatsApp ordering."
+    },
+    {
+      "question": "Can my store support both physical and digital products?",
+      "answer": "Yes. Product catalogs can handle shipped physical items, digital downloads, or service packages."
+    },
+    {
+      "question": "How do I add or update products later?",
+      "answer": "We provide structured catalog management workflows or headless store admin dashboards tailored to your team."
+    }
+  ],
+  "relatedCategories": ["E-Commerce Development"],
+  "idealFor": "Retail brands, wholesalers, and entrepreneurs selling physical or digital products online.",
+  "seo": {
+    "title": "E-Commerce Development — TOP TECH",
+    "description": "Online stores, product catalogs, shopping carts, and custom e-commerce systems by TOP TECH."
+  }
+}

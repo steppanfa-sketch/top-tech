@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting — TOP TECH</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        // Redirect direct GitHub Pages subpaths into the HashRouter app cleanly,
+        // so unknown paths render the branded TOP TECH 404 page instead of raw GitHub 404.
+        var l = window.location;
+        var path = l.pathname || '/';
+        var base = path.indexOf('/top-tech/') === 0 ? '/top-tech/' : '/';
+        var rest = path.slice(base.length).replace(/^\/+/, '');
+        var hashTarget = rest ? '#/' + rest + (l.search || '') : '#/not-found';
+        l.replace(l.origin + base + hashTarget);
+      })();
+    </script>
+  </head>
+  <body style="background:#050A18;color:#e2e8f0;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;">
+    <p>Redirecting to TOP TECH...</p>
+  </body>
+</html>

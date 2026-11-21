@@ -1,0 +1,35 @@
+{
+  "title": "Practical AI Training Programs",
+  "slug": "ai-training-programs",
+  "published": true,
+  "kicker": "AI Education & Enablement",
+  "heroSubtitle": "Hands-on training designed for individuals, entrepreneurs, and organizations looking to apply artificial intelligence tools safely and productively.",
+  "heroImage": "/src/assets/images/showcase_ai_training_1795280409208.jpg",
+  "sections": [
+    {
+      "heading": "Core Training Tracks",
+      "body": "Each cohort or private team workshop is tailored to real day-to-day tasks rather than abstract theory. Participants practice directly on structured exercises.",
+      "bullets": [
+        "AI Foundations: Understanding capabilities, limitations, and reliable tool selection",
+        "Prompt Engineering: Writing clear, repeatable instructions for research, drafting, and synthesis",
+        "Business Productivity: Automating repetitive reporting, summaries, and customer documentation",
+        "Responsible Verification: Establishing human review checklists for accuracy and privacy"
+      ]
+    },
+    {
+      "heading": "Delivery Formats",
+      "body": "Programs can be scheduled for individual professionals, small business teams, or institutional departments either remotely or in person.",
+      "bullets": [
+        "One-on-One Executive & Entrepreneur Coaching",
+        "Half-Day or Multi-Week Team Workshops",
+        "Custom Internal Playbooks & Prompt Libraries"
+      ]
+    }
+  ],
+  "ctaLabel": "Request AI Training Syllabus",
+  "ctaTarget": "/#contact?service=AI%20Training",
+  "seo": {
+    "title": "AI Training Programs — TOP TECH",
+    "description": "Practical AI education, prompt engineering workshops, and business productivity training from TOP TECH."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "order": 2,
+  "slug": "minimalist-retail-storefront",
+  "title": "Minimalist Retail Storefront System",
+  "category": "E-Commerce Development",
+  "clientType": "Showcase Concept · Home & Lifestyle Retail",
+  "summary": "A clean digital catalog and shopping cart architecture focused on effortless product discovery, variant selection, and mobile checkout speed.",
+  "challenge": "Cluttered online stores with heavy scripts create friction on mobile networks and obscure product photography.",
+  "solution": "Built a streamlined storefront layout prioritizing crisp product grids, instant category filtering, and an uncluttered cart experience.",
+  "deliverables": [
+    "Product Catalog Grid & Filtering",
+    "Responsive Mobile Checkout UX",
+    "Variant & Collection Structuring",
+    "Performance-Tuned Image Delivery"
+  ],
+  "image": "/src/assets/images/showcase_ecommerce_system_1795280409464.jpg",
+  "videoUrl": "",
+  "projectUrl": "",
+  "featured": true,
+  "seo": {
+    "title": "Minimalist Retail Storefront System — TOP TECH Projects",
+    "description": "E-commerce storefront and catalog architecture showcase by TOP TECH."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "TOP TECH — Technology. Creativity. Innovation.",
+  "short_name": "TOP TECH",
+  "description": "Multidisciplinary digital technology and creative agency specializing in websites, e-commerce, web and mobile apps, graphic design, building plans, and AI training.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050A18",
+  "theme_color": "#050A18",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
