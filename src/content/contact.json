@@ -1,22 +1,32 @@
 {
-  "kicker": "Contact TOP TECH",
+  "kicker": "GET IN TOUCH",
   "title": "Ready to Build Something Remarkable?",
   "subtitle": "Share your goals, choose a service of interest, or reach out directly via WhatsApp or email. All inquiries receive a structured response.",
-  "formEndpoint": "",
-  "formAccessKey": "",
-  "email": "hello@toptech-agency.example",
-  "phone": "+1 (555) 019-2834",
-  "whatsappNumber": "15550192834",
-  "whatsappPrefill": "Hello TOP TECH, I would like to discuss a new project.",
+  "email": "toptechagencygh@gmail.com",
+  "phone": "+233550797129",
+  "whatsappNumber": "https://wa.me/233550797129",
+  "whatsappPrefill": "Hello TOP TECH! I'm interested in your services and would like to discuss a project with your team. Please assist me with more information.",
   "floatingWhatsappEnabled": true,
-  "floatingWhatsappLabel": "Chat on WhatsApp",
-  "location": "Available Worldwide · Remote & On-Site Consultations",
-  "availabilityNote": "Monday – Friday · 09:00 – 18:00",
+  "floatingWhatsappLabel": "Chat with TOP TECH on WhatsApp",
+  "location": "Serving clients across Africa",
+  "availabilityNote": "Monday – Saturday: 8:00 AM – 6:00 PM (GMT)",
   "socialLinks": [
-    { "platform": "LinkedIn", "url": "https://linkedin.com" },
-    { "platform": "GitHub", "url": "https://github.com" },
-    { "platform": "X", "url": "https://x.com" },
-    { "platform": "Instagram", "url": "https://instagram.com" }
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com"
+    },
+    {
+      "platform": "X",
+      "url": "https://x.com"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://instagram.com"
+    }
   ],
   "seo": {
     "title": "Contact Us — TOP TECH",
