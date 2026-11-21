@@ -334,7 +334,7 @@ export function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {processContent.steps.map((step, idx) => (
               <motion.div
                 key={step.stepNumber}
@@ -378,20 +378,20 @@ export function HomePage() {
             <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
               {homeContent.ctaSection.description}
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
-              <MagneticButton>
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-2">
+              <MagneticButton className="w-full sm:w-auto">
                 <Link
                   to="/contact"
-                  className="inline-flex min-h-[46px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-6 py-3 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0"
+                  className="inline-flex min-h-[46px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 active:scale-[0.98] px-6 py-3 text-sm font-semibold text-white transition-all whitespace-nowrap shrink-0"
                 >
                   <span>{homeContent.ctaSection.primaryButtonLabel}</span>
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </Link>
               </MagneticButton>
-              <MagneticButton>
+              <MagneticButton className="w-full sm:w-auto">
                 <Link
                   to="/services"
-                  className="inline-flex min-h-[46px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#060B18] hover:border-blue-500/60 px-6 py-3 text-sm font-semibold text-slate-900 dark:text-white transition-colors whitespace-nowrap shrink-0"
+                  className="inline-flex min-h-[46px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg border-[1.5px] border-slate-400/90 dark:border-blue-400/50 bg-slate-50 dark:bg-[#0D1836] hover:border-blue-600 dark:hover:border-cyan-400 hover:bg-blue-50/75 dark:hover:bg-[#13234B] active:scale-[0.98] px-6 py-3 text-sm font-semibold text-slate-900 dark:text-white transition-all whitespace-nowrap shrink-0"
                 >
                   <span>{homeContent.ctaSection.secondaryButtonLabel}</span>
                 </Link>

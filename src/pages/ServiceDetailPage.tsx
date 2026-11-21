@@ -66,12 +66,12 @@ export function ServiceDetailPage() {
   return (
     <div className="bg-transparent">
       {/* Service Hero Section */}
-      <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/55 dark:bg-[#050A18]/55 py-12 sm:py-16">
+      <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/55 dark:bg-[#050A18]/55 py-8 sm:py-14 lg:py-16">
         <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
           <div className="absolute -top-24 right-[10%] h-[340px] w-[340px] rounded-full bg-blue-500/15 dark:bg-blue-600/15 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
           <div>
             <Link
               to="/services"
@@ -86,9 +86,9 @@ export function ServiceDetailPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-            className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch"
+            className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch"
           >
-            <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+            <div className="lg:col-span-6 flex flex-col justify-center space-y-5 sm:space-y-6">
               <div className="flex items-center gap-3">
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
                   <DynamicIcon name={service.icon} className="w-5 h-5" />
@@ -100,7 +100,7 @@ export function ServiceDetailPage() {
 
               <h1
                 className="font-display font-bold tracking-tight text-slate-950 dark:text-white leading-[1.08] text-balance"
-                style={{ fontSize: 'clamp(2rem, 4vw, 3.25rem)' }}
+                style={{ fontSize: 'clamp(1.95rem, 4vw, 3.25rem)' }}
               >
                 {service.name}
               </h1>
@@ -109,13 +109,13 @@ export function ServiceDetailPage() {
                 {service.heroSubtitle || service.shortDescription}
               </p>
 
-              <div className="flex flex-wrap items-center gap-3 pt-1">
-                <OrderActionButton service={service} className="min-h-[46px] px-6" />
+              <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 pt-1">
+                <OrderActionButton service={service} className="min-h-[46px] w-full sm:w-auto px-6" />
 
                 <button
                   type="button"
                   onClick={handleRequestQuote}
-                  className="inline-flex min-h-[46px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0B1224] hover:border-blue-500/60 px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                  className="inline-flex min-h-[46px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg border-[1.5px] border-slate-400/90 dark:border-blue-400/50 bg-white/95 dark:bg-[#0D1836]/90 hover:border-blue-600 dark:hover:border-cyan-400 hover:bg-blue-50/75 dark:hover:bg-[#13234B] active:scale-[0.98] px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white shadow-sm transition-all cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                 >
                   <span>Discuss Custom Scope</span>
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
@@ -124,7 +124,7 @@ export function ServiceDetailPage() {
             </div>
 
             <div className="lg:col-span-6">
-              <div className="h-full min-h-[280px] overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-900 shadow-lg">
+              <div className="aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto lg:h-full lg:min-h-[300px] overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-900 shadow-lg">
                 <SmartImage
                   src={service.image}
                   alt={service.name}

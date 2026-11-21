@@ -43,8 +43,13 @@ export function MagneticButton({
     rawY.set(0);
   };
 
+  const hasDisplayClass = /\b(hidden|block|flex|inline-flex|inline-block|grid)\b/.test(
+    className
+  );
+  const baseClass = hasDisplayClass ? className : `inline-flex ${className}`;
+
   if (disabled) {
-    return <div className={`inline-flex ${className}`}>{children}</div>;
+    return <div className={baseClass}>{children}</div>;
   }
 
   return (
@@ -53,7 +58,7 @@ export function MagneticButton({
       style={{ x, y }}
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
-      className={`inline-flex ${className}`}
+      className={baseClass}
     >
       {children}
     </motion.div>

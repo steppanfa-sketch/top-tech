@@ -68,7 +68,7 @@ export default function App() {
         <OrderProvider>
           <HashRouter>
             <LoadingScreen visible={isInitialLoading} />
-            <div className="relative min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#050A18] dark:text-slate-100">
+            <div className="relative min-h-screen flex flex-col overflow-x-clip bg-slate-50 text-slate-900 dark:bg-[#050A18] dark:text-slate-100">
               <InteractiveStage />
               <Navbar />
               <main className="relative z-10 flex-1">

@@ -81,7 +81,7 @@ export function Navbar() {
           : 'bg-white/75 dark:bg-[#050A18]/75 backdrop-blur-sm border-b border-slate-200/50 dark:border-slate-800/50'
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 sm:gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8">
         {/* Zone 1: Single-line Brand Wordmark */}
         <Link
           to="/"
@@ -226,8 +226,8 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* Zone 3: Theme Toggle + Get Started CTA + Mobile Hamburger */}
-        <div className="flex items-center gap-3 shrink-0">
+        {/* Zone 3: Theme Toggle + Get Started CTA (md+) + Mobile Hamburger */}
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             type="button"
             onClick={toggleTheme}
@@ -242,37 +242,39 @@ export function Navbar() {
             )}
           </button>
 
-          {hasExternalStartUrl ? (
-            <MagneticButton className="hidden sm:inline-flex">
-              <a
-                href={siteConfig.startProjectUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#050A18]"
-              >
-                <span>{siteConfig.getStartedLabel}</span>
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </a>
-            </MagneticButton>
-          ) : (
-            <MagneticButton className="hidden sm:inline-flex">
-              <button
-                type="button"
-                onClick={() => navigate('/contact')}
-                className="inline-flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#050A18]"
-              >
-                <span>{siteConfig.getStartedLabel}</span>
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </button>
-            </MagneticButton>
-          )}
+          <div className="hidden md:inline-flex">
+            {hasExternalStartUrl ? (
+              <MagneticButton>
+                <a
+                  href={siteConfig.startProjectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#050A18]"
+                >
+                  <span>{siteConfig.getStartedLabel}</span>
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </a>
+              </MagneticButton>
+            ) : (
+              <MagneticButton>
+                <button
+                  type="button"
+                  onClick={() => navigate('/contact')}
+                  className="inline-flex items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-[#050A18]"
+                >
+                  <span>{siteConfig.getStartedLabel}</span>
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </button>
+              </MagneticButton>
+            )}
+          </div>
 
           <button
             type="button"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
             aria-label={mobileOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            className="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] text-slate-800 dark:text-slate-100 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+            className="inline-flex lg:hidden h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] text-slate-800 dark:text-slate-100 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
           >
             {mobileOpen ? <X className="w-5 h-5" aria-hidden="true" /> : <Menu className="w-5 h-5" aria-hidden="true" />}
           </button>
@@ -289,7 +291,7 @@ export function Navbar() {
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="lg:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-[#070D1F] max-h-[82vh] overflow-y-auto"
           >
-            <nav aria-label="Mobile navigation" className="mx-auto max-w-7xl px-4 py-4 flex flex-col gap-1">
+            <nav aria-label="Mobile navigation" className="mx-auto max-w-7xl px-4 pt-4 pb-6 flex flex-col gap-1">
               {navigationConfig.headerLinks.map((link) => {
                 if (link.type === 'services-dropdown') {
                   const active = isRouteActive('/services');

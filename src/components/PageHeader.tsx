@@ -10,7 +10,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ kicker, headline, subtitle, actions }: PageHeaderProps) {
   return (
-    <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/55 dark:bg-[#050A18]/55 py-16 sm:py-20">
+    <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/55 dark:bg-[#050A18]/55 py-10 sm:py-16 lg:py-20">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 14 }}

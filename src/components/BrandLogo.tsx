@@ -22,15 +22,15 @@ export function BrandLogo({ className = '' }: BrandLogoProps) {
   }
 
   return (
-    <span className={`inline-flex items-center gap-2.5 whitespace-nowrap shrink-0 ${className}`}>
+    <span className={`inline-flex items-center gap-2 sm:gap-2.5 whitespace-nowrap shrink-0 ${className}`}>
       <svg
-        width="28"
-        height="28"
+        width="26"
+        height="26"
         viewBox="0 0 28 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
-        className="shrink-0"
+        className="shrink-0 sm:w-7 sm:h-7"
       >
         <rect
           x="1.5"
@@ -55,7 +55,7 @@ export function BrandLogo({ className = '' }: BrandLogoProps) {
           strokeLinejoin="round"
         />
       </svg>
-      <span className="font-display text-lg font-bold tracking-tight text-slate-950 dark:text-white">
+      <span className="font-display text-base sm:text-lg font-bold tracking-tight text-slate-950 dark:text-white">
         TOP <span className="text-blue-600 dark:text-blue-400">TECH</span>
       </span>
     </span>
