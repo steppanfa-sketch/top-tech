@@ -64,17 +64,17 @@
     ]
   },
   "processOverviewSection": {
-    "kicker": "How We Work",
-    "headline": "A Clear Six-Stage Delivery Process",
-    "subtitle": "From initial discovery and strategic planning through design, engineering, launch verification, and ongoing support.",
-    "ctaLabel": "Explore Our Process"
+    "kicker": "HOW WE WORK",
+    "headline": "A Clear Process. Powerful Results.",
+    "subtitle": "Every successful project starts with understanding your vision. We follow a clear, collaborative process to turn your ideas into practical digital solutions.",
+    "ctaLabel": "Discover Our Process"
   },
   "ctaSection": {
-    "kicker": "Start Your Project",
-    "headline": "Ready to Turn Your Concept Into a Dependable Reality?",
-    "description": "Whether you need a high-converting website, a custom application, brand assets, building plans, or team AI training, our team is ready to scope your next step.",
-    "primaryButtonLabel": "Contact TOP TECH",
-    "secondaryButtonLabel": "Browse Services"
+    "kicker": "LET'S BUILD SOMETHING",
+    "headline": "Your Next Big Idea Starts Here.",
+    "description": "Have an idea, a business goal or a project in mind? Let's work together to turn your vision into a digital solution that moves you forward.",
+    "primaryButtonLabel": "Start a Project",
+    "secondaryButtonLabel": "Explore Our Services"
   },
   "seo": {
     "title": "TOP TECH — Technology. Creativity. Innovation.",
