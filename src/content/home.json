@@ -42,24 +42,24 @@
     "ctaLabel": "Why Work With Us",
     "items": [
       {
-        "title": "Innovative Solutions",
-        "description": "Practical architectures and modern workflows tailored to solve real operational and commercial challenges.",
-        "icon": "Lightbulb"
+        "title": "Clear Communication",
+        "description": "We keep clients informed and make project requirements, timelines and next steps easy to understand.",
+        "icon": "messages-square"
+      },
+      {
+        "title": "Purpose-Driven Solutions",
+        "description": "We focus on practical solutions designed around each client's goals and real needs.",
+        "icon": "target"
       },
       {
         "title": "Creative Thinking",
-        "description": "Distinctive visual identities, clean interfaces, and spatial designs crafted to stand apart from generic templates.",
-        "icon": "Sparkles"
+        "description": "We combine thoughtful design and technology to create useful, engaging digital experiences.",
+        "icon": "lightbulb"
       },
       {
-        "title": "Quality Delivery",
-        "description": "Thorough cross-device testing, clean documentation, and attention to typography, speed, and usability.",
-        "icon": "ShieldCheck"
-      },
-      {
-        "title": "Modern Technologies",
-        "description": "Built on proven web, mobile, CAD, and artificial intelligence toolchains chosen for longevity and maintainability.",
-        "icon": "Cpu"
+        "title": "Guidance and Support",
+        "description": "provide clear guidance to help clients understand and make the most of their digital solutions.",
+        "icon": "headset"
       }
     ]
   },
