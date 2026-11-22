@@ -73,7 +73,8 @@
       "description": "Basic checks for usability, responsiveness and website performance."
     },
     {
-      "title": "Launch & Handover"
+      "title": "Launch & Handover",
+      "description": "Preparation for deployment and guidance on managing your completed website."
     }
   ],
   "processSteps": [
