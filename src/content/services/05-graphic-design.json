@@ -49,20 +49,36 @@
   ],
   "features": [
     {
-      "title": "Vector Logo Construction",
-      "description": "Clean geometric marks that scale sharply from favicons to storefront signage."
+      "title": "Logo & Brand Identity",
+      "description": "Visual identity concepts and logo design based on your brief."
     },
     {
-      "title": "Brand Guidelines Document",
-      "description": "Clear usage rules covering color palettes, font pairings, clear space, and light/dark lockups."
+      "title": "Social Media Designs",
+      "description": "Graphics tailored to selected social media platforms and dimensions."
     },
     {
-      "title": "Marketing & Print Collateral",
-      "description": "Brochures, event posters, flyers, business cards, letterheads, and pull-up banners."
+      "title": "Marketing Materials",
+      "description": "Promotional designs such as flyers, posters and banners."
     },
     {
-      "title": "Social Media Template Kits",
-      "description": "Coordinated square, portrait, and cover layouts for Instagram, LinkedIn, X, and Facebook."
+      "title": "Business Stationery",
+      "description": "Designs for business cards, letterheads and related stationery."
+    },
+    {
+      "title": "Promotional Campaign Graphics",
+      "description": "Visual assets for agreed marketing campaigns."
+    },
+    {
+      "title": "Image Editing & Layout",
+      "description": "Basic image editing, composition and layout refinement as required."
+    },
+    {
+      "title": "Print-Ready Artwork",
+      "description": "Files prepared to agreed print specifications when needed."
+    },
+    {
+      "title": "Digital Export Files",
+      "description": "Final artwork supplied in agreed digital formats."
     }
   ],
   "processSteps": [
