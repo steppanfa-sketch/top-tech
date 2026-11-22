@@ -1,14 +1,14 @@
 {
   "order": 2,
+  "published": true,
   "code": "B",
   "slug": "ecommerce-development",
   "name": "E-Commerce Development",
   "icon": "ShoppingBag",
-  "heroSubtitle": "Streamlined online stores, structured product catalogs, shopping carts, and reliable checkout experiences.",
-  "shortDescription": "Online stores, structured product catalogs, seamless shopping carts, and scalable e-commerce solutions built to sell reliably.",
-  "fullDescription": "We design and engineer complete online storefronts that make browsing, product discovery, and checkout intuitive across desktop and mobile devices. From single-brand boutiques to multi-category product catalogs, our e-commerce builds focus on clear merchandising, cart reliability, and streamlined inventory workflows.",
+  "heroSubtitle": "Powerful online stores designed to help businesses showcase products, serve customers and grow their digital sales.",
+  "shortDescription": "We build modern e-commerce websites with intuitive shopping experiences, product management and secure checkout integrations.",
+  "fullDescription": "TOP TECH develops professional e-commerce solutions that help businesses establish and grow their online stores. From product catalogues and shopping carts to checkout integrations and order management, we create user-friendly shopping experiences designed around your business needs. Our goal is to make it easier for customers to discover your products, place orders and interact with your brand online.",
   "image": "/src/assets/images/showcase_ecommerce_system_1795280409464.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "We provide structured catalog management workflows or headless store admin dashboards tailored to your team."
     }
   ],
-  "relatedCategories": ["E-Commerce Development"],
+  "relatedCategories": [
+    "E-Commerce Development"
+  ],
   "idealFor": "Retail brands, wholesalers, and entrepreneurs selling physical or digital products online.",
   "seo": {
     "title": "E-Commerce Development — TOP TECH",
