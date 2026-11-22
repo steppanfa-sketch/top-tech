@@ -45,20 +45,36 @@
   ],
   "features": [
     {
-      "title": "Native-Feel Transitions & Gestures",
-      "description": "Responsive screen transitions, clean form inputs, and reliable feedback states."
+      "title": "Custom Mobile UI Design",
+      "description": "A user-friendly interface designed around your brand, audience and application goals."
     },
     {
-      "title": "Offline Caching & Resilience",
-      "description": "Graceful handling of intermittent mobile connectivity so users never lose unsaved work."
+      "title": "Cross-Device Compatibility",
+      "description": "An experience designed for the supported mobile devices and operating systems selected for your project."
     },
     {
-      "title": "Secure User Accounts",
-      "description": "Clean sign-in flows, profile management, and protected session handling."
+      "title": " User Authentication",
+      "description": "Registration, sign-in and account management features where required."
     },
     {
-      "title": "Real-Time Alerts & Status Updates",
-      "description": "Keep customers or field staff informed on bookings, orders, and task milestones."
+      "title": "Push Notifications",
+      "description": "Optional notifications for relevant updates and user engagement, where supported."
+    },
+    {
+      "title": " API & Database Integration",
+      "description": "Connections to suitable backend services and data systems where required."
+    },
+    {
+      "title": "Intuitive Navigation",
+      "description": "Clear navigation that helps users access important app features easily."
+    },
+    {
+      "title": "Testing & Quality Review",
+      "description": "Checks for functionality, usability and compatibility across agreed devices."
+    },
+    {
+      "title": "Deployment Guidance",
+      "description": "Preparation and guidance for publishing or distributing the completed application through the agreed channels."
     }
   ],
   "processSteps": [
