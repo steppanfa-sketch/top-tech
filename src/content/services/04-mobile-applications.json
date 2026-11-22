@@ -80,23 +80,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Mobile Use-Case & Platform Scope",
-      "description": "We define target devices, core mobile user journeys, and backend sync requirements."
+      "title": "Discovery & Planning",
+      "description": "Discovery & Planning\nStep Description: We discuss your app idea, target audience, goals and the essential features required."
     },
     {
       "step": "02",
-      "title": "Interactive Screen Prototypes",
-      "description": "We design touch-first wireframes and high-contrast light/dark mobile interfaces."
+      "title": " UI/UX Design",
+      "description": "We plan the app structure, user journeys and visual interface to create an intuitive experience."
     },
     {
       "step": "03",
-      "title": "App Development & API Wiring",
-      "description": "We build screens, local storage, authentication, and backend API integrations."
+      "title": "Development",
+      "description": "We build the application and implement the agreed functionality and integrations."
     },
     {
       "step": "04",
-      "title": "Device Testing & Store Submission",
-      "description": "We test across Android and iPhone screen sizes and prepare store listing assets."
+      "title": "Testing & Refinement",
+      "description": "We review the app's functionality, usability and compatibility across the agreed devices."
+    },
+    {
+      "step": "05",
+      "title": "Deployment & Handover",
+      "description": "We prepare the application for the agreed distribution channel and provide handover guidance."
     }
   ],
   "faqs": [
