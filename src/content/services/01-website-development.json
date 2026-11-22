@@ -1,14 +1,14 @@
 {
   "order": 1,
+  "published": true,
   "code": "A",
   "slug": "website-development",
   "name": "Website Development",
   "icon": "Globe",
-  "heroSubtitle": "Fast, conversion-focused business websites, corporate portals, portfolios, and custom landing pages built for reliability.",
-  "shortDescription": "Business websites, portfolios, landing pages, corporate websites and custom websites engineered for speed, clarity, and conversion.",
-  "fullDescription": "We architect and build responsive, search-ready websites tailored to your brand identity and business objectives. Whether launching a high-converting landing page, an executive corporate presence, or a custom multi-page web platform, every build prioritizes clean semantics, fast load performance, and effortless maintainability.",
+  "heroSubtitle": "Professional websites designed to strengthen your online presence, showcase your brand and help your business grow.",
+  "shortDescription": "We design and develop modern, responsive websites that help businesses and individuals establish a professional online presence.",
+  "fullDescription": "TOP TECH creates professional websites tailored to the needs of individuals, businesses and organisations. Whether you need a company website, personal portfolio, landing page or a custom digital platform, we focus on clean design, responsive layouts, intuitive navigation and a strong user experience. We work with you to understand your goals and build a website that communicates your brand effectively and gives your audience a clear way to connect with you.",
   "image": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "Yes. We can deploy to GitHub Pages, Vercel, Netlify, or your preferred hosting provider and assist with DNS setup."
     }
   ],
-  "relatedCategories": ["Website Development"],
+  "relatedCategories": [
+    "Website Development"
+  ],
   "idealFor": "Businesses, founders, consultants, and organizations establishing or upgrading their digital presence.",
   "seo": {
     "title": "Website Development — TOP TECH",
