@@ -80,23 +80,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Site Architecture & Content Mapping",
-      "description": "We organize your pages, navigation hierarchy, and core messaging around visitor actions."
+      "title": "Discovery & Planning",
+      "description": "We discuss your goals, audience, brand identity and the purpose of your website."
     },
     {
       "step": "02",
-      "title": "UI Design & Visual Prototyping",
-      "description": "We craft a cohesive visual language with clean spacing, typography, and responsive breakpoints."
+      "title": "Structure & Design",
+      "description": "We plan the website pages, layout, visual direction and navigation."
     },
     {
       "step": "03",
-      "title": "Engineering & CMS Integration",
-      "description": "We build clean, fast frontend components wired to structured content files and SEO tags."
+      "title": "Development",
+      "description": "We build the website, add the agreed content and configure its required features."
     },
     {
       "step": "04",
-      "title": "Launch Verification & Handover",
-      "description": "We test forms, links, speed, and mobile usability before deploying to your domain."
+      "title": "Testing & Refinement",
+      "description": "We review the website across different screen sizes and refine the agreed details."
+    },
+    {
+      "step": "05",
+      "title": "Launch & Handover",
+      "description": "We prepare the website for deployment and guide you through the completed project."
     }
   ],
   "faqs": [
