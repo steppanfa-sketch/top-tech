@@ -75,23 +75,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Catalog & Checkout Planning",
-      "description": "We map your product categories, variants, shipping rules, and preferred payment methods."
+      "title": "Discovery & Planning",
+      "description": "We discuss your business, products, target customers and e-commerce goals."
     },
     {
       "step": "02",
-      "title": "Storefront & Product Page Design",
-      "description": "We design clean product grids and clear detail pages that highlight product imagery and pricing."
+      "title": "Design & Structure",
+      "description": "We plan the storefront layout and create a shopping experience that reflects your brand."
     },
     {
       "step": "03",
-      "title": "Cart & Payment Engineering",
-      "description": "We build cart state, checkout validation, and payment or WhatsApp order handoff."
+      "title": "Development & Integration",
+      "description": "We build the store and configure its product catalogue, cart and agreed checkout integrations."
     },
     {
       "step": "04",
-      "title": "Test Orders & Store Launch",
-      "description": "We verify every checkout edge case across desktop and mobile before going live."
+      "title": "Testing & Review",
+      "description": " We review the store's responsiveness, navigation and agreed shopping features before delivery."
+    },
+    {
+      "step": "05",
+      "title": "Launch & Handover",
+      "description": " We prepare the completed store for launch and provide guidance on basic administration."
     }
   ],
   "faqs": [
