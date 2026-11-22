@@ -84,23 +84,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Brand & Audience Brief",
-      "description": "We review your positioning, target audience, competitors, and visual preferences."
+      "title": "Discovery & Brief",
+      "description": "We discuss your brand, audience, design goals and intended use of the artwork."
     },
     {
       "step": "02",
-      "title": "Concept Exploration",
-      "description": "We present focused creative directions showing typography, color, and layout structure."
+      "title": "Concept Development",
+      "description": "We explore visual directions and develop initial design concepts."
     },
     {
       "step": "03",
-      "title": "Refinement & System Expansion",
-      "description": "We polish your selected direction and extend it across print and digital deliverables."
+      "title": "Design & Refinement",
+      "description": "We develop the selected concept and apply agreed revisions."
     },
     {
       "step": "04",
-      "title": "Final File Package",
-      "description": "You receive organized SVG, PNG, PDF, and editable source files ready for printers and web teams."
+      "title": "Review & Approval",
+      "description": "We present the final design for review and confirm the agreed deliverables."
+    },
+    {
+      "step": "05",
+      "title": "Final Delivery",
+      "description": "We provide the approved files in the agreed formats for digital or print use."
     }
   ],
   "faqs": [
