@@ -1,14 +1,14 @@
 {
   "order": 6,
+  "published": true,
   "code": "F",
   "slug": "building-plans",
   "name": "Building Plans",
   "icon": "Compass",
-  "heroSubtitle": "Precision architectural floor plans, spatial zoning layouts, elevations, and technical building drawings.",
-  "shortDescription": "Architectural layouts, technical building drawings, floor plans, elevations, and professional building plan design services.",
-  "fullDescription": "TOP TECH brings precision spatial planning to residential, commercial, and mixed-use projects. We produce clear, well-proportioned architectural floor plans, site layouts, elevations, and presentation-ready building drawings designed for functional living, efficient workflow, and smooth engineering coordination.",
+  "heroSubtitle": "Professional building plans and architectural layouts designed to turn your ideas into practical spaces.",
+  "shortDescription": "We help clients develop building plans and architectural layouts that support thoughtful space planning and project preparation.",
+  "fullDescription": "TOP TECH provides building plan and architectural layout services for individuals, property owners and businesses. We help transform ideas and space requirements into organised building layouts that reflect the client's vision and intended use. Our focus is on practical space planning, clear presentation and carefully developed design concepts. Where projects require licensed architectural professionals, engineering input or statutory approval, the relevant qualified professionals must review and certify the plans.",
   "image": "/src/assets/images/showcase_building_plans_1795280410007.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "Final drawing sets are delivered as scaled, high-resolution PDF sheets ready for printing alongside CAD source files where agreed."
     }
   ],
-  "relatedCategories": ["Building Plans"],
+  "relatedCategories": [
+    "Building Plans"
+  ],
   "idealFor": "Property owners, developers, and contractors needing clear, practical architectural drawings.",
   "seo": {
     "title": "Building Plans — TOP TECH",
