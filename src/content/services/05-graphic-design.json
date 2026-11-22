@@ -1,14 +1,14 @@
 {
   "order": 5,
+  "published": true,
   "code": "E",
   "slug": "graphic-design",
   "name": "Graphic Design",
   "icon": "PenTool",
-  "heroSubtitle": "Distinctive logos, cohesive brand identity systems, flyers, posters, banners, and social media graphics.",
-  "shortDescription": "Logo design, complete branding systems, flyers, posters, banners, social media graphics, and print-ready promotional materials.",
-  "fullDescription": "Strong visual communication earns immediate trust. Our graphic design studio crafts cohesive brand identities and campaign assets—from distinctive logos and typography guidelines to crisp flyers, event posters, large-format banners, and social media graphics ready for both digital and print production.",
+  "heroSubtitle": "Creative visual designs that bring your brand to life, communicate your message and leave a lasting impression.",
+  "shortDescription": "We create professional graphic designs that help businesses and individuals communicate visually and build recognisable brands.",
+  "fullDescription": "TOP TECH provides creative graphic design solutions for businesses, organisations, entrepreneurs and individuals. From brand identity and promotional materials to social media graphics and marketing designs, we combine creativity, visual consistency and clear communication to bring ideas to life. Every design is developed with your brand, audience and intended purpose in mind.",
   "image": "/src/assets/images/showcase_brand_identity_1795280409365.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "Every project scope includes structured review and refinement rounds so the final artwork meets your expectations."
     }
   ],
-  "relatedCategories": ["Graphic Design"],
+  "relatedCategories": [
+    "Graphic Design"
+  ],
   "idealFor": "New ventures building their brand from scratch and established companies refreshing campaign visuals.",
   "seo": {
     "title": "Graphic Design — TOP TECH",
