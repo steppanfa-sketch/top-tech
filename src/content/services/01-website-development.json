@@ -106,16 +106,24 @@
   ],
   "faqs": [
     {
-      "question": "Can I update text and images on my website after launch?",
-      "answer": "Yes. We structure projects for clean CMS management such as Pages CMS so your team can edit copy, images, and links directly."
+      "question": "What types of websites do you develop?",
+      "answer": "We develop business websites, personal portfolios, landing pages, organisational websites and other custom website solutions based on project requirements."
     },
     {
-      "question": "Are TOP TECH websites mobile-friendly and SEO-ready?",
-      "answer": "Every website is built mobile-first with semantic HTML, page-specific titles and meta descriptions, and clean Open Graph tags."
+      "question": "Will my website work on mobile phones?",
+      "answer": "Yes. We build responsive websites designed to adapt to smartphones, tablets and desktop screens."
     },
     {
-      "question": "Do you handle custom domains and hosting setup?",
-      "answer": "Yes. We can deploy to GitHub Pages, Vercel, Netlify, or your preferred hosting provider and assist with DNS setup."
+      "question": "Can I update my website after it is completed?",
+      "answer": "Yes. We can provide suitable content-management options or guidance for updating your website, depending on the technology used."
+    },
+    {
+      "question": "Will my website appear on Google?",
+      "answer": "We can configure basic SEO elements to help search engines understand your website. Search visibility and ranking depend on several factors and cannot be guaranteed."
+    },
+    {
+      "question": "How long does website development take?",
+      "answer": "The timeline depends on the number of pages, design requirements, content and requested features. We will agree on a suitable timeline after discussing your project."
     }
   ],
   "relatedCategories": [
