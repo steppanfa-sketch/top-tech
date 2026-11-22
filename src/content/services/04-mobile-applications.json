@@ -23,16 +23,24 @@
   ],
   "benefits": [
     {
-      "title": "Consistent Cross-Platform Reach",
-      "description": "Reach both Android and iOS users from a unified, maintainable codebase without duplicating engineering effort."
+      "title": "Connect With Customers",
+      "description": "Give your audience a convenient mobile channel for accessing your services and interacting with your brand."
     },
     {
-      "title": "Thumb-Friendly Ergonomics",
-      "description": "Generous touch targets, clear bottom navigation, and uncluttered screens keep tasks fast on the go."
+      "title": "Convenience on the Go",
+      "description": "Allow users to access relevant app features through supported mobile devices."
     },
     {
-      "title": "Connected to Your Business Backend",
-      "description": "Sync customer orders, field updates, or analytics seamlessly with your web dashboard."
+      "title": "Improve User Engagement",
+      "description": "Create useful mobile experiences that encourage customers to interact with your services."
+    },
+    {
+      "title": "Simplify Everyday Tasks",
+      "description": "Bring selected services and workflows together in an organised mobile experience."
+    },
+    {
+      "title": "Support Business Growth",
+      "description": "Create a mobile platform that can evolve as your audience and business requirements change."
     }
   ],
   "features": [
