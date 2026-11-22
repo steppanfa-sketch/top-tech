@@ -106,16 +106,24 @@
   ],
   "faqs": [
     {
-      "question": "Should we build a native/cross-platform mobile app or a PWA?",
-      "answer": "We help you evaluate both based on your audience: cross-platform apps for App Store and Google Play distribution, or installable PWAs for fast browser-based rollout."
+      "question": "What types of mobile applications can TOP TECH develop?",
+      "answer": "We can develop customer-facing apps, business tools, service platforms and other custom mobile applications based on your project requirements."
     },
     {
-      "question": "Can the mobile app share data with our website or web dashboard?",
-      "answer": "Yes. Both web and mobile interfaces can connect to the same unified database and API layer."
+      "question": "Can my app work on both Android and iOS?",
+      "answer": "Cross-platform development may allow an app to support both operating systems. The best approach depends on your app's features, technical requirements and budget."
     },
     {
-      "question": "Do you help with Google Play and Apple App Store preparation?",
-      "answer": "Yes. We prepare build packages, app icons, screenshots, and metadata checklists for store review."
+      "question": "Can my mobile app include user accounts?",
+      "answer": "Yes. Registration, sign-in and user account features can be included where required."
+    },
+    {
+      "question": "Can my app connect to a website or database?",
+      "answer": "Yes. We can integrate suitable APIs and backend services to connect your app with websites, databases and other systems."
+    },
+    {
+      "question": "How long does mobile app development take?",
+      "answer": "The timeline depends on the app's complexity, features, integrations and testing requirements. We establish a suitable timeline after reviewing your project."
     }
   ],
   "relatedCategories": [
