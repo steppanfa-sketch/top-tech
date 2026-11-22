@@ -9,27 +9,38 @@
   "shortDescription": "We design and develop modern, responsive websites that help businesses and individuals establish a professional online presence.",
   "fullDescription": "TOP TECH creates professional websites tailored to the needs of individuals, businesses and organisations. Whether you need a company website, personal portfolio, landing page or a custom digital platform, we focus on clean design, responsive layouts, intuitive navigation and a strong user experience. We work with you to understand your goals and build a website that communicates your brand effectively and gives your audience a clear way to connect with you.",
   "image": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-  "buttonText": "Order Service",
+  "buttonText": "Order Website Development",
   "available": true,
   "deliverables": [
-    "Business & Corporate Websites",
-    "Personal & Creative Portfolios",
-    "High-Conversion Landing Pages",
-    "Responsive Mobile & Desktop Architecture",
-    "On-Page SEO & Performance Optimization"
+    "Custom Website Design",
+    "Responsive Website Development",
+    "Website Navigation and Page Structure",
+    "Contact Form Integration (where supported)",
+    "Social Media Integration",
+    "Basic SEO Setup",
+    "Website Testing and Quality Review",
+    "Website Launch and Handover"
   ],
   "benefits": [
     {
-      "title": "Credible Digital First Impression",
-      "description": "Structured typography, clean layouts, and fast page loads build immediate trust with prospective clients."
+      "title": "Build a Strong Online Presence",
+      "description": "Establish a professional digital presence where people can discover your brand, services and business information."
     },
     {
-      "title": "Search-Engine Ready Structure",
-      "description": "Semantic HTML, Open Graph social cards, clean metadata, and structured headings help your pages index cleanly."
+      "title": "Reach a Wider Audience",
+      "description": "Make your business or personal brand accessible to people beyond your immediate location."
     },
     {
-      "title": "Effortless Content Updates",
-      "description": "Organized CMS content files allow your team to update copy, links, and media without developer bottlenecks."
+      "title": "Create a Professional Impression",
+      "description": "Present your brand with a consistent design and an organised online experience."
+    },
+    {
+      "title": "Improve Customer Engagement",
+      "description": "Give visitors convenient ways to explore your offerings and contact you."
+    },
+    {
+      "title": "Support Future Growth",
+      "description": "Build a digital foundation that can evolve as your goals and requirements change."
     }
   ],
   "features": [
