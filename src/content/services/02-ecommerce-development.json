@@ -122,11 +122,13 @@
     }
   ],
   "relatedCategories": [
-    "E-Commerce Development"
+    "E-Commerce",
+    "web-development",
+    "online-stores"
   ],
-  "idealFor": "Retail brands, wholesalers, and entrepreneurs selling physical or digital products online.",
+  "idealFor": "Retail businesses, product brands, wholesalers, entrepreneurs, startups and businesses looking to sell products online.",
   "seo": {
-    "title": "E-Commerce Development — TOP TECH",
-    "description": "Online stores, product catalogs, shopping carts, and custom e-commerce systems by TOP TECH."
+    "title": "E-Commerce Website Development | TOP TECH",
+    "description": "TOP TECH builds professional e-commerce websites with custom storefronts, product catalogues, shopping carts and checkout integrations to help businesses grow online."
   }
 }
