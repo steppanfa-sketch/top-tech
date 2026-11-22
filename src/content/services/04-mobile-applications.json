@@ -1,14 +1,14 @@
 {
   "order": 4,
+  "published": true,
   "code": "D",
   "slug": "mobile-applications",
   "name": "Mobile Applications",
   "icon": "Smartphone",
-  "heroSubtitle": "Intuitive Android and iOS mobile experiences designed for speed, field operations, and everyday customer engagement.",
-  "shortDescription": "Custom Android and iOS mobile applications, companion apps, booking tools, and mobile-first business systems.",
-  "fullDescription": "TOP TECH designs and builds mobile applications crafted for real-world usability on smartphones and tablets. Whether launching a customer-facing service app, an internal field-operations companion, or a mobile extension to your existing web platform, we focus on clean navigation, reliable sync, and responsive performance.",
+  "heroSubtitle": "Innovative mobile applications designed to connect with users, simplify everyday tasks and bring your ideas to life.",
+  "shortDescription": "We design and develop mobile applications that help businesses connect with customers and deliver useful digital experiences.",
+  "fullDescription": "TOP TECH helps transform mobile app ideas into practical digital experiences. We work with businesses, entrepreneurs and organisations to plan and develop mobile applications based on their goals and target users. Whether you need a customer-facing app, a business tool or a service platform, we focus on intuitive design, useful functionality and a consistent experience across supported mobile devices. The technology and platform are selected according to the project's requirements.",
   "image": "/src/assets/images/showcase_mobile_app_1795284409918.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "Yes. We prepare build packages, app icons, screenshots, and metadata checklists for store review."
     }
   ],
-  "relatedCategories": ["Mobile Applications"],
+  "relatedCategories": [
+    "Mobile Applications"
+  ],
   "idealFor": "Businesses launching customer mobile apps, booking platforms, or field-team companion tools.",
   "seo": {
     "title": "Mobile Applications — TOP TECH",
