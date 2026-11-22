@@ -45,20 +45,35 @@
   ],
   "features": [
     {
-      "title": "Responsive Multi-Device Layouts",
-      "description": "Carefully tested across desktop monitors, laptops, tablets, iOS, and Android viewports."
+      "title": "Custom Website Design",
+      "description": " A website layout and visual style tailored to your brand and project goals."
     },
     {
-      "title": "Modern Component Architecture",
-      "description": "Built on React, TypeScript, and Tailwind CSS for clean long-term maintainability."
+      "title": "Responsive Layout",
+      "description": "A flexible design that adapts to smartphones, tablets and desktop screens."
     },
     {
-      "title": "Dark & Light Theme Support",
-      "description": "Optional dual-theme UI systems tuned for legibility in every lighting environment."
+      "title": " Feature Title: User-Friendly Navigation",
+      "description": "Clear page structures and navigation that help visitors find information easily."
     },
     {
-      "title": "Contact & Lead Routing",
-      "description": "Validated inquiry forms, WhatsApp quick links, and direct email handoff."
+      "title": "Contact Integration",
+      "description": "Convenient contact options such as email links, WhatsApp or supported contact forms."
+    },
+    {
+      "title": "Basic SEO Setup",
+      "description": "Essential page titles, descriptions and search-engine-friendly structure."
+    },
+    {
+      "title": "Social Media Links",
+      "description": "Integration of your selected social media profiles."
+    },
+    {
+      "title": "Performance Review",
+      "description": "Basic checks for usability, responsiveness and website performance."
+    },
+    {
+      "title": "Launch & Handover"
     }
   ],
   "processSteps": [
