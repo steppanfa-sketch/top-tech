@@ -23,16 +23,24 @@
   ],
   "benefits": [
     {
-      "title": "Tailored to Your Exact Workflow",
-      "description": "Eliminate manual copy-pasting between disconnected spreadsheets with software built around how your team works."
+      "title": "Improve Productivity",
+      "description": "Automate suitable tasks and organise important business activities through a centralised digital platform."
     },
     {
-      "title": "Accessible From Any Browser",
-      "description": "Zero desktop installation overhead—authorized staff or clients sign in securely from any device."
+      "title": "Streamline Operations",
+      "description": "Bring relevant workflows and information together to make everyday processes easier to manage."
     },
     {
-      "title": "Maintainable TypeScript Codebase",
-      "description": "Clean modular architecture makes future feature additions and integrations predictable and cost-effective."
+      "title": "Access Anywhere",
+      "description": "Use browser-based applications across supported devices wherever an internet connection is available."
+    },
+    {
+      "title": "Better User Experience",
+      "description": "Give staff and customers intuitive interfaces that make digital tasks easier to complete."
+    },
+    {
+      "title": "Adapt to Your Needs",
+      "description": "Build application features around your workflows, requirements and future plans."
     }
   ],
   "features": [
