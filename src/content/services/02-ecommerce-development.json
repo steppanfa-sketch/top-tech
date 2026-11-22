@@ -101,16 +101,24 @@
   ],
   "faqs": [
     {
-      "question": "Which payment gateways can you integrate?",
-      "answer": "We configure integrations matching your region and platform—such as Stripe, Paystack, PayPal, or direct invoice/WhatsApp ordering."
+      "question": "What is an e-commerce website?",
+      "answer": "An e-commerce website is an online store that allows customers to browse products, place orders and purchase items through the internet."
     },
     {
-      "question": "Can my store support both physical and digital products?",
-      "answer": "Yes. Product catalogs can handle shipped physical items, digital downloads, or service packages."
+      "question": "Can I manage my own products?",
+      "answer": "Yes. We can provide product management tools and guidance so you can update product names, images, descriptions and prices, depending on the platform selected."
     },
     {
-      "question": "How do I add or update products later?",
-      "answer": "We provide structured catalog management workflows or headless store admin dashboards tailored to your team."
+      "question": "Can customers pay online?",
+      "answer": "Yes. We can integrate suitable payment providers, subject to their availability, account approval and configuration requirements."
+    },
+    {
+      "question": "Will my online store work on mobile phones?",
+      "answer": "Yes. We design responsive online stores that adapt to smartphones, tablets and desktop screens."
+    },
+    {
+      "question": "How long does it take to build an online store?",
+      "answer": " The timeline depends on the store's size, features, product catalogue and integrations. We will discuss the requirements and agree on a suitable timeline before development begins."
     }
   ],
   "relatedCategories": [
