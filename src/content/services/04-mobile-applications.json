@@ -9,14 +9,17 @@
   "shortDescription": "We design and develop mobile applications that help businesses connect with customers and deliver useful digital experiences.",
   "fullDescription": "TOP TECH helps transform mobile app ideas into practical digital experiences. We work with businesses, entrepreneurs and organisations to plan and develop mobile applications based on their goals and target users. Whether you need a customer-facing app, a business tool or a service platform, we focus on intuitive design, useful functionality and a consistent experience across supported mobile devices. The technology and platform are selected according to the project's requirements.",
   "image": "/src/assets/images/showcase_mobile_app_1795284409918.jpg",
-  "buttonText": "Order Service",
+  "buttonText": "Order Mobile App Development",
   "available": true,
   "deliverables": [
-    "Cross-Platform Android & iOS Applications",
-    "Progressive Web Apps (PWA)",
-    "Mobile UI/UX Prototypes & Design Systems",
-    "Push Notification & Offline-Ready Workflows",
-    "App Store & Play Store Release Preparation"
+    "Custom Mobile Application Design",
+    "Mobile App User Interface",
+    "Core App Functionality",
+    "User Registration and Login (where required)",
+    "Database and API Integration (where required)",
+    "App Testing and Quality Review",
+    "Deployment Preparation",
+    "App Handover and Usage Guidance"
   ],
   "benefits": [
     {
