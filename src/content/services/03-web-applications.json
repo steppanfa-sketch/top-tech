@@ -80,23 +80,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Workflow & Data Modeling",
-      "description": "We document user roles, database entities, permissions, and core operational tasks."
+      "title": "Requirements & Discovery",
+      "description": "We discuss your idea, identify the problem to solve and define the application's essential requirements."
     },
     {
       "step": "02",
-      "title": "Interactive UI Architecture",
-      "description": "We design clean dashboard screens, forms, and navigation flows optimized for daily speed."
+      "title": "Planning & Interface Design",
+      "description": "We map the application structure, user journeys and interface before development begins."
     },
     {
       "step": "03",
-      "title": "Full-Stack Engineering",
-      "description": "We implement the frontend, API routes, validation, authentication, and database persistence."
+      "title": "Development & Integration",
+      "description": "We build the application and configure the agreed features, data storage and integrations."
     },
     {
       "step": "04",
-      "title": "Testing & Team Onboarding",
-      "description": "We run end-to-end validation checks and guide your administrators through live deployment."
+      "title": "Testing & Refinement",
+      "description": "We review functionality, usability and supported devices, then address agreed issues."
+    },
+    {
+      "step": "05",
+      "title": "Deployment & Handover",
+      "description": "We prepare the application for deployment and provide guidance on its use and administration."
     }
   ],
   "faqs": [
