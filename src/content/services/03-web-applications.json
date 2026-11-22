@@ -106,16 +106,24 @@
   ],
   "faqs": [
     {
-      "question": "Can a custom web app replace our spreadsheets?",
-      "answer": "Yes. We routinely turn multi-tab spreadsheets into structured web applications with validation, search, user roles, and automated reporting."
+      "question": "What is a web application?",
+      "answer": "A web application is an interactive software solution that runs through a web browser and allows users to perform specific tasks online."
     },
     {
-      "question": "Can it integrate with tools we already use?",
-      "answer": "Yes. We build clean integrations for email services, payment APIs, cloud storage, and third-party business tools."
+      "question": "What types of web applications can TOP TECH build?",
+      "answer": "We can develop business management tools, booking platforms, dashboards, customer portals and other custom browser-based applications based on project requirements."
     },
     {
-      "question": "Will the web app work on tablets and phones too?",
-      "answer": "Yes. Every web application is engineered responsively so managers and staff can check updates from mobile browsers."
+      "question": "Do web applications work on mobile phones?",
+      "answer": "Yes. We can design responsive interfaces that adapt to supported smartphones, tablets and desktop devices."
+    },
+    {
+      "question": "Can my application have user accounts and an admin dashboard?",
+      "answer": "Yes. User accounts, access permissions and administrative dashboards can be included where they fit the project's requirements."
+    },
+    {
+      "question": "How long does it take to develop a web application?",
+      "answer": "The timeline depends on the application's complexity, features, integrations and testing requirements. We establish a suitable timeline after reviewing your project."
     }
   ],
   "relatedCategories": [
