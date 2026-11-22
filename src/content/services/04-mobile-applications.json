@@ -127,7 +127,10 @@
     }
   ],
   "relatedCategories": [
-    "Mobile Applications"
+    "mobile-applications",
+    "android-apps",
+    "ios-apps",
+    "cross-platform"
   ],
   "idealFor": "Businesses launching customer mobile apps, booking platforms, or field-team companion tools.",
   "seo": {
