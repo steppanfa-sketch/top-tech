@@ -127,11 +127,14 @@
     }
   ],
   "relatedCategories": [
-    "Web Applications"
+    "web-applications",
+    "dashboards",
+    "custom-platforms",
+    "business-software"
   ],
-  "idealFor": "Growing teams, service businesses, and startups replacing manual workflows with custom software.",
+  "idealFor": "Businesses, startups, organisations, entrepreneurs and institutions that need custom browser-based software, digital platforms or workflow management tools.",
   "seo": {
-    "title": "Web Applications — TOP TECH",
+    "title": "Businesses, startups, organisations, entrepreneurs and institutions that need custom browser-based software, digital platforms or workflow management tools.",
     "description": "Custom web applications, operational dashboards, client portals, and business systems built by TOP TECH."
   }
 }
