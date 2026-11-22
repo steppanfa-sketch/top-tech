@@ -110,16 +110,24 @@
   ],
   "faqs": [
     {
-      "question": "What file formats do I receive for logo and print designs?",
-      "answer": "You receive scalable vector files (SVG, PDF, EPS/AI), transparent high-resolution PNGs, and CMYK print-ready PDFs with proper bleed."
+      "question": "What types of graphic design services do you offer?",
+      "answer": "We create logos, brand identity materials, social media graphics, flyers, posters, business cards and other promotional designs based on project requirements."
     },
     {
-      "question": "Can I order only flyers, posters, or social graphics without a full rebrand?",
-      "answer": "Yes. You can book standalone promotional graphics or a full brand identity package."
+      "question": "Can you design a logo for my business?",
+      "answer": "Yes. We can develop logo concepts based on your brand name, audience, preferences and intended use."
     },
     {
-      "question": "How many revision rounds are included?",
-      "answer": "Every project scope includes structured review and refinement rounds so the final artwork meets your expectations."
+      "question": "Can I request changes to a design?",
+      "answer": "Yes. Revisions can be discussed and agreed as part of the project scope before work begins."
+    },
+    {
+      "question": "Will I receive files suitable for printing and online use?",
+      "answer": "We can provide final files in agreed formats suitable for the intended digital or print use."
+    },
+    {
+      "question": "How long does a graphic design project take?",
+      "answer": "The timeline depends on the type of design, complexity, number of deliverables and revision requirements. We agree on a timeline after reviewing your brief."
     }
   ],
   "relatedCategories": [
