@@ -127,11 +127,14 @@
     }
   ],
   "relatedCategories": [
-    "Website Development"
+    "website-development",
+    "web-design",
+    "business-website",
+    "landing-pages"
   ],
-  "idealFor": "Businesses, founders, consultants, and organizations establishing or upgrading their digital presence.",
+  "idealFor": "Businesses, entrepreneurs, startups, professionals, personal brands, institutions and organisations looking to establish or improve their online presence.",
   "seo": {
-    "title": "Website Development — TOP TECH",
-    "description": "Custom business websites, portfolios, landing pages, and corporate web solutions built by TOP TECH."
+    "title": "Professional Website Development | TOP TECH",
+    "description": "TOP TECH designs and develops professional, responsive websites for businesses, entrepreneurs and individuals. Build your online presence with modern website solutions."
   }
 }
