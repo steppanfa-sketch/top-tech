@@ -45,20 +45,36 @@
   ],
   "features": [
     {
-      "title": "Structured Data Tables & Filters",
-      "description": "Sortable, searchable records with tabular numeric alignment and instant CSV or report exports."
+      "title": "Custom Application Design",
+      "description": "Interfaces and layouts designed around your application goals and user requirements."
     },
     {
-      "title": "Role-Based Views",
-      "description": "Separate administrator, staff, and client permissions so every user sees only what they need."
+      "title": "User Authentication",
+      "description": "Suitable sign-in and account access features where required by the project."
     },
     {
-      "title": "Interactive Analytics & Summaries",
-      "description": "Clear visual indicators and real-time KPI summaries without visual clutter."
+      "title": "Database Integration",
+      "description": "Structured data storage and retrieval using an appropriate database solution."
     },
     {
-      "title": "API & Webhook Connectivity",
-      "description": "Connect payment processors, CRM systems, email providers, or external databases seamlessly."
+      "title": "Admin Dashboard",
+      "description": "An organised administrative interface for managing relevant application information."
+    },
+    {
+      "title": "Responsive Interface",
+      "description": "A flexible interface designed for supported desktop, tablet and mobile screens."
+    },
+    {
+      "title": "Workflow Automation",
+      "description": "Automation of agreed repetitive tasks and business processes where technically suitable."
+    },
+    {
+      "title": "Security Considerations",
+      "description": "Appropriate access controls and security practices based on the application's requirements."
+    },
+    {
+      "title": "Testing & Deployment",
+      "description": "Application checks and deployment preparation based on the agreed project scope."
     }
   ],
   "processSteps": [
