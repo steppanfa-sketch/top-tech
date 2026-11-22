@@ -44,20 +44,32 @@
   ],
   "features": [
     {
-      "title": "Category & Attribute Filtering",
-      "description": "Filter products by collection, price range, size, or availability without page reloads."
+      "title": "Custom Store Design",
+      "description": " A branded storefront designed to reflect your business identity and products."
     },
     {
-      "title": "Persistent Shopping Cart",
-      "description": "Slide-over or dedicated cart views with clear quantity controls and itemized subtotals."
+      "title": "Product Management",
+      "description": "Organised product listings with images, descriptions and pricing."
     },
     {
-      "title": "Payment Gateway Integration",
-      "description": "Ready for Stripe, Paystack, Flutterwave, PayPal, or regional checkout workflows."
+      "title": "Shopping Cart",
+      "description": "A convenient cart that allows customers to review products before checkout."
     },
     {
-      "title": "Order & Inquiry Notifications",
-      "description": "Structured customer confirmation summaries and WhatsApp or email order routing options."
+      "title": "Checkout Integration",
+      "description": "Checkout setup with suitable payment options, subject to provider availability and configuration."
+    },
+    {
+      "title": "Mobile-Friendly Experience",
+      "description": "A responsive shopping experience across smartphones, tablets and desktop devices."
+    },
+    {
+      "title": "Order Management",
+      "description": "Tools for reviewing and organising customer orders."
+    },
+    {
+      "title": "Store Administration",
+      "description": "Guidance on managing products and basic store content."
     }
   ],
   "processSteps": [
