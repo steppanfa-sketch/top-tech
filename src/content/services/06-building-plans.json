@@ -45,20 +45,36 @@
   ],
   "features": [
     {
-      "title": "Dimensioned Floor Plans",
-      "description": "Detailed room-by-room layouts with wall thicknesses, door swings, window placement, and furniture zoning."
+      "title": "Architectural Floor Plan Layouts",
+      "description": "Organised floor plan layouts showing the proposed arrangement of rooms and functional spaces."
     },
     {
-      "title": "Exterior Elevations",
-      "description": "Front, rear, and side facade drawings illustrating roof lines, openings, and material proportions."
+      "title": "Space Planning",
+      "description": "Thoughtful room positioning and space allocation based on your requirements.\n3. Building Design Concepts"
     },
     {
-      "title": "Site & Parking Planning",
-      "description": "Coordinated setback awareness, driveway access, walkways, and outdoor utility zones."
+      "title": "Building Design Concepts",
+      "description": "Initial design concepts developed around your preferences, project goals and intended building use."
     },
     {
-      "title": "CAD & Print-Ready Sheets",
-      "description": "Clean DWG/CAD files alongside scaled PDF sheets ready for A1/A3 plotting."
+      "title": "Room Arrangement",
+      "description": "Practical room layouts designed to support convenient movement and functional use of spaces."
+    },
+    {
+      "title": "Site Layout Concepts",
+      "description": "Proposed positioning of the building and relevant outdoor spaces where site information is available."
+    },
+    {
+      "title": "Building Elevation Concepts",
+      "description": "Visual representations of the proposed building's exterior appearance where included in the agreed project scope."
+    },
+    {
+      "title": "Digital Plan Presentation",
+      "description": "Clear digital presentation of agreed layouts and design concepts for convenient review."
+    },
+    {
+      "title": "Design Revisions",
+      "description": "Reasonable design adjustments based on agreed feedback and project requirements."
     }
   ],
   "processSteps": [
