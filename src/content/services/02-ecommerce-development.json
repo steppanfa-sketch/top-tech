@@ -9,27 +9,37 @@
   "shortDescription": "We build modern e-commerce websites with intuitive shopping experiences, product management and secure checkout integrations.",
   "fullDescription": "TOP TECH develops professional e-commerce solutions that help businesses establish and grow their online stores. From product catalogues and shopping carts to checkout integrations and order management, we create user-friendly shopping experiences designed around your business needs. Our goal is to make it easier for customers to discover your products, place orders and interact with your brand online.",
   "image": "/src/assets/images/showcase_ecommerce_system_1795280409464.jpg",
-  "buttonText": "Order Service",
+  "buttonText": "Order E-Commerce Development",
   "available": true,
   "deliverables": [
-    "Custom Online Storefronts",
-    "Structured Product Catalogs & Filtering",
-    "Shopping Cart & Checkout Flows",
-    "Payment & Shipping Integration Readiness",
-    "Mobile-First Merchandising Layouts"
+    "Custom E-Commerce Website",
+    "Product Catalogue Setup",
+    "Shopping Cart Integration",
+    "Checkout and Payment Integration",
+    "Order Management System",
+    "Mobile-Responsive Store Design",
+    "Basic Store Administration Guide"
   ],
   "benefits": [
     {
-      "title": "Frictionless Product Discovery",
-      "description": "Clean category filters, search, and clear variant selection help shoppers find what they need quickly."
+      "title": "Reach More Customers",
+      "description": "Make your products accessible to customers beyond your physical location through an online store."
     },
     {
-      "title": "Built for Mobile Shoppers",
-      "description": "Touch-friendly product cards, fast image loading, and clear cart controls prevent mobile drop-off."
+      "title": "Convenient Shopping",
+      "description": "Give customers an easy way to browse products and place orders whenever they want."
     },
     {
-      "title": "Flexible Catalog Management",
-      "description": "Easily organize collections, pricing, stock visibility, and promotional banners as inventory changes."
+      "title": "Stronger Brand Presence",
+      "description": "Present your business professionally with a branded and consistent online shopping experience."
+    },
+    {
+      "title": "Simplified Order Management",
+      "description": "Organise product listings and incoming customer orders in one digital storefront."
+    },
+    {
+      "title": "Room to Grow",
+      "description": "Build an online store that can be expanded as your products and business needs evolve."
     }
   ],
   "features": [
