@@ -9,14 +9,17 @@
   "shortDescription": "We help clients develop building plans and architectural layouts that support thoughtful space planning and project preparation.",
   "fullDescription": "TOP TECH provides building plan and architectural layout services for individuals, property owners and businesses. We help transform ideas and space requirements into organised building layouts that reflect the client's vision and intended use. Our focus is on practical space planning, clear presentation and carefully developed design concepts. Where projects require licensed architectural professionals, engineering input or statutory approval, the relevant qualified professionals must review and certify the plans.",
   "image": "/src/assets/images/showcase_building_plans_1795280410007.jpg",
-  "buttonText": "Order Service",
+  "buttonText": "Order Building Plans",
   "available": true,
   "deliverables": [
-    "2D Architectural Floor Plans",
-    "Site Layouts & Spatial Zoning",
-    "Building Elevations & Section Drawings",
-    "Residential & Commercial Layout Concepts",
-    "Structured CAD & PDF Drawing Sets"
+    "Building Plan Concepts",
+    "Architectural Floor Plan Layouts",
+    "Space Planning and Room Arrangement",
+    "Site Layout Planning (where required)",
+    "Building Elevation Drawings (where agreed)",
+    "Dimensioned Floor Plans",
+    "Digital Plan Files in Agreed Formats",
+    "Design Revisions and Handover"
   ],
   "benefits": [
     {
