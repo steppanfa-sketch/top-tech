@@ -80,23 +80,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Skill & Workflow Assessment",
-      "description": "We identify your team's current familiarity with AI and the daily tasks with highest time-saving potential."
+      "title": "Introduction & Assessment",
+      "description": "We discuss your learning goals, current experience and the AI skills you want to develop."
     },
     {
       "step": "02",
-      "title": "Custom Curriculum Design",
-      "description": "We assemble focused exercises, prompt templates, and tool workflows matching your roles."
+      "title": "Training Planning",
+      "description": "We organise a practical training programme around your interests, experience and intended applications of AI."
     },
     {
       "step": "03",
-      "title": "Interactive Hands-On Sessions",
-      "description": "Live guided workshops (remote or on-site) where every participant practices directly."
+      "title": "Guided Learning & Demonstrations",
+      "description": "We introduce relevant AI concepts, demonstrate useful tools and explain how they can be applied to everyday tasks."
     },
     {
       "step": "04",
-      "title": "Playbook Delivery & Follow-Up",
-      "description": "Participants receive reference guides, prompt libraries, and post-session Q&A support."
+      "title": "Practical Exercises",
+      "description": "You practise using selected AI tools through guided activities involving content creation, research and productivity."
+    },
+    {
+      "step": "05",
+      "title": "Review & Next Steps",
+      "description": "We review what you've learned, address questions and provide guidance on continuing to develop your AI skills."
     }
   ],
   "faqs": [
