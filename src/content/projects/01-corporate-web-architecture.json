@@ -1,5 +1,6 @@
 {
   "order": 1,
+  "published": false,
   "slug": "corporate-web-architecture",
   "title": "Corporate Web Architecture & Portal",
   "category": "Website Development",
@@ -14,8 +15,6 @@
     "CMS-Ready Content Structure"
   ],
   "image": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-  "videoUrl": "",
-  "projectUrl": "",
   "featured": true,
   "seo": {
     "title": "Corporate Web Architecture — TOP TECH Projects",
