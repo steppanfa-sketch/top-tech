@@ -1,14 +1,14 @@
 {
   "order": 7,
+  "published": true,
   "code": "G",
   "slug": "ai-training",
   "name": "AI Training",
   "icon": "BrainCircuit",
-  "heroSubtitle": "Hands-on artificial intelligence education, prompt engineering workshops, and practical business workflow training.",
-  "shortDescription": "Practical AI education, modern AI tools, structured prompt engineering, workflow productivity, and business applications of artificial intelligence.",
-  "fullDescription": "Artificial intelligence delivers real value only when people know how to apply it responsibly and effectively. Our hands-on AI training programs equip individuals, educators, and business teams with practical prompt engineering techniques, real tool workflows, document and analysis automation, and clear governance habits.",
+  "heroSubtitle": "Practical artificial intelligence training designed to help individuals and businesses understand AI and use it more effectively.",
+  "shortDescription": "We provide practical AI training that helps individuals and teams understand AI tools, improve productivity and explore new possibilities.",
+  "fullDescription": "TOP TECH provides practical artificial intelligence training for individuals, entrepreneurs, professionals and businesses. We help learners understand AI concepts and explore how modern AI tools can support everyday tasks, content creation, research, business operations and problem-solving. Our training focuses on practical demonstrations, responsible use and real-world applications, helping participants build confidence and develop useful digital skills.",
   "image": "/src/assets/images/showcase_ai_training_1795280409208.jpg",
-  "orderingUrl": "",
   "buttonText": "Order Service",
   "available": true,
   "deliverables": [
@@ -86,7 +86,9 @@
       "answer": "Yes. We deliver live interactive online workshops globally as well as on-site team sessions by arrangement."
     }
   ],
-  "relatedCategories": ["AI Training"],
+  "relatedCategories": [
+    "AI Training"
+  ],
   "idealFor": "Individuals, professionals, educators, and corporate teams adopting AI for everyday productivity.",
   "seo": {
     "title": "AI Training — TOP TECH",
