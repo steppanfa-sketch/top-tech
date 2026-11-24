@@ -8,7 +8,7 @@
   "heroSubtitle": "Powerful online stores designed to help businesses showcase products, serve customers and grow their digital sales.",
   "shortDescription": "We build modern e-commerce websites with intuitive shopping experiences, product management and secure checkout integrations.",
   "fullDescription": "TOP TECH develops professional e-commerce solutions that help businesses establish and grow their online stores. From product catalogues and shopping carts to checkout integrations and order management, we create user-friendly shopping experiences designed around your business needs. Our goal is to make it easier for customers to discover your products, place orders and interact with your brand online.",
-  "image": "/src/assets/images/showcase_ecommerce_system_1795280409464.jpg",
+  "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80",
   "buttonText": "Order E-Commerce Development",
   "available": true,
   "deliverables": [
@@ -45,7 +45,7 @@
   "features": [
     {
       "title": "Custom Store Design",
-      "description": " A branded storefront designed to reflect your business identity and products."
+      "description": "A branded storefront designed to reflect your business identity and products."
     },
     {
       "title": "Product Management",
@@ -91,12 +91,12 @@
     {
       "step": "04",
       "title": "Testing & Review",
-      "description": " We review the store's responsiveness, navigation and agreed shopping features before delivery."
+      "description": "We review the store's responsiveness, navigation and agreed shopping features before delivery."
     },
     {
       "step": "05",
       "title": "Launch & Handover",
-      "description": " We prepare the completed store for launch and provide guidance on basic administration."
+      "description": "We prepare the completed store for launch and provide guidance on basic administration."
     }
   ],
   "faqs": [
@@ -118,7 +118,7 @@
     },
     {
       "question": "How long does it take to build an online store?",
-      "answer": " The timeline depends on the store's size, features, product catalogue and integrations. We will discuss the requirements and agree on a suitable timeline before development begins."
+      "answer": "The timeline depends on the store's size, features, product catalogue and integrations. We will discuss the requirements and agree on a suitable timeline before development begins."
     }
   ],
   "relatedCategories": [

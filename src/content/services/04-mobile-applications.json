@@ -8,7 +8,7 @@
   "heroSubtitle": "Innovative mobile applications designed to connect with users, simplify everyday tasks and bring your ideas to life.",
   "shortDescription": "We design and develop mobile applications that help businesses connect with customers and deliver useful digital experiences.",
   "fullDescription": "TOP TECH helps transform mobile app ideas into practical digital experiences. We work with businesses, entrepreneurs and organisations to plan and develop mobile applications based on their goals and target users. Whether you need a customer-facing app, a business tool or a service platform, we focus on intuitive design, useful functionality and a consistent experience across supported mobile devices. The technology and platform are selected according to the project's requirements.",
-  "image": "/src/assets/images/showcase_mobile_app_1795284409918.jpg",
+  "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80",
   "buttonText": "Order Mobile App Development",
   "available": true,
   "deliverables": [
@@ -53,7 +53,7 @@
       "description": "An experience designed for the supported mobile devices and operating systems selected for your project."
     },
     {
-      "title": " User Authentication",
+      "title": "User Authentication",
       "description": "Registration, sign-in and account management features where required."
     },
     {
@@ -61,7 +61,7 @@
       "description": "Optional notifications for relevant updates and user engagement, where supported."
     },
     {
-      "title": " API & Database Integration",
+      "title": "API & Database Integration",
       "description": "Connections to suitable backend services and data systems where required."
     },
     {
@@ -81,11 +81,11 @@
     {
       "step": "01",
       "title": "Discovery & Planning",
-      "description": "Discovery & Planning\nStep Description: We discuss your app idea, target audience, goals and the essential features required."
+      "description": "We discuss your app idea, target audience, goals and the essential features required."
     },
     {
       "step": "02",
-      "title": " UI/UX Design",
+      "title": "UI/UX Design",
       "description": "We plan the app structure, user journeys and visual interface to create an intuitive experience."
     },
     {

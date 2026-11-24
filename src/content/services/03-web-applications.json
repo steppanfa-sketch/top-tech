@@ -8,7 +8,7 @@
   "heroSubtitle": "Powerful web-based applications designed to simplify operations, improve productivity and solve real business challenges.",
   "shortDescription": "We build custom web applications that help businesses and organisations manage tasks, streamline processes and deliver digital services.",
   "fullDescription": "TOP TECH develops custom web applications designed around the specific needs of businesses, organisations and entrepreneurs. From management dashboards and booking platforms to customer portals and business tools, we turn ideas into practical browser-based applications. We focus on usability, responsive interfaces, reliable functionality and scalable foundations to help clients work more efficiently and serve their users better.",
-  "image": "/src/assets/images/showcase_web_platform_1795280410303.jpg",
+  "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
   "buttonText": "Order Web Application Development",
   "available": true,
   "deliverables": [

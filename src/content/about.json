@@ -3,21 +3,17 @@
   "headline": "Turning Ideas Into Technology. Creating Possibilities Through Innovation.",
   "intro": "TOP TECH is a technology and digital solutions company committed to helping individuals, businesses and organisations transform ideas into practical digital experiences. We bring together technology, creativity and innovation to develop solutions that help our clients build, connect and grow.",
   "secondaryText": "Our services span website development, e-commerce solutions, web and mobile applications, graphic design, building plan concepts and practical artificial intelligence training. We believe technology should be useful, accessible and designed around real needs. That's why we focus on understanding every project, exploring the right approach and delivering solutions with purpose.",
-  "image": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-  "imageAlt": "TOP TECH – Technology, creativity and innovation in digital solutions.",
+  "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1400&q=80",
+  "imageAlt": "TOP TECH team collaborating around laptops on digital product architecture.",
   "mission": {
-    "title": "Our Mission",
-    "description": "To equip individuals, entrepreneurs, and businesses with dependable digital products, thoughtful creative design, architectural clarity, and hands-on AI literacy that produce measurable everyday value."
-  },
-  "vision": {
     "title": "Our Mission",
     "description": "Our mission is to empower individuals, businesses and organisations through innovative, practical and accessible technology solutions. We strive to turn ideas into meaningful digital experiences by combining creativity, technical knowledge and a commitment to understanding our clients' needs. Through our services and training, we aim to help people build confidently, work smarter and embrace the opportunities of the digital world."
   },
+  "vision": {
+    "title": "Our Vision",
+    "description": "To become a trusted and forward-thinking technology and digital solutions company recognised for creativity, innovation and meaningful impact. We envision a future where individuals and businesses across Africa can access the digital tools, knowledge and opportunities they need to thrive in an increasingly connected world."
+  },
   "values": [
-    {
-      "title": "Our Vision",
-      "description": "To become a trusted and forward-thinking technology and digital solutions company recognised for creativity, innovation and meaningful impact. We envision a future where individuals and businesses across Africa can access the digital tools, knowledge and opportunities they need to thrive in an increasingly connected world."
-    },
     {
       "title": "Innovation",
       "description": "We embrace new ideas, explore emerging technologies and continuously seek better ways to solve problems and create meaningful digital solutions."

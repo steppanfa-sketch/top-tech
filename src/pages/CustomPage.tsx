@@ -92,9 +92,9 @@ export function CustomPage() {
         {page.videoUrl && <VideoEmbed url={page.videoUrl} title={page.title} />}
 
         <div className="space-y-6">
-          {page.sections.map((section) => (
+          {(Array.isArray(page.sections) ? page.sections : []).map((section, sectionIdx) => (
             <section
-              key={section.heading}
+              key={`${sectionIdx}-${section.heading}`}
               className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-4"
             >
               <h2 className="font-display text-2xl font-semibold text-slate-950 dark:text-white">
@@ -103,11 +103,11 @@ export function CustomPage() {
               <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
                 {section.body}
               </p>
-              {section.bullets && section.bullets.length > 0 && (
+              {Array.isArray(section.bullets) && section.bullets.length > 0 && (
                 <ul className="space-y-2.5 pt-1">
-                  {section.bullets.map((bullet) => (
+                  {section.bullets.map((bullet, bulletIdx) => (
                     <li
-                      key={bullet}
+                      key={`${sectionIdx}-bullet-${bulletIdx}`}
                       className="flex items-start gap-3 text-sm sm:text-base text-slate-700 dark:text-slate-200"
                     >
                       <CheckCircle2

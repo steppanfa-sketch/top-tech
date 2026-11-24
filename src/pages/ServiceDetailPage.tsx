@@ -180,9 +180,9 @@ export function ServiceDetailPage() {
               Core Deliverables
             </h2>
             <ul className="space-y-3">
-              {service.deliverables.map((item) => (
+              {(Array.isArray(service.deliverables) ? service.deliverables : []).map((item, idx) => (
                 <li
-                  key={item}
+                  key={`${idx}-${item}`}
                   className="flex items-start gap-3 text-sm sm:text-base text-slate-700 dark:text-slate-200"
                 >
                   <CheckCircle2
@@ -214,7 +214,7 @@ export function ServiceDetailPage() {
                     const BenefitIcon = [Sparkles, ShieldCheck, TrendingUp][idx % 3];
                     return (
                       <motion.div
-                        key={benefit.title}
+                        key={`${idx}-${benefit.title}`}
                         initial={{ opacity: 0, y: 14 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.2 }}
@@ -250,7 +250,7 @@ export function ServiceDetailPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {service.features.map((feature, idx) => (
                     <motion.div
-                      key={feature.title}
+                      key={`${idx}-${feature.title}`}
                       initial={{ opacity: 0, y: 14 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, amount: 0.2 }}
@@ -291,7 +291,7 @@ export function ServiceDetailPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {service.processSteps.map((step, idx) => (
                 <motion.div
-                  key={step.step}
+                  key={`${idx}-${step.step}`}
                   initial={{ opacity: 0, y: 14 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -336,7 +336,15 @@ export function ServiceDetailPage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              className={`grid grid-cols-1 ${
+                relevantProjects.length === 1
+                  ? 'max-w-xl'
+                  : relevantProjects.length === 2
+                  ? 'md:grid-cols-2'
+                  : 'md:grid-cols-2 lg:grid-cols-3'
+              } gap-6`}
+            >
               {relevantProjects.map((project) => (
                 <TiltCard key={project.slug} maxTilt={4} className="rounded-2xl">
                   <Link
@@ -392,7 +400,7 @@ export function ServiceDetailPage() {
                 const isOpen = openFaqIndex === idx;
                 return (
                   <div
-                    key={faq.question}
+                    key={`${idx}-${faq.question}`}
                     className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/90 dark:bg-[#0B1224]/90 backdrop-blur-sm overflow-hidden"
                   >
                     <button

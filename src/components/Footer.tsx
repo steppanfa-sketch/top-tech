@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Github, Globe, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import { contactConfig, navigationConfig, servicesList, siteConfig } from '../lib/cms';
+import { isValidExternalUrl } from '../lib/assets';
 import { BrandLogo } from './BrandLogo';
 
 function SocialIcon({ platform }: { platform: string }) {
@@ -31,18 +32,20 @@ export function Footer() {
               {siteConfig.shortDescription}
             </p>
             <div className="flex items-center gap-3 pt-2">
-              {contactConfig.socialLinks.map((social) => (
-                <a
-                  key={social.platform}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`TOP TECH on ${social.platform}`}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] text-slate-600 dark:text-slate-300 hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                >
-                  <SocialIcon platform={social.platform} />
-                </a>
-              ))}
+              {contactConfig.socialLinks
+                .filter((social) => isValidExternalUrl(social.url))
+                .map((social) => (
+                  <a
+                    key={social.platform}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`TOP TECH on ${social.platform}`}
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] text-slate-600 dark:text-slate-300 hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  >
+                    <SocialIcon platform={social.platform} />
+                  </a>
+                ))}
             </div>
           </div>
 

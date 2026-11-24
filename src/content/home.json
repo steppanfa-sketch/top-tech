@@ -5,13 +5,13 @@
     "supportingText": "From stunning websites and powerful applications to creative designs and practical AI solutions, TOP TECH helps individuals and businesses build, innovate and grow.",
     "primaryCtaLabel": "Explore Our Services",
     "secondaryCtaLabel": "Start a Project",
-    "heroImage": "/src/assets/images/hero_toptech_studio_1795280407432.jpg",
-    "heroImageAlt": "TOP TECH digital solutions and technology innovation"
+    "heroImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80",
+    "heroImageAlt": "Technology team collaborating with laptops in a modern digital studio"
   },
   "introSection": {
     "kicker": "WHO WE ARE",
     "headline": "Technology That Turns Ambition Into Progress.",
-    "summary": "TOP TECH is a full-service technology and digital solutions company serving individuals and businesses across",
+    "summary": "TOP TECH is a full-service technology and digital solutions company serving individuals and businesses across Africa with modern websites, e-commerce platforms, web and mobile applications, graphic design, building plan concepts, and practical AI training.",
     "ctaLabel": "Discover TOP TECH"
   },
   "featuredServicesSection": {
@@ -36,7 +36,7 @@
     "ctaLabel": "Explore Our Portfolio"
   },
   "whyChooseSection": {
-    "kicker": "Why TOP TECH",
+    "kicker": "WHY TOP TECH",
     "headline": "More Than Technology. A Partner in Your Progress.",
     "subtitle": "We bring creativity, clear communication and practical technology together to deliver solutions that make a difference.",
     "ctaLabel": "Why Work With Us",
@@ -58,7 +58,7 @@
       },
       {
         "title": "Guidance and Support",
-        "description": "provide clear guidance to help clients understand and make the most of their digital solutions.",
+        "description": "We provide clear guidance to help clients understand and make the most of their digital solutions.",
         "icon": "headset"
       }
     ]

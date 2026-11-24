@@ -192,7 +192,15 @@ export function HomePage() {
             </MagneticButton>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            className={`grid grid-cols-1 ${
+              selectedProjects.length === 1
+                ? 'max-w-xl'
+                : selectedProjects.length === 2
+                ? 'md:grid-cols-2'
+                : 'md:grid-cols-3'
+            } gap-6`}
+          >
             {selectedProjects.map((project, idx) => (
               <motion.div
                 key={project.slug}
@@ -216,12 +224,17 @@ export function HomePage() {
                         />
                       </Link>
                       <div className="p-6 space-y-2.5">
-                        <p className="text-xs text-slate-500 dark:text-slate-400">
-                          <span className="font-medium text-blue-600 dark:text-blue-400">
-                            {project.category}
-                          </span>{' '}
-                          · {project.clientType}
-                        </p>
+                        {(project.category || project.clientType) && (
+                          <p className="text-xs text-slate-500 dark:text-slate-400">
+                            {project.category && (
+                              <span className="font-medium text-blue-600 dark:text-blue-400">
+                                {project.category}
+                              </span>
+                            )}
+                            {project.category && project.clientType ? ' · ' : ''}
+                            {project.clientType}
+                          </p>
+                        )}
                         <h3 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
                           <Link
                             to={`/projects/${project.slug}`}
@@ -280,7 +293,7 @@ export function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {homeContent.whyChooseSection.items.map((item, idx) => (
               <motion.div
-                key={item.title}
+                key={`${idx}-${item.title}`}
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
@@ -332,7 +345,7 @@ export function HomePage() {
           <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {processContent.steps.map((step, idx) => (
               <motion.div
-                key={step.stepNumber}
+                key={`${idx}-${step.stepNumber}`}
                 initial={{ opacity: 0, y: 14 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}

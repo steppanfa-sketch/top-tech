@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Mail, MessageSquare, Send, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +9,17 @@ import { SmartImage } from './SmartImage';
 export function OrderFallbackModal() {
   const { fallbackService, closeFallbackOrder, setPreselectedService } = useOrder();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!fallbackService) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeFallbackOrder();
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [fallbackService, closeFallbackOrder]);
 
   if (!fallbackService) {
     return null;
@@ -64,7 +76,7 @@ export function OrderFallbackModal() {
             </button>
             <div className="absolute bottom-4 left-5 right-5">
               <p className="text-xs font-medium text-blue-300">
-                Service Request · {fallbackService.code}
+                Service Request
               </p>
               <h3 id="order-fallback-title" className="font-display text-xl font-bold text-white">
                 {fallbackService.name}

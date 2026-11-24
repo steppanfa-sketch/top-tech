@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowRight, Compass, Eye, Lightbulb, PenTool, ShieldCheck, Target } from 'lucide-react';
+import { ArrowRight, Compass, Eye, Lightbulb, PenTool, ShieldCheck, Target, TrendingUp } from 'lucide-react';
 import { aboutContent } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
@@ -124,13 +124,17 @@ export function AboutPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div
+              className={`grid grid-cols-1 md:grid-cols-2 ${
+                aboutContent.values.length === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3'
+              } gap-5`}
+            >
               {aboutContent.values.map((val, idx) => {
                 const ValueIcon =
-                  [Compass, PenTool, Lightbulb, ShieldCheck][idx % 4];
+                  [Lightbulb, ShieldCheck, Compass, PenTool, TrendingUp][idx % 5];
                 return (
                   <motion.div
-                    key={val.title}
+                    key={`${idx}-${val.title}`}
                     initial={{ opacity: 0, y: 14 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.2 }}
@@ -172,7 +176,7 @@ export function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {aboutContent.reasons.map((item, idx) => (
               <motion.div
-                key={item.title}
+                key={`${idx}-${item.title}`}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}

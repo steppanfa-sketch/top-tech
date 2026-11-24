@@ -177,12 +177,17 @@ export function getProjectBySlug(slug?: string): ProjectItem | undefined {
 }
 
 export function getProjectsForService(service: ServiceItem): ProjectItem[] {
-  const categories = service.relatedCategories?.length
-    ? service.relatedCategories
-    : [service.name];
+  const categoryKeys = [
+    service.name,
+    service.slug,
+    ...(Array.isArray(service.relatedCategories) ? service.relatedCategories : []),
+  ]
+    .map((entry) => toSlugKey(entry))
+    .filter(Boolean);
+
   return projectsList.filter((project) => {
-    const projectCategory = (project.category || '').toLowerCase();
-    return Boolean(projectCategory) && categories.some((cat) => cat.toLowerCase() === projectCategory);
+    const projectCategoryKey = toSlugKey(project.category);
+    return Boolean(projectCategoryKey) && categoryKeys.includes(projectCategoryKey);
   });
 }
 

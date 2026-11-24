@@ -11,7 +11,7 @@
         "Initial consultation and discussion.",
         "Understanding your goals and requirements.",
         "Identifying project scope and priorities.",
-        "1. Exploring suitable solutions and opportunities."
+        "Exploring suitable solutions and opportunities."
       ],
       "deliverable": "A clear project brief outlining your requirements, objectives and proposed direction."
     },
@@ -33,7 +33,7 @@
       "description": "We bring the approved plan to life through thoughtful design and development. Our focus is on creating solutions that combine functionality, usability and visual appeal while aligning with your project requirements.",
       "activities": [
         "Creating layouts and design concepts.",
-        "Creating layouts and design concepts.",
+        "Developing visual design and core system functionality.",
         "Building responsive user interfaces.",
         "Integrating required tools and services.",
         "Sharing progress for client feedback."
@@ -49,7 +49,7 @@
         "Checking responsiveness across supported devices.",
         "Identifying and fixing errors.",
         "Reviewing performance and usability.",
-        "1. Making final improvements."
+        "Making final improvements."
       ],
       "deliverable": "A reviewed and refined solution that is ready for client evaluation and delivery."
     },
@@ -58,13 +58,13 @@
       "title": "Delivery & Handover",
       "description": "Once the project has been reviewed and approved, we prepare it for delivery. We provide the necessary files, access details and guidance to help you understand and use your completed solution.",
       "activities": [
-        "Once the project has been reviewed and approved, we prepare it for delivery. We provide the necessary files, access details and guidance to help you understand and use your completed solution.",
+        "Preparing the approved project for final delivery.",
         "Providing agreed project files and documentation.",
         "Assisting with deployment or installation where applicable.",
         "Demonstrating important features.",
-        "1. Providing handover guidance."
+        "Providing handover guidance."
       ],
-      "deliverable": "1. Providing handover guidance."
+      "deliverable": "Final project files, deployment access, and practical handover guidance."
     },
     {
       "stepNumber": "06",

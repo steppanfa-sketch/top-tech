@@ -8,7 +8,7 @@
   "heroSubtitle": "Creative visual designs that bring your brand to life, communicate your message and leave a lasting impression.",
   "shortDescription": "We create professional graphic designs that help businesses and individuals communicate visually and build recognisable brands.",
   "fullDescription": "TOP TECH provides creative graphic design solutions for businesses, organisations, entrepreneurs and individuals. From brand identity and promotional materials to social media graphics and marketing designs, we combine creativity, visual consistency and clear communication to bring ideas to life. Every design is developed with your brand, audience and intended purpose in mind.",
-  "image": "/src/assets/images/showcase_brand_identity_1795280409365.jpg",
+  "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=1200&q=80",
   "buttonText": "Order Graphic Design",
   "available": true,
   "deliverables": [
@@ -137,7 +137,7 @@
     "social-media-design",
     "print-design"
   ],
-  "idealFor": "New ventures building their brand from scratch and established companies refreshing campaign visuals.Businesses, entrepreneurs, startups, organisations, creators and individuals who need professional visual content and brand materials.",
+  "idealFor": "New ventures building their brand from scratch and established companies refreshing campaign visuals. Businesses, entrepreneurs, startups, organisations, creators and individuals who need professional visual content and brand materials.",
   "seo": {
     "title": "Graphic Design & Branding Services | TOP TECH",
     "description": "TOP TECH creates professional graphic designs, logos, brand identity materials, social media graphics, flyers and promotional designs for businesses and individuals."

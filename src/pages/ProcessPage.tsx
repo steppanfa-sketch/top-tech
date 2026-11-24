@@ -41,7 +41,7 @@ export function ProcessPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8">
           {processContent.steps.map((step, idx) => (
             <motion.article
-              key={step.stepNumber}
+              key={`${step.stepNumber}-${idx}`}
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
@@ -55,7 +55,7 @@ export function ProcessPage() {
                       {step.stepNumber}
                     </span>
                     <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                      Stage {step.stepNumber} of 0{processContent.steps.length}
+                      Stage {step.stepNumber} of {String(processContent.steps.length).padStart(2, '0')}
                     </span>
                   </div>
 
@@ -75,9 +75,9 @@ export function ProcessPage() {
                         Key Activities
                       </h3>
                       <ul className="space-y-2">
-                        {step.activities.map((activity) => (
+                        {step.activities.map((activity, activityIdx) => (
                           <li
-                            key={activity}
+                            key={`${step.stepNumber}-activity-${activityIdx}`}
                             className="flex items-start gap-2.5 text-sm text-slate-700 dark:text-slate-200"
                           >
                             <CheckCircle2

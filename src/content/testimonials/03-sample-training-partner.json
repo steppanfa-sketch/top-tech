@@ -1,6 +1,6 @@
 {
   "order": 3,
-  "visible": true,
+  "visible": false,
   "isSamplePlaceholder": true,
   "quote": "Sample testimonial placeholder: Edit, hide (visible: false), or remove this file through Pages CMS when publishing real feedback from building plan or AI training participants.",
   "authorName": "Sample Partner Placeholder",

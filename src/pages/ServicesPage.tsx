@@ -85,11 +85,13 @@ export function ServicesPage() {
                         </div>
 
                         <ul className="space-y-1.5 pt-1 border-t border-slate-200/70 dark:border-slate-800/70">
-                          {service.deliverables.slice(0, 3).map((item) => (
-                            <li
-                              key={item}
-                              className="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-300"
-                            >
+                          {(Array.isArray(service.deliverables) ? service.deliverables : [])
+                            .slice(0, 3)
+                            .map((item, itemIdx) => (
+                              <li
+                                key={`${service.slug}-${itemIdx}-${item}`}
+                                className="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-300"
+                              >
                               <CheckCircle2
                                 className="w-3.5 h-3.5 mt-0.5 shrink-0 text-blue-600 dark:text-blue-400"
                                 aria-hidden="true"

@@ -39,7 +39,7 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.45, delay: idx * 0.05, ease: [0.16, 1, 0.3, 1] }}
-              className="flex flex-col justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-[#0B1224] p-6 sm:p-7 space-y-6"
+              className="flex flex-col justify-between rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white dark:bg-[#0B1224] p-6 sm:p-7 space-y-6 hover:border-blue-500/40 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/25 transition-all duration-200"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">

@@ -244,25 +244,29 @@ export function ContactSection() {
             </div>
 
             {/* Social Media Links */}
-            <div className="space-y-3">
-              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                Connect with TOP TECH
-              </p>
-              <div className="flex flex-wrap items-center gap-3">
-                {contactConfig.socialLinks.map((social) => (
-                  <a
-                    key={social.platform}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex h-10 items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] px-3.5 text-xs font-medium text-slate-700 dark:text-slate-200 hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                  >
-                    <SocialIcon platform={social.platform} />
-                    <span>{social.platform}</span>
-                  </a>
-                ))}
+            {contactConfig.socialLinks.some((social) => isValidExternalUrl(social.url)) && (
+              <div className="space-y-3">
+                <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                  Connect with TOP TECH
+                </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  {contactConfig.socialLinks
+                    .filter((social) => isValidExternalUrl(social.url))
+                    .map((social) => (
+                      <a
+                        key={social.platform}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-10 items-center gap-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] px-3.5 text-xs font-medium text-slate-700 dark:text-slate-200 hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                      >
+                        <SocialIcon platform={social.platform} />
+                        <span>{social.platform}</span>
+                      </a>
+                    ))}
+                </div>
               </div>
-            </div>
+            )}
           </motion.div>
 
           {/* Right Form Column */}

@@ -1,11 +1,11 @@
 {
-  "kicker": "WEBSITE DEVELOPMENT",
-  "headline": "Websites That Build Trust and Drive Growth.",
-  "subtitle": "We design and develop modern, responsive websites that help individuals and businesses establish a strong online presence, showcase their offerings and connect with their audiences.",
-  "ctaTitle": "Ready to Build Your Website?",
-  "ctaDescription": "Let's create a professional, responsive website that represents your brand, connects with your audience and supports your goals.",
+  "kicker": "OUR SERVICES",
+  "headline": "Technology, Design & AI Solutions Built Around Your Goals.",
+  "subtitle": "Explore TOP TECH's seven specialised service divisions—spanning website development, e-commerce, custom web and mobile applications, graphic design, building plan concepts, and practical AI training.",
+  "ctaTitle": "Not Sure Which Service Fits Best?",
+  "ctaDescription": "Tell us what you are planning to build or learn. Our team will recommend the right scope, timeline, and combination of services for your needs.",
   "seo": {
-    "title": "Website Development | TOP TECH",
-    "description": "Get a modern, responsive website with TOP TECH. We create professional websites that help individuals and businesses build their online presence and grow."
+    "title": "Services & Digital Solutions | TOP TECH",
+    "description": "Explore TOP TECH's full range of services: website development, e-commerce, web applications, mobile applications, graphic design, building plan concepts, and practical AI training."
   }
 }
