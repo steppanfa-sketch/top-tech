@@ -127,11 +127,15 @@
     }
   ],
   "relatedCategories": [
-    "Building Plans"
+    "residential-design",
+    "space-planning",
+    "floor-plans",
+    "architectural-design",
+    "building-plans"
   ],
-  "idealFor": "Property owners, developers, and contractors needing clear, practical architectural drawings.",
+  "idealFor": "Individuals, homeowners, property developers, businesses and organisations seeking building layout concepts, floor plans and architectural design presentations.",
   "seo": {
-    "title": "Building Plans — TOP TECH",
-    "description": "Architectural layouts, building drawings, and professional building plan design services by TOP TECH."
+    "title": "Building Plans & Architectural Layouts | TOP TECH",
+    "description": "TOP TECH helps develop building plan concepts, architectural floor layouts, space planning and design presentations tailored to residential and commercial project requirements."
   }
 }
