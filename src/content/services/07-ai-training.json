@@ -23,16 +23,24 @@
   ],
   "benefits": [
     {
-      "title": "Immediate Everyday Productivity",
-      "description": "Participants leave with repeatable prompt patterns and tool setups they can apply to real tasks the same day."
+      "title": "Understand Artificial Intelligence",
+      "description": "Build a clear understanding of artificial intelligence, how it works and how it is being used in everyday life and business."
     },
     {
-      "title": "Role-Specific Relevance",
-      "description": "Exercises are tailored to your industry—whether operations, marketing, education, administration, or software."
+      "title": "Improve Productivity",
+      "description": "Learn how AI tools can help simplify tasks, organise information and save time on suitable activities."
     },
     {
-      "title": "Safe, Verification-First Habits",
-      "description": "Learn practical guidelines for fact-checking AI outputs, protecting sensitive data, and maintaining quality standards."
+      "title": "Develop Practical Digital Skills",
+      "description": "Gain hands-on experience using modern AI tools for content creation, research, learning and problem-solving."
+    },
+    {
+      "title": "Support Business Growth",
+      "description": "Discover practical ways AI can support business operations, customer engagement and everyday decision-making."
+    },
+    {
+      "title": "Use AI Responsibly",
+      "description": "Understand the importance of privacy, accuracy, human oversight and responsible AI use."
     }
   ],
   "features": [
