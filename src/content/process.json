@@ -1,16 +1,17 @@
 {
-  "kicker": "Our Process",
-  "headline": "A Disciplined Six-Stage Delivery Framework",
-  "subtitle": "Every engagement—from custom websites and mobile apps to architectural building plans and AI training—follows a transparent six-stage workflow with clear milestones.",
+  "kicker": "HOW WE WORK",
+  "headline": "A Clear Process. From First Idea to Final Delivery.",
+  "subtitle": "Every successful project begins with understanding your vision. At TOP TECH, we follow a structured and collaborative approach to transform ideas into practical, high-quality digital solutions. From the initial discussion to final delivery, we keep you informed and involved at every stage.",
   "steps": [
     {
       "stepNumber": "01",
-      "title": "Discovery",
-      "description": "Understanding the client's needs, audience, technical constraints, and business objectives before writing a line of code or drawing a layout.",
+      "title": "Discovery & Consultation",
+      "description": "We begin by understanding your ideas, goals, challenges and expectations. This helps us identify what you need and establish a clear direction for your project.",
       "activities": [
-        "Stakeholder discovery session and requirements gathering",
-        "Audience, workflow, and operational bottleneck analysis",
-        "Review of existing brand assets, systems, or site plans"
+        "Initial consultation and discussion.",
+        "Understanding your goals and requirements.",
+        "Identifying project scope and priorities.",
+        "1. Exploring suitable solutions and opportunities."
       ],
       "deliverable": "Project Discovery Brief & Requirements Summary"
     },
