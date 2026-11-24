@@ -127,11 +127,15 @@
     }
   ],
   "relatedCategories": [
-    "AI Training"
+    "ai-training",
+    "artificial-intelligence",
+    "digital-skills",
+    "ai-education",
+    "business-productivity"
   ],
-  "idealFor": "Individuals, professionals, educators, and corporate teams adopting AI for everyday productivity.",
+  "idealFor": "Students, beginners, entrepreneurs, professionals, business owners, startups and organisations interested in learning practical AI skills and applying artificial intelligence in everyday activities.",
   "seo": {
-    "title": "AI Training — TOP TECH",
-    "description": "Practical AI education, prompt engineering, AI tools, and business productivity training by TOP TECH."
+    "title": "Practical AI Training & Education | TOP TECH",
+    "description": "TOP TECH provides practical AI training for individuals and businesses, covering AI tools, prompt writing, content creation, research, productivity and responsible AI use."
   }
 }
