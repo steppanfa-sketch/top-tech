@@ -42,25 +42,29 @@
     },
     {
       "stepNumber": "04",
-      "title": "Development",
-      "description": "Building the solution using modern frameworks, clean maintainable architecture, responsive layouts, and reliable integrations.",
+      "title": "Testing & Quality Assurance",
+      "description": "Before delivery, we carefully review the solution to identify issues, verify functionality and ensure that the project meets the agreed requirements. We make necessary refinements to improve reliability, usability and overall quality.",
       "activities": [
-        "Frontend, backend, mobile, or print-ready asset production",
-        "CMS structure setup and configurable ordering integration",
-        "Code quality checks, semantic markup, and SEO implementation"
+        "Testing core features and functionality.",
+        "Checking responsiveness across supported devices.",
+        "Identifying and fixing errors.",
+        "Reviewing performance and usability.",
+        "1. Making final improvements."
       ],
-      "deliverable": "Staging Build or Production-Ready Package"
+      "deliverable": "A reviewed and refined solution that is ready for client evaluation and delivery."
     },
     {
       "stepNumber": "05",
-      "title": "Delivery",
-      "description": "Testing across devices, verifying performance and accessibility, and delivering the finished project ready for real-world launch.",
+      "title": "Delivery & Handover",
+      "description": "Once the project has been reviewed and approved, we prepare it for delivery. We provide the necessary files, access details and guidance to help you understand and use your completed solution.",
       "activities": [
-        "Cross-browser, mobile viewport, and accessibility verification",
-        "Deployment configuration and domain/hosting handover",
-        "Walkthrough documentation and team orientation"
+        "Once the project has been reviewed and approved, we prepare it for delivery. We provide the necessary files, access details and guidance to help you understand and use your completed solution.",
+        "Providing agreed project files and documentation.",
+        "Assisting with deployment or installation where applicable.",
+        "Demonstrating important features.",
+        "1. Providing handover guidance."
       ],
-      "deliverable": "Verified Production Release & Handover Guide"
+      "deliverable": "1. Providing handover guidance."
     },
     {
       "stepNumber": "06",
