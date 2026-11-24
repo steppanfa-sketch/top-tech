@@ -6,6 +6,9 @@ import {
   ArrowRight,
   CheckCircle2,
   ChevronDown,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
 } from 'lucide-react';
 import {
   getProjectsForService,
@@ -94,7 +97,7 @@ export function ServiceDetailPage() {
                   <DynamicIcon name={service.icon} className="w-5 h-5" />
                 </div>
                 <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                  Service {service.code} · TOP TECH
+                  Service Division · TOP TECH
                 </span>
               </div>
 
@@ -207,28 +210,31 @@ export function ServiceDetailPage() {
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {service.benefits.map((benefit, idx) => (
-                    <motion.div
-                      key={benefit.title}
-                      initial={{ opacity: 0, y: 14 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, amount: 0.2 }}
-                      transition={{ duration: 0.4, delay: idx * 0.05 }}
-                      className="flex"
-                    >
-                      <TiltCard maxTilt={3.5} className="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-2.5">
-                        <span className="font-mono-num text-xs font-medium text-blue-600 dark:text-blue-400">
-                          0{idx + 1}
-                        </span>
-                        <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
-                          {benefit.title}
-                        </h3>
-                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                          {benefit.description}
-                        </p>
-                      </TiltCard>
-                    </motion.div>
-                  ))}
+                  {service.benefits.map((benefit, idx) => {
+                    const BenefitIcon = [Sparkles, ShieldCheck, TrendingUp][idx % 3];
+                    return (
+                      <motion.div
+                        key={benefit.title}
+                        initial={{ opacity: 0, y: 14 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{ duration: 0.4, delay: idx * 0.05 }}
+                        className="flex"
+                      >
+                        <TiltCard maxTilt={3.5} className="group w-full rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3.5 hover:border-blue-500/45 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/25 transition-all duration-200">
+                          <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                            <BenefitIcon className="w-5 h-5" aria-hidden="true" />
+                          </div>
+                          <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
+                            {benefit.title}
+                          </h3>
+                          <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            {benefit.description}
+                          </p>
+                        </TiltCard>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               </div>
             )}
@@ -249,14 +255,19 @@ export function ServiceDetailPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, amount: 0.2 }}
                       transition={{ duration: 0.4, delay: idx * 0.04 }}
-                      className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-2"
+                      className="group rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 flex items-start gap-4 hover:border-blue-500/45 hover:shadow-md transition-all duration-200"
                     >
-                      <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
-                        {feature.title}
-                      </h3>
-                      <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                        {feature.description}
-                      </p>
+                      <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                        <CheckCircle2 className="w-5 h-5" aria-hidden="true" />
+                      </div>
+                      <div className="space-y-1.5">
+                        <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
+                          {feature.title}
+                        </h3>
+                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                          {feature.description}
+                        </p>
+                      </div>
                     </motion.div>
                   ))}
                 </div>
@@ -285,7 +296,7 @@ export function ServiceDetailPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.4, delay: idx * 0.05 }}
-                  className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/90 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3"
+                  className="rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-slate-50/90 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3 hover:border-blue-500/45 hover:shadow-md transition-all duration-200"
                 >
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600/10 dark:bg-blue-500/15 font-mono-num text-xs font-semibold text-blue-600 dark:text-blue-400">
                     {step.step}
@@ -327,10 +338,10 @@ export function ServiceDetailPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relevantProjects.map((project) => (
-                <TiltCard key={project.slug} maxTilt={4} className="rounded-xl">
+                <TiltCard key={project.slug} maxTilt={4} className="rounded-2xl">
                   <Link
                     to={`/projects/${project.slug}`}
-                    className="group h-full overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm hover:border-blue-500/50 transition-colors flex flex-col justify-between"
+                    className="group h-full overflow-hidden rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30 transition-all duration-200 flex flex-col justify-between"
                   >
                     <div>
                       <div className="aspect-[4/3] overflow-hidden bg-slate-200 dark:bg-slate-900">
@@ -342,7 +353,8 @@ export function ServiceDetailPage() {
                       </div>
                       <div className="p-6 space-y-2">
                         <p className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                          {project.category} · {project.clientType}
+                          {project.category}
+                          {project.clientType ? ` · ${project.clientType}` : ''}
                         </p>
                         <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                           {project.title}
@@ -452,20 +464,26 @@ export function ServiceDetailPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {otherServices.map((other) => (
-                <TiltCard key={other.slug} maxTilt={3.5} className="rounded-xl">
+                <TiltCard key={other.slug} maxTilt={3.5} className="rounded-2xl">
                   <Link
                     to={`/services/${other.slug}`}
-                    className="group block h-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-5 hover:border-blue-500/50 transition-colors space-y-2"
+                    className="group flex flex-col justify-between h-full rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30 transition-all duration-200 space-y-4"
                   >
-                    <p className="text-xs font-mono-num text-blue-600 dark:text-blue-400">
-                      Service {other.code}
-                    </p>
-                    <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                      {other.name}
-                    </h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">
-                      {other.shortDescription}
-                    </p>
+                    <div className="space-y-3">
+                      <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                        <DynamicIcon name={other.icon} className="w-5 h-5" />
+                      </div>
+                      <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        {other.name}
+                      </h3>
+                      <p className="text-sm text-slate-600 dark:text-slate-300 line-clamp-2">
+                        {other.shortDescription}
+                      </p>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400">
+                      <span>Explore Service</span>
+                      <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
+                    </span>
                   </Link>
                 </TiltCard>
               ))}

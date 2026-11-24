@@ -47,7 +47,7 @@ export function ServicesPage() {
                 transition={{ duration: 0.45, delay: index * 0.04, ease: [0.16, 1, 0.3, 1] }}
                 className="flex"
               >
-                <TiltCard className="w-full overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm transition-colors hover:border-blue-500/50">
+                <TiltCard className="w-full overflow-hidden rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm transition-all duration-200 hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30">
                   <article className="group flex flex-col justify-between h-full">
                     <div>
                       <Link
@@ -66,13 +66,8 @@ export function ServicesPage() {
                       </Link>
 
                       <div className="p-6 space-y-4">
-                        <div className="flex items-center justify-between gap-3">
-                          <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
-                            <DynamicIcon name={service.icon} className="w-5 h-5" />
-                          </div>
-                          <span className="font-mono-num text-xs font-medium text-slate-400 dark:text-slate-500">
-                            {service.code}.
-                          </span>
+                        <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                          <DynamicIcon name={service.icon} className="w-5 h-5" />
                         </div>
 
                         <div className="space-y-2">

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence, MotionConfig, motion } from 'motion/react';
+import { MotionConfig, motion } from 'motion/react';
 import { ThemeProvider } from './context/ThemeContext';
 import { OrderProvider } from './context/OrderContext';
 import { useMotionCapabilities } from './hooks/useMotionCapabilities';
@@ -21,19 +21,51 @@ import { ContactPage } from './pages/ContactPage';
 import { CustomPage } from './pages/CustomPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
+interface RouteErrorBoundaryProps {
+  resetKey: string;
+  children: React.ReactNode;
+}
+
+interface RouteErrorBoundaryState {
+  hasError: boolean;
+}
+
+class RouteErrorBoundary extends React.Component<
+  RouteErrorBoundaryProps,
+  RouteErrorBoundaryState
+> {
+  state: RouteErrorBoundaryState = { hasError: false };
+
+  static getDerivedStateFromError(): RouteErrorBoundaryState {
+    return { hasError: true };
+  }
+
+  componentDidUpdate(prevProps: RouteErrorBoundaryProps) {
+    if (prevProps.resetKey !== this.props.resetKey && this.state.hasError) {
+      this.setState({ hasError: false });
+    }
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <NotFoundPage />;
+    }
+    return this.props.children;
+  }
+}
+
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
+    <RouteErrorBoundary resetKey={location.pathname}>
       <motion.div
         key={location.pathname}
         initial={{ opacity: 0, y: 6 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -6 }}
         transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
       >
-        <Routes location={location}>
+        <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
@@ -46,7 +78,7 @@ function AnimatedRoutes() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </motion.div>
-    </AnimatePresence>
+    </RouteErrorBoundary>
   );
 }
 

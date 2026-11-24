@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowRight, Eye, Target } from 'lucide-react';
+import { ArrowRight, Compass, Eye, Lightbulb, PenTool, ShieldCheck, Target } from 'lucide-react';
 import { aboutContent } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
@@ -124,27 +124,31 @@ export function AboutPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {aboutContent.values.map((val, idx) => (
-                <motion.div
-                  key={val.title}
-                  initial={{ opacity: 0, y: 14 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.4, delay: idx * 0.05 }}
-                  className="space-y-2"
-                >
-                  <span className="font-mono-num text-xs font-semibold text-blue-600 dark:text-blue-400">
-                    0{idx + 1}
-                  </span>
-                  <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
-                    {val.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                    {val.description}
-                  </p>
-                </motion.div>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              {aboutContent.values.map((val, idx) => {
+                const ValueIcon =
+                  [Compass, PenTool, Lightbulb, ShieldCheck][idx % 4];
+                return (
+                  <motion.div
+                    key={val.title}
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.4, delay: idx * 0.05 }}
+                    className="group rounded-2xl border border-slate-200/80 dark:border-slate-800/80 bg-white/85 dark:bg-[#060B18]/80 p-5 sm:p-6 space-y-3 hover:border-blue-500/45 hover:shadow-md transition-all duration-200"
+                  >
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                      <ValueIcon className="w-5 h-5" aria-hidden="true" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
+                      {val.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                      {val.description}
+                    </p>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -175,8 +179,8 @@ export function AboutPage() {
                 transition={{ duration: 0.45, delay: idx * 0.04, ease: [0.16, 1, 0.3, 1] }}
                 className="flex"
               >
-                <TiltCard maxTilt={3.5} className="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3">
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
+                <TiltCard maxTilt={3.5} className="group w-full rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3.5 hover:border-blue-500/45 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/25 transition-all duration-200">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
                     <DynamicIcon name={item.icon} className="w-5 h-5" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">

@@ -15,7 +15,9 @@ export function ProjectsSection({ showHeading = false }: ProjectsSectionProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const categories = useMemo(() => {
-    const unique = Array.from(new Set(projectsList.map((p) => p.category)));
+    const unique = Array.from(
+      new Set(projectsList.map((p) => p.category).filter((c): c is string => Boolean(c)))
+    );
     return ['All', ...unique];
   }, []);
 
@@ -89,7 +91,7 @@ export function ProjectsSection({ showHeading = false }: ProjectsSectionProps) {
                   transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                   className="flex"
                 >
-                  <TiltCard className="w-full flex flex-col justify-between overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm transition-colors hover:border-blue-500/50">
+                  <TiltCard className="w-full flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm transition-all duration-200 hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30">
                     <article className="group flex flex-col justify-between h-full">
                       <div>
                         <Link
@@ -104,13 +106,17 @@ export function ProjectsSection({ showHeading = false }: ProjectsSectionProps) {
                         </Link>
 
                         <div className="p-6 space-y-3">
-                          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                            <span className="font-medium text-blue-600 dark:text-blue-400">
-                              {project.category}
-                            </span>
-                            <span aria-hidden="true">·</span>
-                            <span>{project.clientType}</span>
-                          </div>
+                          {(project.category || project.clientType) && (
+                            <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                              {project.category && (
+                                <span className="font-medium text-blue-600 dark:text-blue-400">
+                                  {project.category}
+                                </span>
+                              )}
+                              {project.category && project.clientType && <span aria-hidden="true">·</span>}
+                              {project.clientType && <span>{project.clientType}</span>}
+                            </div>
+                          )}
 
                           <h3 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
                             <Link

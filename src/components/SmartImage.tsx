@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Image as ImageIcon } from 'lucide-react';
 import { resolveAssetUrl } from '../lib/assets';
 
@@ -20,6 +20,11 @@ export function SmartImage({
   const [hasError, setHasError] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const resolved = resolveAssetUrl(src);
+
+  useEffect(() => {
+    setHasError(false);
+    setLoaded(false);
+  }, [resolved]);
 
   if (!resolved || hasError) {
     return (

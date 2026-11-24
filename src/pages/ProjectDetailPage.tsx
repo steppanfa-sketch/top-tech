@@ -45,10 +45,14 @@ export function ProjectDetailPage() {
   }
 
   const hasExternalUrl = isValidExternalUrl(project.projectUrl);
+  const deliverables = Array.isArray(project.deliverables) ? project.deliverables : [];
+  const hasChallenge = Boolean(project.challenge?.trim());
+  const hasSolution = Boolean(project.solution?.trim());
 
   const handleStartSimilar = () => {
-    setPreselectedService(project.category);
-    navigate('/contact', { state: { service: project.category } });
+    const serviceTopic = project.category || 'Website Development';
+    setPreselectedService(serviceTopic);
+    navigate('/contact', { state: { service: serviceTopic } });
   };
 
   return (
@@ -70,19 +74,25 @@ export function ProjectDetailPage() {
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
           className="space-y-6"
         >
-          <div className="flex flex-wrap items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
-            <span className="font-medium text-blue-600 dark:text-blue-400">{project.category}</span>
-            <span aria-hidden="true">·</span>
-            <span>{project.clientType}</span>
-          </div>
+          {(project.category || project.clientType) && (
+            <div className="flex flex-wrap items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+              {project.category && (
+                <span className="font-medium text-blue-600 dark:text-blue-400">{project.category}</span>
+              )}
+              {project.category && project.clientType && <span aria-hidden="true">·</span>}
+              {project.clientType && <span>{project.clientType}</span>}
+            </div>
+          )}
 
           <h1 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-slate-950 dark:text-white text-balance">
             {project.title}
           </h1>
 
-          <p className="text-base sm:text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl">
-            {project.summary}
-          </p>
+          {project.summary && (
+            <p className="text-base sm:text-lg leading-relaxed text-slate-600 dark:text-slate-300 max-w-3xl">
+              {project.summary}
+            </p>
+          )}
 
           <div className="flex flex-wrap items-center gap-3">
             <MagneticButton>
@@ -121,39 +131,50 @@ export function ProjectDetailPage() {
 
         {project.videoUrl && <VideoEmbed url={project.videoUrl} title={project.title} />}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
-            <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-              The Challenge
-            </h2>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
-              {project.challenge}
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
-            <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-              Our Approach &amp; Solution
-            </h2>
-            <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
-              {project.solution}
-            </p>
-          </div>
-        </div>
-
-        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-5">
-          <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-            Key Deliverables
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {project.deliverables.map((item) => (
-              <div key={item} className="flex items-start gap-3 text-sm sm:text-base text-slate-700 dark:text-slate-200">
-                <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-                <span>{item}</span>
+        {(hasChallenge || hasSolution) && (
+          <div className={`grid grid-cols-1 ${hasChallenge && hasSolution ? 'md:grid-cols-2' : ''} gap-6`}>
+            {hasChallenge && (
+              <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
+                <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
+                  The Challenge
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
+                  {project.challenge}
+                </p>
               </div>
-            ))}
+            )}
+
+            {hasSolution && (
+              <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
+                <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
+                  Our Approach &amp; Solution
+                </h2>
+                <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
+                  {project.solution}
+                </p>
+              </div>
+            )}
           </div>
-        </div>
+        )}
+
+        {deliverables.length > 0 && (
+          <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-5">
+            <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
+              Key Deliverables
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {deliverables.map((item, idx) => (
+                <div
+                  key={`${item}-${idx}`}
+                  className="flex items-start gap-3 text-sm sm:text-base text-slate-700 dark:text-slate-200"
+                >
+                  <CheckCircle2 className="w-5 h-5 mt-0.5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export function Footer() {
 
   return (
     <footer className="relative z-10 border-t border-slate-200 dark:border-slate-800/80 bg-white/90 dark:bg-[#040813]/90 backdrop-blur-sm text-slate-600 dark:text-slate-400">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-24 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-24 sm:pt-16 sm:pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-4">
@@ -127,17 +127,17 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Legal Row */}
-        <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs">
+        {/* Bottom Legal Row — cleared from floating WhatsApp trigger across all viewports */}
+        <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800/80 pr-16 sm:pr-56 lg:pr-52 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center justify-between gap-x-6 gap-y-3 text-xs">
           <p>
             &copy; {currentYear} {siteConfig.copyrightHolder}. All rights reserved.
           </p>
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {navigationConfig.footerLegalLinks.map((item) => (
               <Link
                 key={item.target}
                 to={item.target}
-                className="hover:text-slate-950 dark:hover:text-white transition-colors"
+                className="inline-flex min-h-[36px] items-center hover:text-slate-950 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
               >
                 {item.label}
               </Link>

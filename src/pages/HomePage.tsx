@@ -125,16 +125,11 @@ export function HomePage() {
                 transition={{ duration: 0.45, delay: idx * 0.05 }}
                 className="flex"
               >
-                <TiltCard className="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 hover:border-blue-500/50 transition-colors">
+                <TiltCard className="group w-full rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30 transition-all duration-200">
                   <article className="flex flex-col justify-between h-full space-y-5">
                     <div className="space-y-4">
-                      <div className="flex items-center justify-between">
-                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
-                          <DynamicIcon name={service.icon} className="w-5 h-5" />
-                        </div>
-                        <span className="font-mono-num text-xs text-slate-400 dark:text-slate-500">
-                          {service.code}.
-                        </span>
+                      <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
+                        <DynamicIcon name={service.icon} className="w-5 h-5" />
                       </div>
 
                       <div className="space-y-2">
@@ -207,7 +202,7 @@ export function HomePage() {
                 transition={{ duration: 0.45, delay: idx * 0.05 }}
                 className="flex"
               >
-                <TiltCard className="w-full overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm hover:border-blue-500/50 transition-colors">
+                <TiltCard className="w-full overflow-hidden rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm hover:border-blue-500/50 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/30 transition-all duration-200">
                   <article className="group flex flex-col justify-between h-full">
                     <div>
                       <Link
@@ -292,8 +287,8 @@ export function HomePage() {
                 transition={{ duration: 0.4, delay: idx * 0.04 }}
                 className="flex"
               >
-                <TiltCard maxTilt={3.5} className="w-full rounded-xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3">
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400">
+                <TiltCard maxTilt={3.5} className="group w-full rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 space-y-3.5 hover:border-blue-500/45 hover:shadow-lg hover:shadow-slate-900/5 dark:hover:shadow-blue-950/25 transition-all duration-200">
+                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-blue-500/15 dark:border-blue-400/20 bg-blue-600/10 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400 transition-transform duration-200 group-hover:scale-105">
                     <DynamicIcon name={item.icon} className="w-5 h-5" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-slate-950 dark:text-white">
@@ -342,7 +337,7 @@ export function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.4, delay: idx * 0.04 }}
-                className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-5 space-y-2"
+                className="rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-slate-50/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-5 space-y-2 hover:border-blue-500/45 hover:shadow-md transition-all duration-200"
               >
                 <span className="font-mono-num text-xs font-semibold text-blue-600 dark:text-blue-400">
                   {step.stepNumber}
