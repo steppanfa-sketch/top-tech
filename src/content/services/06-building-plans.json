@@ -80,23 +80,28 @@
   "processSteps": [
     {
       "step": "01",
-      "title": "Plot Details & Program Brief",
-      "description": "We review your land dimensions, room list, story count, and architectural style preferences."
+      "title": "Initial Consultation",
+      "description": "We discuss your building idea, intended use, preferred design, site information and space requirements."
     },
     {
       "step": "02",
-      "title": "Preliminary Floor Plan Concept",
-      "description": "We draft initial spatial zoning and room flow options for your feedback."
+      "title": "Requirements & Planning",
+      "description": "We organise your requirements and identify the spaces, room arrangements and design elements needed for the proposed layout."
     },
     {
       "step": "03",
-      "title": "Detailed Drafting & Elevations",
-      "description": "We refine exact dimensions, openings, stairs, and exterior elevation views."
+      "title": "Concept Development",
+      "description": "We develop the agreed building layout concepts and present the proposed arrangement for your review."
     },
     {
       "step": "04",
-      "title": "Final Drawing Package Delivery",
-      "description": "You receive scaled PDF drawing sheets and editable CAD files for project coordination."
+      "title": "Review & Refinement",
+      "description": "We review your feedback and make agreed adjustments to improve the layout and overall presentation."
+    },
+    {
+      "step": "05",
+      "title": "Final Presentation & Handover",
+      "description": "We deliver the agreed digital design files and explain the next steps, including any required review by qualified building professionals."
     }
   ],
   "faqs": [
