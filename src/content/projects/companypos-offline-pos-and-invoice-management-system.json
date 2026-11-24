@@ -5,6 +5,8 @@
   "title": "CompanyPOS – Offline POS & Invoice Management System",
   "category": "Web Applications",
   "clientType": "Retail & Business Operations · Independent Software Development",
+  "summary": "CompanyPOS is an offline point-of-sale and invoice management system that brings sales, inventory, customer records, invoicing and payment management together in one integrated Windows desktop application.",
   "challenge": "Many businesses need a reliable way to manage sales, inventory, invoices, customers and payments without depending on a continuous internet connection. The project aimed to bring these essential operations together in one organised, locally operated business management system while keeping business data stored on the computer.",
+  "solution": "TOP TECH developed CompanyPOS as an integrated offline Windows desktop application that brings essential business operations into one system. It combines point-of-sale transactions, product and inventory management, customer records, invoicing, discounts, tax calculations and payment tracking.\n\nThe system supports multiple payment methods, including cash, mobile money, bank transfers, cards and credit, with split-payment support. It also uses a local SQLite database to store business information on the computer, allowing core operations to function without relying on an internet connection.\n\nCompanyPOS is designed to give businesses a centralised, practical tool for handling everyday sales and administrative activities.",
   "featured": true
 }
