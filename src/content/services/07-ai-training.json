@@ -106,16 +106,24 @@
   ],
   "faqs": [
     {
-      "question": "Do participants need a technical or coding background?",
-      "answer": "No. Our core practical AI and prompt engineering tracks are designed for non-technical professionals, founders, students, and teams, with optional technical tracks for developers."
+      "question": "What is artificial intelligence (AI)?",
+      "answer": "Artificial intelligence is technology that enables computer systems to perform tasks that typically require human intelligence, such as understanding language, analysing information, recognising patterns and generating content."
     },
     {
-      "question": "Can training be customized for our company department?",
-      "answer": "Yes. We tailor examples and lab exercises directly around your team's real documents, workflows, and daily tasks."
+      "question": "Who can benefit from TOP TECH AI training?",
+      "answer": "Our training is suitable for beginners, students, entrepreneurs, professionals, business owners and organisations interested in understanding and applying AI."
     },
     {
-      "question": "Are sessions available online as well as in person?",
-      "answer": "Yes. We deliver live interactive online workshops globally as well as on-site team sessions by arrangement."
+      "question": "Do I need previous experience with AI?",
+      "answer": "No. Our training can start with the fundamentals and gradually introduce practical AI tools and techniques based on your experience and learning goals."
+    },
+    {
+      "question": "Which AI tools will I learn to use?",
+      "answer": "Training may cover tools for writing, research, content creation, productivity and business applications. The specific tools depend on your training programme and objectives."
+    },
+    {
+      "question": "Is the AI training practical?",
+      "answer": "Yes. We combine explanations, demonstrations and guided exercises to help participants understand how AI tools can be applied to real-world tasks."
     }
   ],
   "relatedCategories": [
