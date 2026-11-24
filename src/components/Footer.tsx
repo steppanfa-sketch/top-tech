@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Globe, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import { Github, Globe, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import { contactConfig, navigationConfig, servicesList, siteConfig } from '../lib/cms';
 import { isValidExternalUrl } from '../lib/assets';
 import { BrandLogo } from './BrandLogo';
@@ -8,7 +8,7 @@ function SocialIcon({ platform }: { platform: string }) {
   const key = platform.toLowerCase();
   if (key.includes('linkedin')) return <Linkedin className="w-4 h-4" aria-hidden="true" />;
   if (key.includes('github')) return <Github className="w-4 h-4" aria-hidden="true" />;
-  if (key.includes('x') || key.includes('twitter')) return <Twitter className="w-4 h-4" aria-hidden="true" />;
+  if (key.includes('x') || key.includes('twitter')) return <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.83L0 1.153h7.594l5.243 6.932zm-1.29 19.49h2.039L6.486 3.24H4.298z" /></svg>;
   if (key.includes('instagram')) return <Instagram className="w-4 h-4" aria-hidden="true" />;
   return <Globe className="w-4 h-4" aria-hidden="true" />;
 }
