@@ -663,7 +663,8 @@ content:
     label: Portfolio Projects (/projects/:slug)
     type: collection
     path: src/content/projects
-    extension: json
+    format: json
+    filename: "{primary}.json"
     view:
       fields: [order, title, category, published, featured]
       primary: title
