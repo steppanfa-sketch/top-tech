@@ -45,20 +45,36 @@
   ],
   "features": [
     {
-      "title": "Structured Prompt Frameworks",
-      "description": "Master context framing, role assignment, constraints, structured output formats, and iterative refinement."
+      "title": "Introduction to AI",
+      "description": "Learn the fundamentals of artificial intelligence, common AI concepts and how AI systems are used in different industries."
     },
     {
-      "title": "Tool Ecosystem Walkthroughs",
-      "description": "Hands-on practice with modern text, research, spreadsheet, coding, and visual AI assistants."
+      "title": "AI Tools & Platforms",
+      "description": "Explore popular AI tools and understand their capabilities, uses and limitations."
     },
     {
-      "title": "Business Workflow Labs",
-      "description": "Drafting SOPs, summarizing reports, organizing meeting notes, and accelerating customer communications."
+      "title": "Prompt Writing Techniques",
+      "description": "Learn how to write clear and effective instructions to get more useful results from AI tools."
     },
     {
-      "title": "Custom Team Playbooks",
-      "description": "Take-home prompt libraries and checklists documented specifically for your organization."
+      "title": "AI for Content Creation",
+      "description": "Discover how AI can assist with generating ideas, drafting content and developing creative materials."
+    },
+    {
+      "title": "AI for Research & Learning",
+      "description": "Explore how AI tools can support research, summarisation, explanations and learning activities while encouraging fact-checking."
+    },
+    {
+      "title": "AI for Business Productivity",
+      "description": "Understand how AI can assist with planning, organising information and improving suitable business workflows."
+    },
+    {
+      "title": "Responsible AI Practices",
+      "description": "Learn about privacy, data protection, accuracy, bias, ethical considerations and human oversight when using AI."
+    },
+    {
+      "title": "Practical Training Exercises",
+      "description": "Apply what you learn through guided demonstrations and practical exercises based on real-world scenarios."
     }
   ],
   "processSteps": [
