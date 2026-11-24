@@ -29,14 +29,16 @@
     },
     {
       "stepNumber": "03",
-      "title": "Design",
-      "description": "Creating the visual experience, interface systems, brand assets, or architectural floor plans with clarity and intentional hierarchy.",
+      "title": "Design & Development",
+      "description": "We bring the approved plan to life through thoughtful design and development. Our focus is on creating solutions that combine functionality, usability and visual appeal while aligning with your project requirements.",
       "activities": [
-        "Wireframes, visual prototypes, or spatial zoning concepts",
-        "Typography, color system, and responsive layout design",
-        "Structured client review and refinement cycle"
+        "Creating layouts and design concepts.",
+        "Creating layouts and design concepts.",
+        "Building responsive user interfaces.",
+        "Integrating required tools and services.",
+        "Sharing progress for client feedback."
       ],
-      "deliverable": "Approved Visual Design System or CAD Concept"
+      "deliverable": "A working project built according to the agreed requirements and design direction."
     },
     {
       "stepNumber": "04",
