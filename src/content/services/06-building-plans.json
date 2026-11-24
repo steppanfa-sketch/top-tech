@@ -106,16 +106,24 @@
   ],
   "faqs": [
     {
-      "question": "What information do you need to start designing a building plan?",
-      "answer": "Share your plot dimensions (or survey sketch), desired number of rooms/floors, intended use (residential, commercial, or mixed-use), and any reference styles you like."
+      "question": "What types of building plans can TOP TECH help with?",
+      "answer": "We help develop building layout concepts, floor plans, room arrangements and other agreed architectural design presentations based on your project requirements."
     },
     {
-      "question": "Can plans be customized for irregular or compact plots?",
-      "answer": "Yes. Every floor plan is drafted specifically to fit your plot boundaries, access road, and daylight orientation."
+      "question": "Can I request a building plan for my residential property?",
+      "answer": "Yes. We can help develop residential layout concepts based on your preferred design, available space and intended use."
     },
     {
-      "question": "In what formats are final building drawings delivered?",
-      "answer": "Final drawing sets are delivered as scaled, high-resolution PDF sheets ready for printing alongside CAD source files where agreed."
+      "question": "Can you customise a building plan to my preferences? Answer:",
+      "answer": "Yes. We consider your preferred room arrangement, space requirements, design ideas and project goals when developing the proposed layout."
+    },
+    {
+      "question": "Will the plans be approved for construction?",
+      "answer": "Our design concepts do not automatically constitute approved construction documents. Where required, plans must be reviewed, certified and submitted for approval by appropriately qualified professionals and relevant authorities."
+    },
+    {
+      "question": "How long does it take to prepare building plans?",
+      "answer": "The timeline depends on the size of the project, design complexity, available site information and revision requirements. We discuss the scope and agree on a suitable timeline before starting."
     }
   ],
   "relatedCategories": [
