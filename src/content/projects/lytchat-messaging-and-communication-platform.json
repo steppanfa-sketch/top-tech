@@ -1,0 +1,17 @@
+{
+  "order": 2,
+  "published": true,
+  "slug": "Lytchat",
+  "title": "LYTCHAT – Messaging & Communication Platform",
+  "category": "Web Applications",
+  "clientType": "Communication & Collaboration · Independent Product Development",
+  "summary": "LYNQ is a modern messaging and communication platform designed to bring people closer through real-time conversations, user connections and media sharing. Built as a progressive web application, LYNQ delivers a responsive communication experience across supported devices.",
+  "challenge": "Digital communication platforms need to provide convenient, responsive and reliable ways for people to connect. The challenge was to create a modern messaging experience that brings conversations, user connections and media sharing together while remaining accessible across different devices.",
+  "solution": "TOP TECH developed LYNQ as a modern progressive web application focused on bringing people closer through digital communication. The platform is designed around real-time messaging, user authentication, connections and media sharing, with a responsive interface for supported devices.\n\nLYNQ uses Firebase services for authentication and communication-related backend functionality, with media storage and delivery integrations configured for the project. Its PWA architecture provides an app-like experience through supported web browsers and devices.",
+  "image": "/uploads/file_00000000431082109d67fbd3366ea5eb.png",
+  "featured": true,
+  "seo": {
+    "title": "LYNQ | Messaging & Communication Platform – TOP TECH",
+    "description": "Explore LYTCHAT, a progressive web application developed by TOP TECH to deliver a responsive messaging and communication experience across supported devices."
+  }
+}
