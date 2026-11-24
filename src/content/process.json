@@ -17,14 +17,15 @@
     },
     {
       "stepNumber": "02",
-      "title": "Planning",
-      "description": "Developing the right strategy, scope architecture, technical stack, and milestone roadmap aligned with your timeline.",
+      "title": "Planning & Strategy",
+      "description": "With your requirements understood, we develop a structured plan that defines the project's approach, key features, design direction and expected deliverables.",
       "activities": [
-        "Information architecture, sitemap, or functional specification",
-        "Technology selection and external integration mapping",
-        "Milestone schedule and deliverable acceptance criteria"
+        "Defining project scope and objectives.",
+        "Selecting suitable technologies and tools.",
+        "Planning features and functionality.",
+        "Establishing milestones and project timelines."
       ],
-      "deliverable": "Technical Architecture & Milestone Roadmap"
+      "deliverable": "A structured project plan with clear deliverables, priorities and implementation direction."
     },
     {
       "stepNumber": "03",
