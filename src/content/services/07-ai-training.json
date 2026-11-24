@@ -9,14 +9,17 @@
   "shortDescription": "We provide practical AI training that helps individuals and teams understand AI tools, improve productivity and explore new possibilities.",
   "fullDescription": "TOP TECH provides practical artificial intelligence training for individuals, entrepreneurs, professionals and businesses. We help learners understand AI concepts and explore how modern AI tools can support everyday tasks, content creation, research, business operations and problem-solving. Our training focuses on practical demonstrations, responsible use and real-world applications, helping participants build confidence and develop useful digital skills.",
   "image": "/src/assets/images/showcase_ai_training_1795280409208.jpg",
-  "buttonText": "Order Service",
+  "buttonText": "Order AI Training",
   "available": true,
   "deliverables": [
-    "Practical AI Foundations & Tool Mastery",
-    "Structured Prompt Engineering Workshops",
-    "Team Productivity & Workflow Automation",
-    "Business Use-Case Implementation Playbooks",
-    "Live Guided Sessions & Training Materials"
+    "Introduction to Artificial Intelligence",
+    "Understanding AI Tools and Platforms",
+    " for Business Productivity",
+    "AI for Content Creation",
+    " for Research and Learning",
+    " for Business Productivity",
+    "Responsible and Ethical AI Use",
+    "Practical Exercises and Learning Guidance"
   ],
   "benefits": [
     {
