@@ -68,14 +68,16 @@
     },
     {
       "stepNumber": "06",
-      "title": "Support",
-      "description": "Providing ongoing technical assistance, team training, and iterative improvements whenever your business needs to evolve.",
+      "title": "Ongoing Support & Growth",
+      "description": "Our relationship doesn't end at delivery. We provide ongoing guidance and technical assistance to help you get the most out of your solution. As your needs evolve, we can help with refinements, improvements and future enhancements.",
       "activities": [
-        "Post-launch monitoring and minor refinement support",
-        "Content management guidance and AI workflow coaching",
-        "Planned feature expansions as your business scales"
+        "Providing post-launch guidance and technical assistance.",
+        "Offering content management guidance where applicable.",
+        "Helping users understand and use delivered solutions.",
+        "Identifying opportunities for future improvements.",
+        "Supporting planned feature enhancements as your needs grow."
       ],
-      "deliverable": "Continuous Support & Growth Readiness"
+      "deliverable": "Ongoing Guidance, Technical Support & Growth Opportunities"
     }
   ],
   "collaborationNoteTitle": "Transparent Collaboration at Every Milestone",
