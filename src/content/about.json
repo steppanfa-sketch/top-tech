@@ -39,38 +39,38 @@
       "description": "We believe in continuous learning, embracing opportunities and using technology to help individuals and businesses move forward."
     }
   ],
-  "reasonsHeading": "Why Work With TOP TECH",
-  "reasonsSubtitle": "Six commitments that define every website, application, design system, building plan, and training session we deliver.",
+  "reasonsHeading": "Why Choose TOP TECH?",
+  "reasonsSubtitle": "We combine technology, creativity and practical thinking to deliver digital solutions built around your goals. Our focus is on understanding your needs, communicating clearly and creating value through every project.",
   "reasons": [
     {
-      "title": "Innovative Solutions",
-      "description": "Practical architectures and modern workflows tailored to solve real operational and commercial challenges.",
-      "icon": "Lightbulb"
+      "title": "Client-Focused Approach",
+      "description": "We take time to understand your goals, listen to your ideas and shape solutions around your specific requirements.",
+      "icon": "users"
     },
     {
-      "title": "Creative Thinking",
-      "description": "Distinctive visual identities, clean interfaces, and spatial designs crafted to stand apart from generic templates.",
-      "icon": "Sparkles"
+      "title": "Innovation & Creativity",
+      "description": "We combine fresh ideas, thoughtful design and modern technology to create solutions that stand out and serve a purpose.",
+      "icon": "lightbulb"
     },
     {
-      "title": "Quality Delivery",
-      "description": "Thorough cross-device testing, clean documentation, and attention to typography, speed, and usability.",
-      "icon": "ShieldCheck"
+      "title": "Practical Solutions",
+      "description": "We focus on building useful digital products and services that address real challenges and support everyday needs.",
+      "icon": "target"
     },
     {
-      "title": "Modern Technologies",
-      "description": "Built on proven web, mobile, CAD, and artificial intelligence toolchains chosen for longevity and maintainability.",
-      "icon": "Cpu"
+      "title": "Diverse Digital Expertise",
+      "description": "From websites and applications to graphic design, building plan concepts and AI training, we bring different digital services together under one brand.",
+      "icon": "layers"
     },
     {
-      "title": "Customer-Focused Service",
-      "description": "Direct collaboration, transparent project scopes, and solutions structured around your team's actual workflows.",
-      "icon": "Users"
+      "title": "Clear Communication",
+      "description": "We value transparency, collaboration and keeping clients informed throughout the project journey.",
+      "icon": "messages-square"
     },
     {
-      "title": "Continuous Support",
-      "description": "Reliable post-launch guidance, updates, and practical training so your team stays confident after handover.",
-      "icon": "Headphones"
+      "title": "Commitment to Growth",
+      "description": "We believe every project is an opportunity to create value, develop new possibilities and help our clients move forward.",
+      "icon": "trending-up"
     }
   ],
   "seo": {
