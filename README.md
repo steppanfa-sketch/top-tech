@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./file_1795300619209.png" alt="TOP TECH Logo" width="180">
+</p>
+
 TOP TECH
 
 Technology. Creativity. Innovation.
