@@ -117,10 +117,10 @@ export function HeroSection() {
 
               <div className="relative z-10 border-t border-slate-800/90 bg-[#060E21]/95 px-4 py-3 sm:px-5 sm:py-3.5 flex flex-wrap items-center justify-between gap-x-4 gap-y-1.5 text-xs text-slate-200">
                 <span className="leading-relaxed">
-                  Web · E-Commerce · Apps · Design · Building Plans · AI
+                  {hero.visualCaption}
                 </span>
                 <span className="font-mono-num text-blue-300 whitespace-nowrap">
-                  TOP TECH Studio
+                  {hero.visualLabel}
                 </span>
               </div>
             </div>
@@ -141,10 +141,10 @@ export function HeroSection() {
             <Layers className="w-5 h-5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
             <div>
               <p className="font-display text-base sm:text-lg font-bold text-slate-950 dark:text-white">
-                <AnimatedCounter target={servicesList.length} /> Service Divisions
+                <AnimatedCounter target={servicesList.length} /> {hero.capabilityCards.services.title}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Dedicated pages &amp; configurable ordering
+                {hero.capabilityCards.services.description}
               </p>
             </div>
           </Link>
@@ -156,10 +156,10 @@ export function HeroSection() {
             <Compass className="w-5 h-5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
             <div>
               <p className="font-display text-base sm:text-lg font-bold text-slate-950 dark:text-white">
-                <AnimatedCounter target={processContent.steps.length} /> Delivery Stages
+                <AnimatedCounter target={processContent.steps.length} /> {hero.capabilityCards.process.title}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Structured from discovery to ongoing support
+                {hero.capabilityCards.process.description}
               </p>
             </div>
           </Link>
@@ -170,10 +170,10 @@ export function HeroSection() {
           >
             <div>
               <p className="font-display text-base sm:text-lg font-bold text-slate-950 dark:text-white">
-                Direct Ordering &amp; Custom Quotes
+                {hero.capabilityCards.ordering.title}
               </p>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                Flexible workflows for individuals &amp; businesses
+                {hero.capabilityCards.ordering.description}
               </p>
             </div>
             <ArrowRight className="w-4 h-4 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />

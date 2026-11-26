@@ -57,6 +57,13 @@ export interface HomeContent {
     secondaryCtaLabel: string;
     heroImage: string;
     heroImageAlt: string;
+    visualCaption: string;
+    visualLabel: string;
+    capabilityCards: {
+      services: { title: string; description: string };
+      process: { title: string; description: string };
+      ordering: { title: string; description: string };
+    };
   };
   introSection: {
     kicker: string;
@@ -70,12 +77,14 @@ export interface HomeContent {
     subtitle: string;
     featuredSlugs: string[];
     ctaLabel: string;
+    cardButtonLabel: string;
   };
   selectedProjectsSection: {
     kicker: string;
     headline: string;
     subtitle: string;
     ctaLabel: string;
+    cardButtonLabel: string;
   };
   whyChooseSection: {
     kicker: string;

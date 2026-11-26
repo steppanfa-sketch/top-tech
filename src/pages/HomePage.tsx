@@ -152,7 +152,7 @@ export function HomePage() {
                         to={`/services/${service.slug}`}
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                       >
-                        <span>Explore Service</span>
+                        <span>{homeContent.featuredServicesSection.cardButtonLabel}</span>
                         <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                       </Link>
                       <OrderActionButton service={service} className="w-full min-h-[40px]" />
@@ -253,7 +253,7 @@ export function HomePage() {
                         to={`/projects/${project.slug}`}
                         className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
                       >
-                        <span>View Case Study</span>
+                        <span>{homeContent.selectedProjectsSection.cardButtonLabel}</span>
                         <ArrowRight className="w-4 h-4" aria-hidden="true" />
                       </Link>
                     </div>

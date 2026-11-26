@@ -120,6 +120,46 @@ content:
           - name: heroImageAlt
             label: Hero Image Alt Text
             type: string
+          - name: visualCaption
+            label: Hero Image Caption
+            type: string
+          - name: visualLabel
+            label: Hero Image Label
+            type: string
+          - name: capabilityCards
+            label: Hero Capability Cards
+            type: object
+            fields:
+              - name: services
+                label: Service Divisions Card
+                type: object
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: description
+                    label: Description
+                    type: text
+              - name: process
+                label: Delivery Stages Card
+                type: object
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: description
+                    label: Description
+                    type: text
+              - name: ordering
+                label: Direct Ordering Card
+                type: object
+                fields:
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: description
+                    label: Description
+                    type: text
       - name: introSection
         label: Brief Introduction Section
         type: object
@@ -156,6 +196,9 @@ content:
           - name: ctaLabel
             label: View More Button Text
             type: string
+          - name: cardButtonLabel
+            label: Service Card Button Text
+            type: string
       - name: selectedProjectsSection
         label: Selected Projects Section
         type: object
@@ -171,6 +214,9 @@ content:
             type: text
           - name: ctaLabel
             label: Explore Portfolio Button Text
+            type: string
+          - name: cardButtonLabel
+            label: Project Card Button Text
             type: string
       - name: whyChooseSection
         label: Reasons to Choose Us (Homepage)

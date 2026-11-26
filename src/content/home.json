@@ -1,83 +1,101 @@
 {
-  "hero": {
-    "kicker": "TECHNOLOGY. CREATIVITY. INNOVATION.",
-    "headline": "We Turn Your Ideas Into Powerful Digital Experiences.",
-    "supportingText": "From stunning websites and powerful applications to creative designs and practical AI solutions, TOP TECH helps individuals and businesses build, innovate and grow.",
-    "primaryCtaLabel": "Explore Our Services",
-    "secondaryCtaLabel": "Start a Project",
-    "heroImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80",
-    "heroImageAlt": "Technology team collaborating with laptops in a modern digital studio"
-  },
-  "introSection": {
-    "kicker": "WHO WE ARE",
-    "headline": "Technology That Turns Ambition Into Progress.",
-    "summary": "TOP TECH is a full-service technology and digital solutions company serving individuals and businesses across Africa with modern websites, e-commerce platforms, web and mobile applications, graphic design, building plan concepts, and practical AI training.",
-    "ctaLabel": "Discover TOP TECH"
-  },
-  "featuredServicesSection": {
-    "kicker": "WHAT WE DO",
-    "headline": "Digital Solutions Built Around Your Vision.",
-    "subtitle": "From websites and applications to creative design and practical technology training, explore the services that help bring your ideas to life.",
-    "featuredSlugs": [
-      "website-development",
-      "ecommerce-development",
-      "web-applications",
-      "mobile-applications",
-      "graphic-design",
-      "building-plans",
-      "ai-training"
-    ],
-    "ctaLabel": "Explore All Services"
-  },
-  "selectedProjectsSection": {
-    "kicker": "OUR WORK",
-    "headline": "Ideas Transformed Into Digital Experiences.",
-    "subtitle": "Explore a selection of projects that showcase our creativity, technical capabilities and commitment to delivering meaningful digital solutions.",
-    "ctaLabel": "Explore Our Portfolio"
-  },
-  "whyChooseSection": {
-    "kicker": "WHY TOP TECH",
-    "headline": "More Than Technology. A Partner in Your Progress.",
-    "subtitle": "We bring creativity, clear communication and practical technology together to deliver solutions that make a difference.",
-    "ctaLabel": "Why Work With Us",
-    "items": [
-      {
-        "title": "Clear Communication",
-        "description": "We keep clients informed and make project requirements, timelines and next steps easy to understand.",
-        "icon": "messages-square"
-      },
-      {
-        "title": "Purpose-Driven Solutions",
-        "description": "We focus on practical solutions designed around each client's goals and real needs.",
-        "icon": "target"
-      },
-      {
-        "title": "Creative Thinking",
-        "description": "We combine thoughtful design and technology to create useful, engaging digital experiences.",
-        "icon": "lightbulb"
-      },
-      {
-        "title": "Guidance and Support",
-        "description": "We provide clear guidance to help clients understand and make the most of their digital solutions.",
-        "icon": "headset"
-      }
-    ]
-  },
-  "processOverviewSection": {
-    "kicker": "HOW WE WORK",
-    "headline": "A Clear Process. Powerful Results.",
-    "subtitle": "Every successful project starts with understanding your vision. We follow a clear, collaborative process to turn your ideas into practical digital solutions.",
-    "ctaLabel": "Discover Our Process"
-  },
-  "ctaSection": {
-    "kicker": "LET'S BUILD SOMETHING",
-    "headline": "Your Next Big Idea Starts Here.",
-    "description": "Have an idea, a business goal or a project in mind? Let's work together to turn your vision into a digital solution that moves you forward.",
-    "primaryButtonLabel": "Start a Project",
-    "secondaryButtonLabel": "Explore Our Services"
-  },
-  "seo": {
-    "title": "TOP TECH | Digital Solutions, Websites, Apps & Design",
-    "description": "TOP TECH delivers website development, e-commerce, web and mobile applications, graphic design, architectural planning and practical AI training for individuals and businesses across Africa."
-  }
+    "hero":  {
+                 "kicker":  "TECHNOLOGY. CREATIVITY. INNOVATION.",
+                 "headline":  "We Turn Your Ideas Into Powerful Digital Experiences.",
+                 "supportingText":  "From stunning websites and powerful applications to creative designs and practical AI solutions, TOP TECH helps individuals and businesses build, innovate and grow.",
+                 "primaryCtaLabel":  "Explore Our Services",
+                 "secondaryCtaLabel":  "Start a Project",
+                 "heroImage":  "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format\u0026fit=crop\u0026w=1600\u0026q=80",
+                 "heroImageAlt":  "Technology team collaborating with laptops in a modern digital studio",
+                 "visualCaption":  "Web - E-Commerce - Apps - Design - Building Plans - AI",
+                 "visualLabel":  "TOP TECH Studio",
+                 "capabilityCards":  {
+                                         "ordering":  {
+                                                          "description":  "Flexible workflows for individuals \u0026 businesses",
+                                                          "title":  "Direct Ordering \u0026 Custom Quotes"
+                                                      },
+                                         "services":  {
+                                                          "description":  "Dedicated pages \u0026 configurable ordering",
+                                                          "title":  "Service Divisions"
+                                                      },
+                                         "process":  {
+                                                         "description":  "Structured from discovery to ongoing support",
+                                                         "title":  "Delivery Stages"
+                                                     }
+                                     }
+             },
+    "introSection":  {
+                         "kicker":  "WHO WE ARE",
+                         "headline":  "Technology That Turns Ambition Into Progress.",
+                         "summary":  "TOP TECH is a full-service technology and digital solutions company serving individuals and businesses across Africa with modern websites, e-commerce platforms, web and mobile applications, graphic design, building plan concepts, and practical AI training.",
+                         "ctaLabel":  "Discover TOP TECH"
+                     },
+    "featuredServicesSection":  {
+                                    "kicker":  "WHAT WE DO",
+                                    "headline":  "Digital Solutions Built Around Your Vision.",
+                                    "subtitle":  "From websites and applications to creative design and practical technology training, explore the services that help bring your ideas to life.",
+                                    "featuredSlugs":  [
+                                                          "website-development",
+                                                          "ecommerce-development",
+                                                          "web-applications",
+                                                          "mobile-applications",
+                                                          "graphic-design",
+                                                          "building-plans",
+                                                          "ai-training"
+                                                      ],
+                                    "ctaLabel":  "Explore All Services",
+                                    "cardButtonLabel":  "Explore Service"
+                                },
+    "selectedProjectsSection":  {
+                                    "kicker":  "OUR WORK",
+                                    "headline":  "Ideas Transformed Into Digital Experiences.",
+                                    "subtitle":  "Explore a selection of projects that showcase our creativity, technical capabilities and commitment to delivering meaningful digital solutions.",
+                                    "ctaLabel":  "Explore Our Portfolio",
+                                    "cardButtonLabel":  "View Case Study"
+                                },
+    "whyChooseSection":  {
+                             "kicker":  "WHY TOP TECH",
+                             "headline":  "More Than Technology. A Partner in Your Progress.",
+                             "subtitle":  "We bring creativity, clear communication and practical technology together to deliver solutions that make a difference.",
+                             "ctaLabel":  "Why Work With Us",
+                             "items":  [
+                                           {
+                                               "title":  "Clear Communication",
+                                               "description":  "We keep clients informed and make project requirements, timelines and next steps easy to understand.",
+                                               "icon":  "messages-square"
+                                           },
+                                           {
+                                               "title":  "Purpose-Driven Solutions",
+                                               "description":  "We focus on practical solutions designed around each client\u0027s goals and real needs.",
+                                               "icon":  "target"
+                                           },
+                                           {
+                                               "title":  "Creative Thinking",
+                                               "description":  "We combine thoughtful design and technology to create useful, engaging digital experiences.",
+                                               "icon":  "lightbulb"
+                                           },
+                                           {
+                                               "title":  "Guidance and Support",
+                                               "description":  "We provide clear guidance to help clients understand and make the most of their digital solutions.",
+                                               "icon":  "headset"
+                                           }
+                                       ]
+                         },
+    "processOverviewSection":  {
+                                   "kicker":  "HOW WE WORK",
+                                   "headline":  "A Clear Process. Powerful Results.",
+                                   "subtitle":  "Every successful project starts with understanding your vision. We follow a clear, collaborative process to turn your ideas into practical digital solutions.",
+                                   "ctaLabel":  "Discover Our Process"
+                               },
+    "ctaSection":  {
+                       "kicker":  "LET\u0027S BUILD SOMETHING",
+                       "headline":  "Your Next Big Idea Starts Here.",
+                       "description":  "Have an idea, a business goal or a project in mind? Let\u0027s work together to turn your vision into a digital solution that moves you forward.",
+                       "primaryButtonLabel":  "Start a Project",
+                       "secondaryButtonLabel":  "Explore Our Services"
+                   },
+    "seo":  {
+                "title":  "TOP TECH | Digital Solutions, Websites, Apps \u0026 Design",
+                "description":  "TOP TECH delivers website development, e-commerce, web and mobile applications, graphic design, architectural planning and practical AI training for individuals and businesses across Africa."
+            }
 }
