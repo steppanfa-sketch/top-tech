@@ -581,6 +581,527 @@ content:
             label: Social Share Image (optional)
             type: image
 
+  - name: interface_copy
+    label: Interface Copy & UI Labels
+    type: file
+    path: src/content/interface-copy.json
+    fields:
+      - name: navbar
+        label: Navbar & Accessibility Labels
+        type: object
+        fields:
+          - name: allServicesOverviewLabel
+            label: Services Dropdown Overview Link Label
+            type: string
+          - name: homeAriaLabel
+            label: Home Logo Aria Label
+            type: string
+          - name: primaryNavAriaLabel
+            label: Primary Navigation Aria Label
+            type: string
+          - name: mobileNavAriaLabel
+            label: Mobile Navigation Aria Label
+            type: string
+          - name: toggleServicesAriaLabel
+            label: Toggle Services Menu Aria Label
+            type: string
+          - name: expandServicesAriaLabel
+            label: Expand Mobile Services Aria Label
+            type: string
+          - name: switchToLightModeLabel
+            label: Switch to Light Mode Tooltip / Aria Label
+            type: string
+          - name: switchToDarkModeLabel
+            label: Switch to Dark Mode Tooltip / Aria Label
+            type: string
+          - name: openMenuAriaLabel
+            label: Open Mobile Menu Aria Label
+            type: string
+          - name: closeMenuAriaLabel
+            label: Close Mobile Menu Aria Label
+            type: string
+      - name: footer
+        label: Footer Headings & Labels
+        type: object
+        fields:
+          - name: navigationHeading
+            label: Navigation Column Heading
+            type: string
+          - name: servicesHeading
+            label: Services Column Heading
+            type: string
+          - name: contactHeading
+            label: Contact Column Heading
+            type: string
+          - name: copyrightSuffix
+            label: Copyright Suffix
+            type: string
+          - name: socialAriaPrefix
+            label: Social Link Aria Prefix
+            type: string
+      - name: loadingScreen
+        label: Loading Screen
+        type: object
+        fields:
+          - name: ariaLabel
+            label: Loading Screen Aria Label
+            type: string
+      - name: whatsapp
+        label: Floating WhatsApp Fallbacks
+        type: object
+        fields:
+          - name: defaultButtonLabel
+            label: Default Floating Button Label
+            type: string
+          - name: defaultPrefill
+            label: Default WhatsApp Prefill Message
+            type: text
+      - name: ordering
+        label: Service Ordering & Modal Copy
+        type: object
+        fields:
+          - name: defaultOrderButtonLabel
+            label: Default Order Button Label
+            type: string
+          - name: unavailableButtonLabel
+            label: Consultation-Only Button Label
+            type: string
+          - name: modalKicker
+            label: Ordering Modal Eyebrow Label
+            type: string
+          - name: modalCloseAriaLabel
+            label: Close Dialog Aria Label
+            type: string
+          - name: modalAvailableDescription
+            label: Direct Checkout Pending Description
+            type: text
+          - name: modalUnavailableDescription
+            label: Consultation-Only Service Description
+            type: text
+          - name: modalContactButtonLabel
+            label: Contact Page Button Label
+            type: string
+          - name: modalWhatsappButtonLabel
+            label: WhatsApp Button Label
+            type: string
+          - name: modalEmailButtonLabel
+            label: Email Button Label
+            type: string
+          - name: modalWhatsappTemplate
+            label: WhatsApp Inquiry Template ({service})
+            type: text
+          - name: modalEmailSubjectTemplate
+            label: Email Subject Template ({service})
+            type: string
+          - name: modalEmailBodyTemplate
+            label: Email Body Template ({service})
+            type: text
+      - name: media
+        label: Video Embed Labels
+        type: object
+        fields:
+          - name: videoSectionTitle
+            label: Video Section Heading
+            type: string
+          - name: videoOpenSourceLabel
+            label: Open External Source Link Label
+            type: string
+          - name: videoWatchExternalLabel
+            label: Watch External Video Link Label
+            type: string
+          - name: videoIframeTitleSuffix
+            label: Video Iframe Accessible Title Suffix
+            type: string
+      - name: aboutPage
+        label: About Page UI Labels
+        type: object
+        fields:
+          - name: primaryCtaLabel
+            label: Header Primary Button Label
+            type: string
+          - name: secondaryCtaLabel
+            label: Header Secondary Button Label
+            type: string
+          - name: overviewHeading
+            label: Agency Overview Heading
+            type: string
+          - name: valuesKicker
+            label: Core Values Eyebrow Label
+            type: string
+          - name: valuesHeading
+            label: Core Values Heading
+            type: string
+          - name: reasonsKicker
+            label: Reasons Section Eyebrow Label
+            type: string
+          - name: fallbackSeoTitle
+            label: Fallback SEO Title
+            type: string
+      - name: servicesPage
+        label: Services Overview UI Labels
+        type: object
+        fields:
+          - name: cardLearnMoreLabel
+            label: Service Card Learn More Label
+            type: string
+          - name: ctaButtonLabel
+            label: Bottom CTA Button Label
+            type: string
+          - name: fallbackSeoTitle
+            label: Fallback SEO Title
+            type: string
+      - name: serviceDetailPage
+        label: Service Detail Page Labels
+        type: object
+        fields:
+          - name: backLinkLabel
+            label: Back to Services Link Label
+            type: string
+          - name: divisionBadge
+            label: Service Division Eyebrow Label
+            type: string
+          - name: customScopeButtonLabel
+            label: Discuss Custom Scope Button Label
+            type: string
+          - name: overviewKicker
+            label: Overview Eyebrow Label
+            type: string
+          - name: overviewHeadingTemplate
+            label: Overview Heading Template ({service})
+            type: string
+          - name: idealForHeading
+            label: Ideal For Heading
+            type: string
+          - name: aiCurriculumLinkLabel
+            label: AI Training Curriculum Link Label
+            type: string
+          - name: deliverablesHeading
+            label: Core Deliverables Heading
+            type: string
+          - name: benefitsKicker
+            label: Benefits Eyebrow Label
+            type: string
+          - name: benefitsHeading
+            label: Benefits Heading
+            type: string
+          - name: featuresKicker
+            label: Features Eyebrow Label
+            type: string
+          - name: featuresHeading
+            label: Features Heading
+            type: string
+          - name: processKicker
+            label: Execution Process Eyebrow Label
+            type: string
+          - name: processHeadingTemplate
+            label: Execution Process Heading Template ({service})
+            type: string
+          - name: projectsKicker
+            label: Relevant Projects Eyebrow Label
+            type: string
+          - name: projectsHeading
+            label: Relevant Projects Heading
+            type: string
+          - name: viewPortfolioLabel
+            label: View Full Portfolio Link Label
+            type: string
+          - name: inspectCaseStudyLabel
+            label: Inspect Case Study Label
+            type: string
+          - name: faqKicker
+            label: FAQ Eyebrow Label
+            type: string
+          - name: faqHeading
+            label: FAQ Heading
+            type: string
+          - name: orderCtaTitleTemplate
+            label: Bottom Order CTA Heading Template ({service})
+            type: string
+          - name: orderCtaDescription
+            label: Bottom Order CTA Description
+            type: text
+          - name: orderCtaContactLabel
+            label: Bottom Order CTA Contact Button Label
+            type: string
+          - name: otherServicesHeading
+            label: Other Services Section Heading
+            type: string
+          - name: otherServiceLinkLabel
+            label: Other Service Card Link Label
+            type: string
+      - name: portfolio
+        label: Portfolio Filters & Project Cards
+        type: object
+        fields:
+          - name: sectionKicker
+            label: Section Eyebrow Label
+            type: string
+          - name: sectionHeading
+            label: Section Heading
+            type: string
+          - name: allCategoriesLabel
+            label: All Categories Filter Label
+            type: string
+          - name: showingPrefix
+            label: Project Count Prefix
+            type: string
+          - name: projectSingularLabel
+            label: Singular Project Word
+            type: string
+          - name: projectPluralLabel
+            label: Plural Projects Word
+            type: string
+          - name: categoryConnectorLabel
+            label: Category Connector Word
+            type: string
+          - name: filterAriaLabel
+            label: Filter Tabs Aria Label
+            type: string
+          - name: projectDetailsLabel
+            label: Project Card Details Link Label
+            type: string
+          - name: videoDemoLabel
+            label: Video Demo Link Label
+            type: string
+          - name: visitLabel
+            label: External Visit Link Label
+            type: string
+          - name: emptyStateTitle
+            label: Empty Portfolio State Title
+            type: string
+          - name: emptyStateDescription
+            label: Empty Portfolio State Description
+            type: text
+          - name: emptyStateResetLabel
+            label: Empty State Reset Filter Button Label
+            type: string
+          - name: fallbackSeoTitle
+            label: Fallback SEO Title
+            type: string
+      - name: projectDetailPage
+        label: Project Detail Page Labels
+        type: object
+        fields:
+          - name: backLinkLabel
+            label: Back to Projects Link Label
+            type: string
+          - name: requestSimilarLabel
+            label: Request Similar Project Button Label
+            type: string
+          - name: openLiveLinkLabel
+            label: Open Live Link Button Label
+            type: string
+          - name: challengeHeading
+            label: Challenge Card Heading
+            type: string
+          - name: solutionHeading
+            label: Solution Card Heading
+            type: string
+          - name: deliverablesHeading
+            label: Deliverables Card Heading
+            type: string
+      - name: testimonials
+        label: Testimonials Section Labels
+        type: object
+        fields:
+          - name: kicker
+            label: Eyebrow Label
+            type: string
+          - name: heading
+            label: Section Heading
+            type: string
+          - name: subtitle
+            label: Section Subtitle
+            type: text
+          - name: samplePlaceholderBadge
+            label: Sample Placeholder Badge Text
+            type: string
+      - name: processPage
+        label: Process Page UI Labels
+        type: object
+        fields:
+          - name: stagePrefix
+            label: Stage Counter Prefix
+            type: string
+          - name: stageOfConnector
+            label: Stage Counter Connector
+            type: string
+          - name: activitiesHeading
+            label: Key Activities Heading
+            type: string
+          - name: deliverableLabel
+            label: Stage Output Label
+            type: string
+          - name: secondaryCtaLabel
+            label: Secondary CTA Button Label
+            type: string
+          - name: fallbackSeoTitle
+            label: Fallback SEO Title
+            type: string
+      - name: contactPage
+        label: Contact Page Channels & Labels
+        type: object
+        fields:
+          - name: channelsHeading
+            label: Direct Channels Heading
+            type: string
+          - name: channelsSubtitle
+            label: Direct Channels Subtitle
+            type: text
+          - name: whatsappButtonLabel
+            label: WhatsApp Button Label
+            type: string
+          - name: emailButtonLabel
+            label: Email Button Label
+            type: string
+          - name: emailLabel
+            label: Email Detail Label
+            type: string
+          - name: phoneLabel
+            label: Phone Detail Label
+            type: string
+          - name: locationLabel
+            label: Location Detail Label
+            type: string
+          - name: availabilityLabel
+            label: Availability Detail Label
+            type: string
+          - name: socialHeading
+            label: Social Links Heading
+            type: string
+          - name: fallbackSeoTitle
+            label: Fallback SEO Title
+            type: string
+      - name: contactForm
+        label: Contact Form Labels, Placeholders & Messages
+        type: object
+        fields:
+          - name: heading
+            label: Form Heading
+            type: string
+          - name: honeypotLabel
+            label: Honeypot Field Screen-Reader Label
+            type: string
+          - name: nameLabel
+            label: Full Name Field Label
+            type: string
+          - name: namePlaceholder
+            label: Full Name Placeholder
+            type: string
+          - name: emailLabel
+            label: Email Field Label
+            type: string
+          - name: emailPlaceholder
+            label: Email Placeholder
+            type: string
+          - name: phoneLabel
+            label: Phone Field Label
+            type: string
+          - name: phonePlaceholder
+            label: Phone Placeholder
+            type: string
+          - name: serviceLabel
+            label: Service Dropdown Label
+            type: string
+          - name: customServiceOption
+            label: Custom Service Dropdown Option
+            type: string
+          - name: messageLabel
+            label: Project Details Field Label
+            type: string
+          - name: messagePlaceholder
+            label: Project Details Placeholder
+            type: text
+          - name: submitLabel
+            label: Submit Button Label
+            type: string
+          - name: submittingLabel
+            label: Submitting Button Label
+            type: string
+          - name: configuredHint
+            label: Configured Handler Hint
+            type: string
+          - name: unconfiguredHint
+            label: Unconfigured Handler Hint
+            type: string
+          - name: validationName
+            label: Name Validation Message
+            type: string
+          - name: validationEmail
+            label: Email Validation Message
+            type: string
+          - name: validationPhone
+            label: Phone Validation Message
+            type: string
+          - name: validationMessage
+            label: Message Validation Message
+            type: string
+          - name: validationBot
+            label: Bot Protection Validation Message
+            type: string
+          - name: submitFailedPrefix
+            label: Submission Failed Prefix
+            type: string
+          - name: submitNetworkError
+            label: Network Error Message
+            type: string
+          - name: successMessage
+            label: Submission Success Message
+            type: text
+          - name: errorFallbackMessage
+            label: Submission Error Fallback Message
+            type: string
+          - name: fallbackEmailAppLabel
+            label: Error Fallback Email Button Label
+            type: string
+          - name: fallbackWhatsappLabel
+            label: Error Fallback WhatsApp Button Label
+            type: string
+          - name: unconfiguredTitle
+            label: Unconfigured Endpoint Notice Title
+            type: string
+          - name: unconfiguredDescription
+            label: Unconfigured Endpoint Notice Description
+            type: text
+          - name: unconfiguredEmailLabel
+            label: Unconfigured Email Button Label
+            type: string
+          - name: emailSubjectPrefix
+            label: Inquiry Email Subject Prefix
+            type: string
+      - name: customPage
+        label: Custom Pages UI Labels
+        type: object
+        fields:
+          - name: backHomeLabel
+            label: Back to Home Link Label
+            type: string
+      - name: notFoundPage
+        label: 404 Page Copy & SEO
+        type: object
+        fields:
+          - name: kicker
+            label: 404 Eyebrow Label
+            type: string
+          - name: headline
+            label: 404 Headline
+            type: string
+          - name: description
+            label: 404 Description
+            type: text
+          - name: homeButtonLabel
+            label: Return Home Button Label
+            type: string
+          - name: servicesButtonLabel
+            label: Explore Services Button Label
+            type: string
+          - name: seoTitle
+            label: 404 SEO Title
+            type: string
+          - name: seoDescription
+            label: 404 SEO Description
+            type: text
+
   - name: services
     label: Individual Service Pages (/services/:slug)
     type: collection

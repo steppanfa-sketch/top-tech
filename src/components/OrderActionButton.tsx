@@ -1,5 +1,6 @@
 import { ArrowUpRight, ShoppingCart } from 'lucide-react';
 import type { ServiceItem } from '../types/content';
+import { interfaceCopy } from '../lib/cms';
 import { isValidExternalUrl } from '../lib/assets';
 import { useOrder } from '../context/OrderContext';
 import { MagneticButton } from './effects/MagneticButton';
@@ -12,7 +13,7 @@ interface OrderActionButtonProps {
 export function OrderActionButton({ service, className = '' }: OrderActionButtonProps) {
   const { openFallbackOrder } = useOrder();
   const hasOrderingUrl = service.available && isValidExternalUrl(service.orderingUrl);
-  const label = service.buttonText?.trim() || 'Order Service';
+  const label = service.buttonText?.trim() || interfaceCopy.ordering.defaultOrderButtonLabel;
 
   if (hasOrderingUrl) {
     return (
@@ -38,7 +39,7 @@ export function OrderActionButton({ service, className = '' }: OrderActionButton
         className={`inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500 px-4 py-2.5 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${className}`}
       >
         <ShoppingCart className="w-4 h-4" aria-hidden="true" />
-        <span>{service.available ? label : 'Contact Us'}</span>
+        <span>{service.available ? label : interfaceCopy.ordering.unavailableButtonLabel}</span>
       </button>
     </MagneticButton>
   );

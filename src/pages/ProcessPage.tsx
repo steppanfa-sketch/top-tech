@@ -2,14 +2,14 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { processContent } from '../lib/cms';
+import { interfaceCopy, processContent } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
 import { MagneticButton } from '../components/effects/MagneticButton';
 
 export function ProcessPage() {
   useSeo({
-    title: processContent.seo?.title || 'Our Process — TOP TECH',
+    title: processContent.seo?.title || interfaceCopy.processPage.fallbackSeoTitle,
     description: processContent.seo?.description,
     ogImage: processContent.seo?.ogImage,
   });
@@ -55,7 +55,9 @@ export function ProcessPage() {
                       {step.stepNumber}
                     </span>
                     <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                      Stage {step.stepNumber} of {String(processContent.steps.length).padStart(2, '0')}
+                      {interfaceCopy.processPage.stagePrefix} {step.stepNumber}{' '}
+                      {interfaceCopy.processPage.stageOfConnector}{' '}
+                      {String(processContent.steps.length).padStart(2, '0')}
                     </span>
                   </div>
 
@@ -72,7 +74,7 @@ export function ProcessPage() {
                   {step.activities && step.activities.length > 0 && (
                     <div className="space-y-2.5">
                       <h3 className="text-xs font-semibold tracking-wide text-slate-500 dark:text-slate-400">
-                        Key Activities
+                        {interfaceCopy.processPage.activitiesHeading}
                       </h3>
                       <ul className="space-y-2">
                         {step.activities.map((activity, activityIdx) => (
@@ -94,7 +96,7 @@ export function ProcessPage() {
                   {step.deliverable && (
                     <div className="pt-3 border-t border-slate-200/80 dark:border-slate-800/80 text-sm">
                       <span className="font-medium text-slate-500 dark:text-slate-400">
-                        Stage Output:{' '}
+                        {interfaceCopy.processPage.deliverableLabel}{' '}
                       </span>
                       <span className="font-semibold text-slate-950 dark:text-white">
                         {step.deliverable}
@@ -133,7 +135,7 @@ export function ProcessPage() {
                 to="/services"
                 className="inline-flex min-h-[46px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#060B18] hover:border-blue-500/60 px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white transition-colors whitespace-nowrap shrink-0"
               >
-                <span>Explore Services</span>
+                <span>{interfaceCopy.processPage.secondaryCtaLabel}</span>
               </Link>
             </div>
           </div>

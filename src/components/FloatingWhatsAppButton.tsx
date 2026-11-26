@@ -1,6 +1,6 @@
 import { MessageCircle } from 'lucide-react';
 import { motion } from 'motion/react';
-import { contactConfig } from '../lib/cms';
+import { contactConfig, interfaceCopy } from '../lib/cms';
 import { MagneticButton } from './effects/MagneticButton';
 
 export function FloatingWhatsAppButton() {
@@ -13,10 +13,10 @@ export function FloatingWhatsAppButton() {
     return null;
   }
 
-  const label = contactConfig.floatingWhatsappLabel?.trim() || 'Chat on WhatsApp';
+  const label = contactConfig.floatingWhatsappLabel?.trim() || interfaceCopy.whatsapp.defaultButtonLabel;
   const prefill =
     contactConfig.whatsappPrefill?.trim() ||
-    'Hello TOP TECH, I would like to discuss a new project.';
+    interfaceCopy.whatsapp.defaultPrefill;
   const href = `https://wa.me/${digits}?text=${encodeURIComponent(prefill)}`;
 
   return (

@@ -1,4 +1,5 @@
 import { ArrowUpRight, PlayCircle } from 'lucide-react';
+import { interfaceCopy } from '../lib/cms';
 import { parseVideoEmbed } from '../lib/assets';
 
 interface VideoEmbedProps {
@@ -15,7 +16,7 @@ export function VideoEmbed({ url, title }: VideoEmbedProps) {
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-sm font-semibold text-slate-950 dark:text-white">
           <PlayCircle className="w-5 h-5 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-          <span>Video Demonstration</span>
+          <span>{interfaceCopy.media.videoSectionTitle}</span>
         </div>
         {(parsed.kind === 'youtube' || parsed.kind === 'vimeo') && (
           <a
@@ -24,7 +25,7 @@ export function VideoEmbed({ url, title }: VideoEmbedProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            <span>Open Source</span>
+            <span>{interfaceCopy.media.videoOpenSourceLabel}</span>
             <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
         )}
@@ -34,7 +35,7 @@ export function VideoEmbed({ url, title }: VideoEmbedProps) {
         <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-950 border border-slate-200/50 dark:border-slate-800">
           <iframe
             src={parsed.embedUrl}
-            title={`${title} video demonstration`}
+            title={`${title} ${interfaceCopy.media.videoIframeTitleSuffix}`}
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -56,7 +57,7 @@ export function VideoEmbed({ url, title }: VideoEmbedProps) {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
         >
-          <span>Watch Demonstration Video</span>
+          <span>{interfaceCopy.media.videoWatchExternalLabel}</span>
           <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
         </a>
       )}

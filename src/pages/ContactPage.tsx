@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { contactConfig } from '../lib/cms';
+import { contactConfig, interfaceCopy } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { useOrder } from '../context/OrderContext';
 import { PageHeader } from '../components/PageHeader';
@@ -15,12 +15,12 @@ export function ContactPage() {
   const { setPreselectedService } = useOrder();
 
   useSeo({
-    title: contactConfig.seo?.title || 'Contact Us — TOP TECH',
+    title: contactConfig.seo?.title || interfaceCopy.contactPage.fallbackSeoTitle,
     description: contactConfig.seo?.description,
     ogImage: contactConfig.seo?.ogImage,
     schema: {
       '@type': 'ContactPage',
-      name: contactConfig.seo?.title || 'Contact Us — TOP TECH',
+      name: contactConfig.seo?.title || interfaceCopy.contactPage.fallbackSeoTitle,
       description: contactConfig.seo?.description,
     },
   });

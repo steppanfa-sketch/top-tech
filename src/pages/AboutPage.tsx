@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, Compass, Eye, Lightbulb, PenTool, ShieldCheck, Target, TrendingUp } from 'lucide-react';
-import { aboutContent } from '../lib/cms';
+import { aboutContent, interfaceCopy } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
 import { SmartImage } from '../components/SmartImage';
@@ -12,12 +12,12 @@ import { MagneticButton } from '../components/effects/MagneticButton';
 
 export function AboutPage() {
   useSeo({
-    title: aboutContent.seo?.title || 'About Us — TOP TECH',
+    title: aboutContent.seo?.title || interfaceCopy.aboutPage.fallbackSeoTitle,
     description: aboutContent.seo?.description,
     ogImage: aboutContent.seo?.ogImage || aboutContent.image,
     schema: {
       '@type': 'AboutPage',
-      name: aboutContent.seo?.title || 'About Us — TOP TECH',
+      name: aboutContent.seo?.title || interfaceCopy.aboutPage.fallbackSeoTitle,
       description: aboutContent.seo?.description || aboutContent.intro,
     },
   });
@@ -39,7 +39,7 @@ export function AboutPage() {
                 to="/services"
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors"
               >
-                <span>Explore Our Services</span>
+                <span>{interfaceCopy.aboutPage.primaryCtaLabel}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </MagneticButton>
@@ -48,7 +48,7 @@ export function AboutPage() {
                 to="/contact"
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0B1224] hover:border-blue-500/60 px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white transition-colors"
               >
-                <span>Start a Conversation</span>
+                <span>{interfaceCopy.aboutPage.secondaryCtaLabel}</span>
               </Link>
             </MagneticButton>
           </>
@@ -81,7 +81,7 @@ export function AboutPage() {
               className="lg:col-span-6 flex flex-col justify-center space-y-6"
             >
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                Technology, Creative Design &amp; Practical AI Under One Roof
+                {interfaceCopy.aboutPage.overviewHeading}
               </h2>
               <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300">
                 {aboutContent.secondaryText}
@@ -118,9 +118,11 @@ export function AboutPage() {
           {/* Core Values */}
           <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] p-6 sm:p-10 space-y-8">
             <div className="max-w-2xl space-y-2">
-              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Principles</p>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                {interfaceCopy.aboutPage.valuesKicker}
+              </p>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                Our Core Values
+                {interfaceCopy.aboutPage.valuesHeading}
               </h2>
             </div>
 
@@ -163,7 +165,7 @@ export function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="max-w-2xl space-y-3">
             <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
-              Our Standards
+              {interfaceCopy.aboutPage.reasonsKicker}
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-slate-950 dark:text-white text-balance">
               {aboutContent.reasonsHeading}

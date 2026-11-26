@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { siteConfig } from '../lib/cms';
+import { interfaceCopy, siteConfig } from '../lib/cms';
 import { useMotionCapabilities } from '../hooks/useMotionCapabilities';
 import { BrandLogo } from './BrandLogo';
 
@@ -95,7 +95,7 @@ export function LoadingScreen({ visible }: LoadingScreenProps) {
           key="toptech-loader"
           role="status"
           aria-live="polite"
-          aria-label="Loading TOP TECH"
+          aria-label={interfaceCopy.loadingScreen.ariaLabel}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.42, ease: [0.16, 1, 0.3, 1] } }}
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-50 dark:bg-[#050A18] px-6 select-none"

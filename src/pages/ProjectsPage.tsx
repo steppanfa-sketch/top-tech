@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { projectsOverviewContent } from '../lib/cms';
+import { interfaceCopy, projectsOverviewContent, siteConfig } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
 import { ProjectsSection } from '../components/sections/ProjectsSection';
@@ -10,12 +10,12 @@ import { MagneticButton } from '../components/effects/MagneticButton';
 
 export function ProjectsPage() {
   useSeo({
-    title: projectsOverviewContent.seo?.title || 'Projects — TOP TECH',
+    title: projectsOverviewContent.seo?.title || interfaceCopy.portfolio.fallbackSeoTitle,
     description: projectsOverviewContent.seo?.description,
     ogImage: projectsOverviewContent.seo?.ogImage,
     schema: {
       '@type': 'CollectionPage',
-      name: projectsOverviewContent.seo?.title || 'Projects — TOP TECH',
+      name: projectsOverviewContent.seo?.title || interfaceCopy.portfolio.fallbackSeoTitle,
       description: projectsOverviewContent.seo?.description,
     },
   });
@@ -52,7 +52,7 @@ export function ProjectsPage() {
                 to="/contact"
                 className="inline-flex min-h-[46px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-6 py-3 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0"
               >
-                <span>Start a Project</span>
+                <span>{siteConfig.startProjectLabel || 'Start a Project'}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </MagneticButton>

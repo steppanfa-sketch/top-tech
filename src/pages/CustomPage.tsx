@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { getCustomPageBySlug } from '../lib/cms';
+import { getCustomPageBySlug, interfaceCopy } from '../lib/cms';
 import { isValidExternalUrl } from '../lib/assets';
 import { useSeo } from '../lib/seo';
 import { useOrder } from '../context/OrderContext';
@@ -55,7 +55,7 @@ export function CustomPage() {
             className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-            <span>Back to Home</span>
+            <span>{interfaceCopy.customPage.backHomeLabel}</span>
           </Link>
         </div>
 

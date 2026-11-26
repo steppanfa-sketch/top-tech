@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Mail, MessageSquare, Send, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { contactConfig } from '../lib/cms';
+import { contactConfig, formatCopyTemplate, interfaceCopy } from '../lib/cms';
 import { useOrder } from '../context/OrderContext';
 import { SmartImage } from './SmartImage';
 
@@ -33,13 +33,19 @@ export function OrderFallbackModal() {
   };
 
   const whatsappUrl = `https://wa.me/${contactConfig.whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(
-    `Hello TOP TECH, I would like to order or inquire about: ${fallbackService.name}`
+    formatCopyTemplate(interfaceCopy.ordering.modalWhatsappTemplate, {
+      service: fallbackService.name,
+    })
   )}`;
 
   const mailtoUrl = `mailto:${contactConfig.email}?subject=${encodeURIComponent(
-    `Service Inquiry: ${fallbackService.name}`
+    formatCopyTemplate(interfaceCopy.ordering.modalEmailSubjectTemplate, {
+      service: fallbackService.name,
+    })
   )}&body=${encodeURIComponent(
-    `Hello TOP TECH,\n\nI would like to order or discuss ${fallbackService.name}.\n\nProject details:\n`
+    formatCopyTemplate(interfaceCopy.ordering.modalEmailBodyTemplate, {
+      service: fallbackService.name,
+    })
   )}`;
 
   return (
@@ -69,14 +75,14 @@ export function OrderFallbackModal() {
             <button
               type="button"
               onClick={closeFallbackOrder}
-              aria-label="Close service ordering dialog"
+              aria-label={interfaceCopy.ordering.modalCloseAriaLabel}
               className="absolute right-3 top-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-950/70 text-white hover:bg-slate-900 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
             >
               <X className="w-4 h-4" aria-hidden="true" />
             </button>
             <div className="absolute bottom-4 left-5 right-5">
               <p className="text-xs font-medium text-blue-300">
-                Service Request
+                {interfaceCopy.ordering.modalKicker}
               </p>
               <h3 id="order-fallback-title" className="font-display text-xl font-bold text-white">
                 {fallbackService.name}
@@ -87,8 +93,8 @@ export function OrderFallbackModal() {
           <div className="p-6 space-y-5">
             <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               {fallbackService.available
-                ? 'Direct online checkout for this service is not linked yet. Start your order directly with our team using any option below so we can confirm scope, timeline, and deliverables.'
-                : 'This service is currently booked through custom project consultation. Connect with our team below to receive a tailored scope and timeline.'}
+                ? interfaceCopy.ordering.modalAvailableDescription
+                : interfaceCopy.ordering.modalUnavailableDescription}
             </p>
 
             <div className="flex flex-col gap-3">
@@ -98,7 +104,7 @@ export function OrderFallbackModal() {
                 className="flex min-h-[44px] w-full items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors cursor-pointer"
               >
                 <Send className="w-4 h-4" aria-hidden="true" />
-                <span>Request via Contact Page</span>
+                <span>{interfaceCopy.ordering.modalContactButtonLabel}</span>
               </button>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -109,14 +115,14 @@ export function OrderFallbackModal() {
                   className="flex min-h-[44px] items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 hover:border-blue-500/60 px-4 py-2.5 text-sm font-medium text-slate-800 dark:text-slate-100 transition-colors"
                 >
                   <MessageSquare className="w-4 h-4 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-                  <span>WhatsApp Us</span>
+                  <span>{interfaceCopy.ordering.modalWhatsappButtonLabel}</span>
                 </a>
                 <a
                   href={mailtoUrl}
                   className="flex min-h-[44px] items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/60 hover:border-blue-500/60 px-4 py-2.5 text-sm font-medium text-slate-800 dark:text-slate-100 transition-colors"
                 >
                   <Mail className="w-4 h-4 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-                  <span>Send Email</span>
+                  <span>{interfaceCopy.ordering.modalEmailButtonLabel}</span>
                 </a>
               </div>
             </div>

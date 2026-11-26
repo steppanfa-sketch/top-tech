@@ -11,9 +11,12 @@ import {
   TrendingUp,
 } from 'lucide-react';
 import {
+  formatCopyTemplate,
   getProjectsForService,
   getServiceBySlug,
+  interfaceCopy,
   servicesList,
+  siteConfig,
 } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { useOrder } from '../context/OrderContext';
@@ -42,7 +45,7 @@ export function ServiceDetailPage() {
           description: service.shortDescription,
           provider: {
             '@type': 'Organization',
-            name: 'TOP TECH',
+            name: siteConfig.brandName,
           },
           serviceType: service.name,
         }
@@ -81,7 +84,7 @@ export function ServiceDetailPage() {
               className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-              <span>All Services</span>
+              <span>{interfaceCopy.serviceDetailPage.backLinkLabel}</span>
             </Link>
           </div>
 
@@ -97,7 +100,7 @@ export function ServiceDetailPage() {
                   <DynamicIcon name={service.icon} className="w-5 h-5" />
                 </div>
                 <span className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                  Service Division · TOP TECH
+                  {interfaceCopy.serviceDetailPage.divisionBadge}
                 </span>
               </div>
 
@@ -120,7 +123,7 @@ export function ServiceDetailPage() {
                   onClick={handleRequestQuote}
                   className="inline-flex min-h-[46px] w-full sm:w-auto items-center justify-center gap-2 rounded-lg border-[1.5px] border-slate-400/90 dark:border-blue-400/50 bg-white/95 dark:bg-[#0D1836]/90 hover:border-blue-600 dark:hover:border-cyan-400 hover:bg-blue-50/75 dark:hover:bg-[#13234B] active:scale-[0.98] px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white shadow-sm transition-all cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                 >
-                  <span>Discuss Custom Scope</span>
+                  <span>{interfaceCopy.serviceDetailPage.customScopeButtonLabel}</span>
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </button>
               </div>
@@ -145,9 +148,13 @@ export function ServiceDetailPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-3">
-              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Overview</p>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                {interfaceCopy.serviceDetailPage.overviewKicker}
+              </p>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                How We Deliver {service.name}
+                {formatCopyTemplate(interfaceCopy.serviceDetailPage.overviewHeadingTemplate, {
+                  service: service.name,
+                })}
               </h2>
               <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300">
                 {service.fullDescription}
@@ -156,7 +163,7 @@ export function ServiceDetailPage() {
 
             <div className="rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] p-6 space-y-2">
               <h3 className="font-display text-base font-semibold text-slate-950 dark:text-white">
-                Ideal For
+                {interfaceCopy.serviceDetailPage.idealForHeading}
               </h3>
               <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 {service.idealFor}
@@ -167,7 +174,7 @@ export function ServiceDetailPage() {
                     to="/pages/ai-training-programs"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
                   >
-                    <span>Explore AI Training Curriculum Tracks</span>
+                    <span>{interfaceCopy.serviceDetailPage.aiCurriculumLinkLabel}</span>
                     <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </Link>
                 </div>
@@ -177,7 +184,7 @@ export function ServiceDetailPage() {
 
           <div className="lg:col-span-5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] p-6 sm:p-8 space-y-5">
             <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-              Core Deliverables
+              {interfaceCopy.serviceDetailPage.deliverablesHeading}
             </h2>
             <ul className="space-y-3">
               {(Array.isArray(service.deliverables) ? service.deliverables : []).map((item, idx) => (
@@ -204,9 +211,11 @@ export function ServiceDetailPage() {
             {service.benefits?.length > 0 && (
               <div className="space-y-8">
                 <div className="max-w-2xl space-y-2">
-                  <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Business Value</p>
+                  <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                    {interfaceCopy.serviceDetailPage.benefitsKicker}
+                  </p>
                   <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                    Key Benefits
+                    {interfaceCopy.serviceDetailPage.benefitsHeading}
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -242,9 +251,11 @@ export function ServiceDetailPage() {
             {service.features?.length > 0 && (
               <div className="space-y-8">
                 <div className="max-w-2xl space-y-2">
-                  <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Capabilities</p>
+                  <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                    {interfaceCopy.serviceDetailPage.featuresKicker}
+                  </p>
                   <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                    Included Features
+                    {interfaceCopy.serviceDetailPage.featuresHeading}
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -282,9 +293,13 @@ export function ServiceDetailPage() {
         <section className="py-16 bg-white/80 dark:bg-[#070D1F]/75 border-b border-slate-200 dark:border-slate-800/80">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
             <div className="max-w-2xl space-y-2">
-              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Execution</p>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                {interfaceCopy.serviceDetailPage.processKicker}
+              </p>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                How We Deliver Your {service.name} Project
+                {formatCopyTemplate(interfaceCopy.serviceDetailPage.processHeadingTemplate, {
+                  service: service.name,
+                })}
               </h2>
             </div>
 
@@ -321,17 +336,17 @@ export function ServiceDetailPage() {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div className="space-y-2">
                 <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
-                  Showcase Examples
+                  {interfaceCopy.serviceDetailPage.projectsKicker}
                 </p>
                 <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                  Relevant Projects
+                  {interfaceCopy.serviceDetailPage.projectsHeading}
                 </h2>
               </div>
               <Link
                 to="/projects"
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline"
               >
-                <span>View Full Portfolio</span>
+                <span>{interfaceCopy.serviceDetailPage.viewPortfolioLabel}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>
@@ -373,7 +388,7 @@ export function ServiceDetailPage() {
                       </div>
                     </div>
                     <div className="px-6 pb-5 text-sm font-semibold text-blue-600 dark:text-blue-400 inline-flex items-center gap-1.5">
-                      <span>Inspect Case Study</span>
+                      <span>{interfaceCopy.serviceDetailPage.inspectCaseStudyLabel}</span>
                       <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     </div>
                   </Link>
@@ -389,9 +404,11 @@ export function ServiceDetailPage() {
         <section className="py-16 bg-white/80 dark:bg-[#070D1F]/75 border-b border-slate-200 dark:border-slate-800/80">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-8">
             <div className="space-y-2">
-              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">Questions</p>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
+                {interfaceCopy.serviceDetailPage.faqKicker}
+              </p>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 dark:text-white">
-                Frequently Asked Questions
+                {interfaceCopy.serviceDetailPage.faqHeading}
               </h2>
             </div>
 
@@ -446,10 +463,12 @@ export function ServiceDetailPage() {
           <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="space-y-2 max-w-xl">
               <h2 className="font-display text-2xl font-bold text-slate-950 dark:text-white">
-                Ready to Order {service.name}?
+                {formatCopyTemplate(interfaceCopy.serviceDetailPage.orderCtaTitleTemplate, {
+                  service: service.name,
+                })}
               </h2>
               <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300">
-                Proceed through our configured ordering flow or request a tailored project consultation with TOP TECH.
+                {interfaceCopy.serviceDetailPage.orderCtaDescription}
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
@@ -460,7 +479,7 @@ export function ServiceDetailPage() {
                   onClick={handleRequestQuote}
                   className="inline-flex min-h-[46px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#060B18] hover:border-blue-500/60 px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white transition-colors cursor-pointer"
                 >
-                  <span>Contact Us</span>
+                  <span>{interfaceCopy.serviceDetailPage.orderCtaContactLabel}</span>
                 </button>
               </MagneticButton>
             </div>
@@ -468,7 +487,7 @@ export function ServiceDetailPage() {
 
           <div className="space-y-6">
             <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-              Explore Other Services
+              {interfaceCopy.serviceDetailPage.otherServicesHeading}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {otherServices.map((other) => (
@@ -489,7 +508,7 @@ export function ServiceDetailPage() {
                       </p>
                     </div>
                     <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400">
-                      <span>Explore Service</span>
+                      <span>{interfaceCopy.serviceDetailPage.otherServiceLinkLabel}</span>
                       <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
                     </span>
                   </Link>

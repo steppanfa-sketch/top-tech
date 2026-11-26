@@ -7,6 +7,7 @@ import {
   processContent,
   projectsList,
   servicesList,
+  siteConfig,
 } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { HeroSection } from '../components/sections/HeroSection';
@@ -23,8 +24,8 @@ export function HomePage() {
     ogImage: homeContent.seo?.ogImage || homeContent.hero.heroImage,
     schema: {
       '@type': 'ProfessionalService',
-      name: 'TOP TECH',
-      slogan: 'Technology. Creativity. Innovation.',
+      name: siteConfig.brandName,
+      slogan: siteConfig.tagline,
       description:
         homeContent.seo?.description ||
         'Digital agency specializing in websites, e-commerce, web and mobile applications, graphic design, building plans, and practical AI training.',

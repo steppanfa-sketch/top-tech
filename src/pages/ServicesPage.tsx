@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { servicesList, servicesOverviewContent } from '../lib/cms';
+import { interfaceCopy, servicesList, servicesOverviewContent } from '../lib/cms';
 import { useSeo } from '../lib/seo';
 import { PageHeader } from '../components/PageHeader';
 import { DynamicIcon } from '../components/DynamicIcon';
@@ -13,12 +13,12 @@ import { MagneticButton } from '../components/effects/MagneticButton';
 
 export function ServicesPage() {
   useSeo({
-    title: servicesOverviewContent.seo?.title || 'Services — TOP TECH',
+    title: servicesOverviewContent.seo?.title || interfaceCopy.servicesPage.fallbackSeoTitle,
     description: servicesOverviewContent.seo?.description,
     ogImage: servicesOverviewContent.seo?.ogImage || servicesList[0]?.image,
     schema: {
       '@type': 'CollectionPage',
-      name: servicesOverviewContent.seo?.title || 'Services — TOP TECH',
+      name: servicesOverviewContent.seo?.title || interfaceCopy.servicesPage.fallbackSeoTitle,
       description: servicesOverviewContent.seo?.description,
     },
   });
@@ -108,7 +108,7 @@ export function ServicesPage() {
                         to={`/services/${service.slug}`}
                         className="inline-flex min-h-[42px] items-center gap-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-[#060B18] hover:border-blue-500/50 px-4 py-2 text-sm font-medium text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap shrink-0"
                       >
-                        <span>Learn More</span>
+                        <span>{interfaceCopy.servicesPage.cardLearnMoreLabel}</span>
                         <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                       </Link>
 
@@ -139,7 +139,7 @@ export function ServicesPage() {
                 to="/contact"
                 className="inline-flex min-h-[46px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-6 py-3 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0"
               >
-                <span>Request Custom Quote</span>
+                <span>{interfaceCopy.servicesPage.ctaButtonLabel}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </MagneticButton>

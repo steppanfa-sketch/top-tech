@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
-import { testimonialsList } from '../../lib/cms';
+import { interfaceCopy, testimonialsList } from '../../lib/cms';
 
 export function TestimonialsSection() {
   if (testimonialsList.length === 0) {
@@ -21,13 +21,13 @@ export function TestimonialsSection() {
           className="max-w-2xl space-y-3 mb-12"
         >
           <p className="text-sm font-medium text-blue-600 dark:text-blue-400">
-            Client Feedback Slots
+            {interfaceCopy.testimonials.kicker}
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-slate-950 dark:text-white text-balance">
-            Client Testimonials
+            {interfaceCopy.testimonials.heading}
           </h2>
           <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-            Manage, publish, hide, or replace client feedback entries directly through Pages CMS without modifying site code.
+            {interfaceCopy.testimonials.subtitle}
           </p>
         </motion.div>
 
@@ -46,7 +46,7 @@ export function TestimonialsSection() {
                   <span>{item.serviceCategory}</span>
                   {item.isSamplePlaceholder && (
                     <span className="font-medium text-amber-600 dark:text-amber-400">
-                      Sample Placeholder
+                      {interfaceCopy.testimonials.samplePlaceholderBadge}
                     </span>
                   )}
                 </div>

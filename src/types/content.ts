@@ -281,3 +281,190 @@ export interface CustomPageItem {
   ctaTarget?: string;
   seo: SeoMeta;
 }
+
+export interface InterfaceCopy {
+  navbar: {
+    allServicesOverviewLabel: string;
+    homeAriaLabel: string;
+    primaryNavAriaLabel: string;
+    mobileNavAriaLabel: string;
+    toggleServicesAriaLabel: string;
+    expandServicesAriaLabel: string;
+    switchToLightModeLabel: string;
+    switchToDarkModeLabel: string;
+    openMenuAriaLabel: string;
+    closeMenuAriaLabel: string;
+  };
+  footer: {
+    navigationHeading: string;
+    servicesHeading: string;
+    contactHeading: string;
+    copyrightSuffix: string;
+    socialAriaPrefix: string;
+  };
+  loadingScreen: {
+    ariaLabel: string;
+  };
+  whatsapp: {
+    defaultButtonLabel: string;
+    defaultPrefill: string;
+  };
+  ordering: {
+    defaultOrderButtonLabel: string;
+    unavailableButtonLabel: string;
+    modalKicker: string;
+    modalCloseAriaLabel: string;
+    modalAvailableDescription: string;
+    modalUnavailableDescription: string;
+    modalContactButtonLabel: string;
+    modalWhatsappButtonLabel: string;
+    modalEmailButtonLabel: string;
+    modalWhatsappTemplate: string;
+    modalEmailSubjectTemplate: string;
+    modalEmailBodyTemplate: string;
+  };
+  media: {
+    videoSectionTitle: string;
+    videoOpenSourceLabel: string;
+    videoWatchExternalLabel: string;
+    videoIframeTitleSuffix: string;
+  };
+  aboutPage: {
+    primaryCtaLabel: string;
+    secondaryCtaLabel: string;
+    overviewHeading: string;
+    valuesKicker: string;
+    valuesHeading: string;
+    reasonsKicker: string;
+    fallbackSeoTitle: string;
+  };
+  servicesPage: {
+    cardLearnMoreLabel: string;
+    ctaButtonLabel: string;
+    fallbackSeoTitle: string;
+  };
+  serviceDetailPage: {
+    backLinkLabel: string;
+    divisionBadge: string;
+    customScopeButtonLabel: string;
+    overviewKicker: string;
+    overviewHeadingTemplate: string;
+    idealForHeading: string;
+    aiCurriculumLinkLabel: string;
+    deliverablesHeading: string;
+    benefitsKicker: string;
+    benefitsHeading: string;
+    featuresKicker: string;
+    featuresHeading: string;
+    processKicker: string;
+    processHeadingTemplate: string;
+    projectsKicker: string;
+    projectsHeading: string;
+    viewPortfolioLabel: string;
+    inspectCaseStudyLabel: string;
+    faqKicker: string;
+    faqHeading: string;
+    orderCtaTitleTemplate: string;
+    orderCtaDescription: string;
+    orderCtaContactLabel: string;
+    otherServicesHeading: string;
+    otherServiceLinkLabel: string;
+  };
+  portfolio: {
+    sectionKicker: string;
+    sectionHeading: string;
+    allCategoriesLabel: string;
+    showingPrefix: string;
+    projectSingularLabel: string;
+    projectPluralLabel: string;
+    categoryConnectorLabel: string;
+    filterAriaLabel: string;
+    projectDetailsLabel: string;
+    videoDemoLabel: string;
+    visitLabel: string;
+    emptyStateTitle: string;
+    emptyStateDescription: string;
+    emptyStateResetLabel: string;
+    fallbackSeoTitle: string;
+  };
+  projectDetailPage: {
+    backLinkLabel: string;
+    requestSimilarLabel: string;
+    openLiveLinkLabel: string;
+    challengeHeading: string;
+    solutionHeading: string;
+    deliverablesHeading: string;
+  };
+  testimonials: {
+    kicker: string;
+    heading: string;
+    subtitle: string;
+    samplePlaceholderBadge: string;
+  };
+  processPage: {
+    stagePrefix: string;
+    stageOfConnector: string;
+    activitiesHeading: string;
+    deliverableLabel: string;
+    secondaryCtaLabel: string;
+    fallbackSeoTitle: string;
+  };
+  contactPage: {
+    channelsHeading: string;
+    channelsSubtitle: string;
+    whatsappButtonLabel: string;
+    emailButtonLabel: string;
+    emailLabel: string;
+    phoneLabel: string;
+    locationLabel: string;
+    availabilityLabel: string;
+    socialHeading: string;
+    fallbackSeoTitle: string;
+  };
+  contactForm: {
+    heading: string;
+    honeypotLabel: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    phoneLabel: string;
+    phonePlaceholder: string;
+    serviceLabel: string;
+    customServiceOption: string;
+    messageLabel: string;
+    messagePlaceholder: string;
+    submitLabel: string;
+    submittingLabel: string;
+    configuredHint: string;
+    unconfiguredHint: string;
+    validationName: string;
+    validationEmail: string;
+    validationPhone: string;
+    validationMessage: string;
+    validationBot: string;
+    submitFailedPrefix: string;
+    submitNetworkError: string;
+    successMessage: string;
+    errorFallbackMessage: string;
+    fallbackEmailAppLabel: string;
+    fallbackWhatsappLabel: string;
+    unconfiguredTitle: string;
+    unconfiguredDescription: string;
+    unconfiguredEmailLabel: string;
+    emailSubjectPrefix: string;
+  };
+  customPage: {
+    backHomeLabel: string;
+  };
+  notFoundPage: {
+    kicker: string;
+    headline: string;
+    description: string;
+    homeButtonLabel: string;
+    servicesButtonLabel: string;
+    seoTitle: string;
+    seoDescription: string;
+  };
+}
+

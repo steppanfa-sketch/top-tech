@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2 } from 'lucide-react';
-import { getProjectBySlug } from '../lib/cms';
+import { getProjectBySlug, interfaceCopy, servicesList, siteConfig } from '../lib/cms';
 import { isValidExternalUrl } from '../lib/assets';
 import { useSeo } from '../lib/seo';
 import { useOrder } from '../context/OrderContext';
@@ -30,7 +30,7 @@ export function ProjectDetailPage() {
           genre: project.category,
           creator: {
             '@type': 'Organization',
-            name: 'TOP TECH',
+            name: siteConfig.brandName,
           },
         }
       : undefined,
@@ -50,7 +50,7 @@ export function ProjectDetailPage() {
   const hasSolution = Boolean(project.solution?.trim());
 
   const handleStartSimilar = () => {
-    const serviceTopic = project.category || 'Website Development';
+    const serviceTopic = project.category || servicesList[0]?.name || 'Website Development';
     setPreselectedService(serviceTopic);
     navigate('/contact', { state: { service: serviceTopic } });
   };
@@ -64,7 +64,7 @@ export function ProjectDetailPage() {
             className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-            <span>Back to All Projects</span>
+            <span>{interfaceCopy.projectDetailPage.backLinkLabel}</span>
           </Link>
         </div>
 
@@ -101,7 +101,7 @@ export function ProjectDetailPage() {
                 onClick={handleStartSimilar}
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors cursor-pointer"
               >
-                <span>Request Similar Project</span>
+                <span>{interfaceCopy.projectDetailPage.requestSimilarLabel}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </button>
             </MagneticButton>
@@ -113,7 +113,7 @@ export function ProjectDetailPage() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0B1224] px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white hover:border-blue-500/60 transition-colors"
               >
-                <span>Open Live Link</span>
+                <span>{interfaceCopy.projectDetailPage.openLiveLinkLabel}</span>
                 <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </a>
             )}
@@ -136,7 +136,7 @@ export function ProjectDetailPage() {
             {hasChallenge && (
               <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
                 <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-                  The Challenge
+                  {interfaceCopy.projectDetailPage.challengeHeading}
                 </h2>
                 <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
                   {project.challenge}
@@ -147,7 +147,7 @@ export function ProjectDetailPage() {
             {hasSolution && (
               <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-3">
                 <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-                  Our Approach &amp; Solution
+                  {interfaceCopy.projectDetailPage.solutionHeading}
                 </h2>
                 <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
                   {project.solution}
@@ -160,7 +160,7 @@ export function ProjectDetailPage() {
         {deliverables.length > 0 && (
           <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-[#0B1224]/90 backdrop-blur-sm p-6 sm:p-8 space-y-5">
             <h2 className="font-display text-xl font-semibold text-slate-950 dark:text-white">
-              Key Deliverables
+              {interfaceCopy.projectDetailPage.deliverablesHeading}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {deliverables.map((item, idx) => (

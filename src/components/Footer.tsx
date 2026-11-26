@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import { Github, Globe, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
-import { contactConfig, navigationConfig, servicesList, siteConfig } from '../lib/cms';
+import {
+  contactConfig,
+  interfaceCopy,
+  navigationConfig,
+  servicesList,
+  siteConfig,
+} from '../lib/cms';
 import { isValidExternalUrl } from '../lib/assets';
 import { BrandLogo } from './BrandLogo';
 
@@ -40,7 +46,7 @@ export function Footer() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`TOP TECH on ${social.platform}`}
+                    aria-label={`${interfaceCopy.footer.socialAriaPrefix} ${social.platform}`}
                     className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] text-slate-600 dark:text-slate-300 hover:border-blue-500/60 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     <SocialIcon platform={social.platform} />
@@ -52,7 +58,7 @@ export function Footer() {
           {/* Navigation Column */}
           <div className="lg:col-span-2 space-y-4">
             <h3 className="font-display text-sm font-semibold text-slate-950 dark:text-white">
-              Navigation
+              {interfaceCopy.footer.navigationHeading}
             </h3>
             <ul className="space-y-2.5 text-sm">
               {navigationConfig.headerLinks.map((link) => (
@@ -82,7 +88,7 @@ export function Footer() {
           {/* Services Column */}
           <div className="lg:col-span-3 space-y-4">
             <h3 className="font-display text-sm font-semibold text-slate-950 dark:text-white">
-              Services
+              {interfaceCopy.footer.servicesHeading}
             </h3>
             <ul className="space-y-2.5 text-sm">
               {servicesList.map((service) => (
@@ -101,7 +107,7 @@ export function Footer() {
           {/* Contact Column */}
           <div className="lg:col-span-3 space-y-4">
             <h3 className="font-display text-sm font-semibold text-slate-950 dark:text-white">
-              Contact
+              {interfaceCopy.footer.contactHeading}
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2.5">
@@ -133,7 +139,7 @@ export function Footer() {
         {/* Bottom Legal Row — cleared from floating WhatsApp trigger across all viewports */}
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800/80 pr-16 sm:pr-56 lg:pr-52 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center justify-between gap-x-6 gap-y-3 text-xs">
           <p>
-            &copy; {currentYear} {siteConfig.copyrightHolder}. All rights reserved.
+            &copy; {currentYear} {siteConfig.copyrightHolder}. {interfaceCopy.footer.copyrightSuffix}
           </p>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {navigationConfig.footerLegalLinks.map((item) => (

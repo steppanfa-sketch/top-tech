@@ -14,7 +14,7 @@ import {
   Phone,
   Send,
 } from 'lucide-react';
-import { contactConfig, servicesList } from '../../lib/cms';
+import { contactConfig, interfaceCopy, servicesList } from '../../lib/cms';
 import { isValidExternalUrl } from '../../lib/assets';
 import { useOrder } from '../../context/OrderContext';
 import { MagneticButton } from '../effects/MagneticButton';
@@ -54,19 +54,19 @@ export function ContactSection() {
 
   const validate = () => {
     if (!name.trim() || name.trim().length < 2) {
-      return 'Please enter your full name (at least 2 characters).';
+      return interfaceCopy.contactForm.validationName;
     }
     if (!email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) {
-      return 'Please enter a valid email address.';
+      return interfaceCopy.contactForm.validationEmail;
     }
     if (phone.trim()) {
       const digits = phone.replace(/\D/g, '');
       if (digits.length < 7 || !/^[+\d\s().-]+$/.test(phone.trim())) {
-        return 'Please enter a valid phone number or leave it blank.';
+        return interfaceCopy.contactForm.validationPhone;
       }
     }
     if (!message.trim() || message.trim().length < 10) {
-      return 'Please include at least a brief description of your project (10+ characters).';
+      return interfaceCopy.contactForm.validationMessage;
     }
     return '';
   };
@@ -78,7 +78,7 @@ export function ContactSection() {
 
     // Silent honeypot and rapid-bot submission protection
     if (honeypot.trim().length > 0 || Date.now() - mountedAt < 1200) {
-      setValidationError('Unable to verify form submission. Please try again.');
+      setValidationError(interfaceCopy.contactForm.validationBot);
       return;
     }
 
@@ -102,7 +102,7 @@ export function ContactSection() {
         service,
         message: message.trim(),
         _gotcha: honeypot,
-        subject: `TOP TECH Inquiry: ${service}`,
+        subject: `${interfaceCopy.contactForm.emailSubjectPrefix} ${service}`,
       };
 
       if (contactConfig.formAccessKey?.trim()) {
@@ -119,7 +119,7 @@ export function ContactSection() {
       });
 
       if (!response.ok) {
-        throw new Error(`Submission failed (${response.status})`);
+        throw new Error(`${interfaceCopy.contactForm.submitFailedPrefix} (${response.status})`);
       }
 
       setSubmitStatus('sent');
@@ -133,7 +133,7 @@ export function ContactSection() {
       setErrorDetail(
         err instanceof Error
           ? err.message
-          : 'Unable to reach the configured form service.'
+          : interfaceCopy.contactForm.submitNetworkError
       );
     }
   };
@@ -165,10 +165,10 @@ export function ContactSection() {
           >
             <div className="space-y-3">
               <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-slate-950 dark:text-white">
-                Direct Channels &amp; Availability
+                {interfaceCopy.contactPage.channelsHeading}
               </h2>
               <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300">
-                Prefer direct messaging or email? Reach our team immediately through any channel below.
+                {interfaceCopy.contactPage.channelsSubtitle}
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export function ContactSection() {
                   className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white transition-colors whitespace-nowrap shrink-0"
                 >
                   <MessageSquare className="w-4 h-4" aria-hidden="true" />
-                  <span>WhatsApp Contact</span>
+                  <span>{interfaceCopy.contactPage.whatsappButtonLabel}</span>
                 </a>
               </MagneticButton>
 
@@ -192,7 +192,7 @@ export function ContactSection() {
                   className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-[#0B1224] hover:border-blue-500/60 px-5 py-2.5 text-sm font-semibold text-slate-900 dark:text-white transition-colors whitespace-nowrap shrink-0"
                 >
                   <Mail className="w-4 h-4 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-                  <span>Email Us</span>
+                  <span>{interfaceCopy.contactPage.emailButtonLabel}</span>
                 </a>
               </MagneticButton>
             </div>
@@ -202,7 +202,9 @@ export function ContactSection() {
               <div className="flex items-start gap-3 text-sm">
                 <Mail className="w-4 h-4 mt-1 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
                 <div>
-                  <p className="font-medium text-slate-950 dark:text-white">Email</p>
+                  <p className="font-medium text-slate-950 dark:text-white">
+                    {interfaceCopy.contactPage.emailLabel}
+                  </p>
                   <a
                     href={`mailto:${contactConfig.email}`}
                     className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
@@ -215,7 +217,9 @@ export function ContactSection() {
               <div className="flex items-start gap-3 text-sm">
                 <Phone className="w-4 h-4 mt-1 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
                 <div>
-                  <p className="font-medium text-slate-950 dark:text-white">Phone</p>
+                  <p className="font-medium text-slate-950 dark:text-white">
+                    {interfaceCopy.contactPage.phoneLabel}
+                  </p>
                   <a
                     href={`tel:${contactConfig.phone.replace(/[^+\d]/g, '')}`}
                     className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
@@ -228,7 +232,9 @@ export function ContactSection() {
               <div className="flex items-start gap-3 text-sm">
                 <MapPin className="w-4 h-4 mt-1 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
                 <div>
-                  <p className="font-medium text-slate-950 dark:text-white">Location</p>
+                  <p className="font-medium text-slate-950 dark:text-white">
+                    {interfaceCopy.contactPage.locationLabel}
+                  </p>
                   <p className="text-slate-600 dark:text-slate-300">{contactConfig.location}</p>
                 </div>
               </div>
@@ -236,7 +242,9 @@ export function ContactSection() {
               <div className="flex items-start gap-3 text-sm">
                 <Clock className="w-4 h-4 mt-1 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true" />
                 <div>
-                  <p className="font-medium text-slate-950 dark:text-white">Availability</p>
+                  <p className="font-medium text-slate-950 dark:text-white">
+                    {interfaceCopy.contactPage.availabilityLabel}
+                  </p>
                   <p className="text-slate-600 dark:text-slate-300">{contactConfig.availabilityNote}</p>
                 </div>
               </div>
@@ -246,7 +254,7 @@ export function ContactSection() {
             {contactConfig.socialLinks.some((social) => isValidExternalUrl(social.url)) && (
               <div className="space-y-3">
                 <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                  Connect with TOP TECH
+                  {interfaceCopy.contactPage.socialHeading}
                 </p>
                 <div className="flex flex-wrap items-center gap-3">
                   {contactConfig.socialLinks
@@ -276,13 +284,15 @@ export function ContactSection() {
             className="lg:col-span-7 rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0B1224] p-6 sm:p-8"
           >
             <h2 className="font-display text-2xl font-semibold text-slate-950 dark:text-white mb-6">
-              Send a Project Inquiry
+              {interfaceCopy.contactForm.heading}
             </h2>
 
             <form onSubmit={handleSubmit} noValidate className="space-y-5">
               {/* Honeypot field for spam bot mitigation */}
               <div className="sr-only" aria-hidden="true">
-                <label htmlFor="contact-company-website">Leave this field empty</label>
+                <label htmlFor="contact-company-website">
+                  {interfaceCopy.contactForm.honeypotLabel}
+                </label>
                 <input
                   id="contact-company-website"
                   name="_gotcha"
@@ -300,7 +310,7 @@ export function ContactSection() {
                     htmlFor="contact-name"
                     className="block text-sm font-medium text-slate-800 dark:text-slate-200"
                   >
-                    Full Name
+                    {interfaceCopy.contactForm.nameLabel}
                   </label>
                   <input
                     id="contact-name"
@@ -309,7 +319,7 @@ export function ContactSection() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Alex Morgan"
+                    placeholder={interfaceCopy.contactForm.namePlaceholder}
                     className="w-full min-h-[44px] rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#060B18] px-3.5 py-2.5 text-sm text-slate-950 dark:text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   />
                 </div>
@@ -319,7 +329,7 @@ export function ContactSection() {
                     htmlFor="contact-email"
                     className="block text-sm font-medium text-slate-800 dark:text-slate-200"
                   >
-                    Email Address
+                    {interfaceCopy.contactForm.emailLabel}
                   </label>
                   <input
                     id="contact-email"
@@ -328,7 +338,7 @@ export function ContactSection() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="alex@company.com"
+                    placeholder={interfaceCopy.contactForm.emailPlaceholder}
                     className="w-full min-h-[44px] rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#060B18] px-3.5 py-2.5 text-sm text-slate-950 dark:text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   />
                 </div>
@@ -340,7 +350,7 @@ export function ContactSection() {
                     htmlFor="contact-phone"
                     className="block text-sm font-medium text-slate-800 dark:text-slate-200"
                   >
-                    Phone Number
+                    {interfaceCopy.contactForm.phoneLabel}
                   </label>
                   <input
                     id="contact-phone"
@@ -348,7 +358,7 @@ export function ContactSection() {
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="+1 (555) 000-0000"
+                    placeholder={interfaceCopy.contactForm.phonePlaceholder}
                     className="w-full min-h-[44px] rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#060B18] px-3.5 py-2.5 text-sm text-slate-950 dark:text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                   />
                 </div>
@@ -358,7 +368,7 @@ export function ContactSection() {
                     htmlFor="contact-service"
                     className="block text-sm font-medium text-slate-800 dark:text-slate-200"
                   >
-                    Service of Interest
+                    {interfaceCopy.contactForm.serviceLabel}
                   </label>
                   <select
                     id="contact-service"
@@ -372,8 +382,8 @@ export function ContactSection() {
                         {item.name}
                       </option>
                     ))}
-                    <option value="Custom / Multiple Services">
-                      Custom / Multiple Services
+                    <option value={interfaceCopy.contactForm.customServiceOption}>
+                      {interfaceCopy.contactForm.customServiceOption}
                     </option>
                   </select>
                 </div>
@@ -384,7 +394,7 @@ export function ContactSection() {
                   htmlFor="contact-message"
                   className="block text-sm font-medium text-slate-800 dark:text-slate-200"
                 >
-                  Project Details
+                  {interfaceCopy.contactForm.messageLabel}
                 </label>
                 <textarea
                   id="contact-message"
@@ -393,7 +403,7 @@ export function ContactSection() {
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="Tell us about your timeline, goals, and what you would like to build or learn..."
+                  placeholder={interfaceCopy.contactForm.messagePlaceholder}
                   className="w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#060B18] px-3.5 py-2.5 text-sm text-slate-950 dark:text-white placeholder:text-slate-400 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
                 />
               </div>
@@ -414,9 +424,7 @@ export function ContactSection() {
                   className="flex items-start gap-2.5 rounded-lg border border-emerald-300 dark:border-emerald-900/70 bg-emerald-50 dark:bg-emerald-950/40 px-4 py-3 text-sm text-emerald-800 dark:text-emerald-300"
                 >
                   <CheckCircle2 className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
-                  <span>
-                    Your inquiry has been submitted through the configured form service. Our team will respond shortly.
-                  </span>
+                  <span>{interfaceCopy.contactForm.successMessage}</span>
                 </div>
               )}
 
@@ -427,14 +435,14 @@ export function ContactSection() {
                 >
                   <div className="flex items-start gap-2.5">
                     <AlertCircle className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
-                    <span>{errorDetail || 'Unable to submit form. Use direct email or WhatsApp below.'}</span>
+                    <span>{errorDetail || interfaceCopy.contactForm.errorFallbackMessage}</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <a
                       href={prefilledMailtoUrl}
                       className="inline-flex items-center gap-1.5 rounded-md bg-white dark:bg-slate-900 px-3 py-1.5 text-xs font-medium text-slate-900 dark:text-white border border-slate-300 dark:border-slate-700"
                     >
-                      Send via Email App
+                      {interfaceCopy.contactForm.fallbackEmailAppLabel}
                     </a>
                     <a
                       href={prefilledWhatsappUrl}
@@ -442,7 +450,7 @@ export function ContactSection() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 rounded-md bg-white dark:bg-slate-900 px-3 py-1.5 text-xs font-medium text-slate-900 dark:text-white border border-slate-300 dark:border-slate-700"
                     >
-                      Send via WhatsApp
+                      {interfaceCopy.contactForm.fallbackWhatsappLabel}
                     </a>
                   </div>
                 </div>
@@ -454,11 +462,10 @@ export function ContactSection() {
                   className="rounded-xl border border-blue-200 dark:border-blue-900/60 bg-blue-50/70 dark:bg-blue-950/35 p-4 space-y-3 text-sm"
                 >
                   <p className="font-medium text-slate-950 dark:text-white">
-                    External form endpoint not connected yet
+                    {interfaceCopy.contactForm.unconfiguredTitle}
                   </p>
                   <p className="text-slate-600 dark:text-slate-300 text-xs leading-relaxed">
-                    To enable direct browser submissions on static hosting, add your Formspree or Web3Forms URL to{' '}
-                    <code className="font-mono text-blue-700 dark:text-blue-300">formEndpoint</code> in Pages CMS. Meanwhile, your details are ready to send directly:
+                    {interfaceCopy.contactForm.unconfiguredDescription}
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <a
@@ -466,7 +473,7 @@ export function ContactSection() {
                       className="inline-flex min-h-[40px] items-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 px-4 py-2 text-xs font-semibold text-white transition-colors"
                     >
                       <Mail className="w-3.5 h-3.5" aria-hidden="true" />
-                      <span>Open Pre-filled Email</span>
+                      <span>{interfaceCopy.contactForm.unconfiguredEmailLabel}</span>
                     </a>
                     <a
                       href={prefilledWhatsappUrl}
@@ -475,7 +482,7 @@ export function ContactSection() {
                       className="inline-flex min-h-[40px] items-center gap-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-[#0B1224] px-4 py-2 text-xs font-semibold text-slate-900 dark:text-white hover:border-blue-500/60 transition-colors"
                     >
                       <MessageSquare className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" aria-hidden="true" />
-                      <span>Send via WhatsApp</span>
+                      <span>{interfaceCopy.contactForm.fallbackWhatsappLabel}</span>
                     </a>
                   </div>
                 </div>
@@ -489,14 +496,18 @@ export function ContactSection() {
                     className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 disabled:opacity-60 px-6 py-3 text-sm font-semibold text-white transition-colors cursor-pointer whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
                   >
                     <Send className="w-4 h-4" aria-hidden="true" />
-                    <span>{submitStatus === 'submitting' ? 'Sending...' : 'Send Inquiry'}</span>
+                    <span>
+                      {submitStatus === 'submitting'
+                        ? interfaceCopy.contactForm.submittingLabel
+                        : interfaceCopy.contactForm.submitLabel}
+                    </span>
                   </button>
                 </MagneticButton>
 
                 <p className="text-xs text-slate-500 dark:text-slate-400">
                   {hasEndpoint
-                    ? 'Powered by configured external form handler.'
-                    : 'Prepared for Formspree / Web3Forms integration via CMS.'}
+                    ? interfaceCopy.contactForm.configuredHint
+                    : interfaceCopy.contactForm.unconfiguredHint}
                 </p>
               </div>
             </form>
